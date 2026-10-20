@@ -27,6 +27,7 @@
         <a href="#welt">Welt &amp; Magie</a>
         <a href="#figuren">Figuren</a>
         <a href="#band1">Band 1</a>
+        <a href="#freigaben">Freigaben</a>
         <a href="#aenderung" class="nav-cta">Änderungswunsch</a>
       </nav>
     </header>
@@ -320,6 +321,142 @@
             <li><span>07</span>Faire Rätselhinweise</li><li><span>08</span>Vollständiges Bandende</li>
             <li><span>09</span>Bedeutung statt Machtsteigerung</li><li><span>10</span>Seltsamkeit mit Funktion</li>
           </ol>
+        </div>
+      </section>
+
+      <section class="approval-section" id="freigaben" aria-labelledby="approval-title">
+        <div class="section-shell">
+          <div class="section-intro light">
+            <p class="eyebrow">Verbindlicher Vier-Augen-Workflow</p>
+            <h2 id="approval-title">Kein Kapitel ohne Go.<br>Kein Kapitel ohne Abnahme.</h2>
+            <p>Jedes Kapitel passiert zwei getrennte Freigabetore. Eine Freigabe gilt immer nur für die im Protokoll genannte Kapitel- und Versionsnummer.</p>
+          </div>
+
+          <ol class="approval-flow">
+            <li><span>01</span><div><strong>Kapitelplan lesen</strong><p>Ziel, Konflikt, Ergebnis, Kanon und spätere Auswirkungen prüfen.</p></div></li>
+            <li><span>02</span><div><strong>Schreibfreigabe geben</strong><p>Erst das bestätigte Go erlaubt die Rohfassung dieser Planversion.</p></div></li>
+            <li><span>03</span><div><strong>Kapitel prüfen</strong><p>Den fertigen Text vollständig lesen, Deltas und Folgen kontrollieren.</p></div></li>
+            <li><span>04</span><div><strong>Kapitel abnehmen</strong><p>Freigeben oder mit konkreten Überarbeitungswünschen zurückgeben.</p></div></li>
+          </ol>
+
+          <div class="approval-note">
+            <strong>Wichtig</strong>
+            <p>Die Webseite versendet nichts automatisch. Sie erstellt ein datiertes Freigabeprotokoll. Verbindlich wird die Entscheidung, sobald dieses Protokoll an den anderen Autor übermittelt und im Projekt dokumentiert wurde.</p>
+          </div>
+
+          <div class="approval-panels">
+            <article class="approval-panel">
+              <div class="panel-heading">
+                <span class="stage-badge">Tor 1</span>
+                <h3>Go für das Schreiben</h3>
+                <p>Bestätigt den fertigen Kapitelplan – noch nicht den späteren Text.</p>
+              </div>
+              <form class="approval-form" id="writingApprovalForm" data-kind="schreibfreigabe">
+                <div class="form-row">
+                  <label>
+                    Koautor · Name oder Kürzel
+                    <input name="reviewer" autocomplete="name" required placeholder="z. B. AB">
+                  </label>
+                  <label>
+                    Kapitelnummer
+                    <input name="chapter" type="number" min="1" max="36" value="1" required>
+                  </label>
+                </div>
+                <label>
+                  Titel des Kapitels
+                  <input name="chapterTitle" value="Das Kind ohne Vorleben" required>
+                </label>
+                <label>
+                  geprüfte Planversion
+                  <input name="version" required placeholder="z. B. Plan v1 · 20.10.2026">
+                </label>
+                <label>
+                  Entscheidung
+                  <select name="decision" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="Schreibfreigabe erteilt">Schreibfreigabe erteilen</option>
+                    <option value="Noch nicht freigegeben – Änderungen erforderlich">Noch nicht freigeben</option>
+                  </select>
+                </label>
+                <fieldset>
+                  <legend>Geprüft und verstanden</legend>
+                  <label><input type="checkbox" name="check" value="Ziel, Konflikt und Ergebnis" required> Ziel, Konflikt und Ergebnis</label>
+                  <label><input type="checkbox" name="check" value="Figurenmotivation und Perspektive" required> Figurenmotivation und Perspektive</label>
+                  <label><input type="checkbox" name="check" value="Welt- und Magieregeln" required> Welt- und Magieregeln</label>
+                  <label><input type="checkbox" name="check" value="Setups, Payoffs und Folgekapitel" required> Setups, Payoffs und Folgekapitel</label>
+                </fieldset>
+                <label>
+                  Anmerkung oder notwendige Änderung
+                  <textarea name="notes" rows="4" required placeholder="Bei Freigabe z. B. ‚ohne weitere Anmerkung‘; sonst konkrete Änderungen nennen."></textarea>
+                </label>
+                <label class="consent">
+                  <input type="checkbox" name="declaration" required>
+                  <span>Diese Entscheidung gilt ausschließlich für die oben genannte Planversion.</span>
+                </label>
+                <div class="form-actions">
+                  <button class="button button-primary" type="button" data-action="copy">Protokoll kopieren</button>
+                  <button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button>
+                </div>
+                <p class="form-status" role="status" aria-live="polite">Noch keine Schreibfreigabe erstellt.</p>
+              </form>
+            </article>
+
+            <article class="approval-panel">
+              <div class="panel-heading">
+                <span class="stage-badge">Tor 2</span>
+                <h3>Abnahme des Kapitels</h3>
+                <p>Bestätigt den geprüften Kapiteltext oder verlangt eine neue Textversion.</p>
+              </div>
+              <form class="approval-form" id="chapterApprovalForm" data-kind="kapitelabnahme">
+                <div class="form-row">
+                  <label>
+                    Koautor · Name oder Kürzel
+                    <input name="reviewer" autocomplete="name" required placeholder="z. B. AB">
+                  </label>
+                  <label>
+                    Kapitelnummer
+                    <input name="chapter" type="number" min="1" max="36" value="1" required>
+                  </label>
+                </div>
+                <label>
+                  Titel des Kapitels
+                  <input name="chapterTitle" value="Das Kind ohne Vorleben" required>
+                </label>
+                <label>
+                  geprüfte Textversion
+                  <input name="version" required placeholder="z. B. Rohfassung v2 · 24.10.2026">
+                </label>
+                <label>
+                  Entscheidung
+                  <select name="decision" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="Kapitel freigegeben">Kapitel endgültig freigeben</option>
+                    <option value="Nicht freigegeben – Überarbeitung erforderlich">Überarbeitung verlangen</option>
+                  </select>
+                </label>
+                <fieldset>
+                  <legend>Vollständig geprüft</legend>
+                  <label><input type="checkbox" name="check" value="Kapitel vollständig gelesen" required> Kapitel vollständig gelesen</label>
+                  <label><input type="checkbox" name="check" value="Figuren, Logik und Magieregeln" required> Figuren, Logik und Magieregeln</label>
+                  <label><input type="checkbox" name="check" value="Stil, Verständlichkeit und Kontinuität" required> Stil, Verständlichkeit und Kontinuität</label>
+                  <label><input type="checkbox" name="check" value="Deltas und spätere Auswirkungen" required> Deltas und spätere Auswirkungen</label>
+                </fieldset>
+                <label>
+                  Abnahmevermerk oder Überarbeitungsauftrag
+                  <textarea name="notes" rows="4" required placeholder="Bei Abnahme z. B. ‚freigegeben ohne Restpunkte‘; sonst Änderungen konkret benennen."></textarea>
+                </label>
+                <label class="consent">
+                  <input type="checkbox" name="declaration" required>
+                  <span>Diese Entscheidung gilt ausschließlich für die oben genannte Textversion.</span>
+                </label>
+                <div class="form-actions">
+                  <button class="button button-primary" type="button" data-action="copy">Protokoll kopieren</button>
+                  <button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button>
+                </div>
+                <p class="form-status" role="status" aria-live="polite">Noch keine Kapitelabnahme erstellt.</p>
+              </form>
+            </article>
+          </div>
         </div>
       </section>
 

@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Zwei Freigabetore für jedes Kapitel ergänzt
+
+- **Art:** Organisation und Kapitelworkflow
+- **Grund:** Der Koautor soll vor der Rohfassung ein ausdrückliches Go und nach der Prüfung eine ausdrückliche Kapitelabnahme geben.
+- **Änderung:** Schreibfreigabe und Kapitelabnahme als versionierte, datierte Protokolle in Produktionsregeln, Vorlagen und Webseite ergänzt.
+- **Auswirkung:** Ohne protokolliertes Go wird nicht geschrieben; ohne protokollierte Abnahme wird kein Kapitel abgeschlossen. Plan- oder Textänderungen benötigen eine neue Freigabe der neuen Version.
+- **Betroffene Dateien:** `produktion/PRODUKTIONSREGELN.md`, `planung/ENTSCHEIDUNGEN.md`, `PROJEKTSTATUS.md`, `vorlagen/`, `index.html`, `styles.css`, `app.js`
+- **Offen:** kein automatischer Versand; Protokolle werden kopiert oder heruntergeladen und anschließend übermittelt.
+
 ### 2026-10-20 · Serien- und Band-1-Grundgerüst festgelegt
 
 - **Art:** Kanon, Plot, Figur, Welt, Stil und Organisation

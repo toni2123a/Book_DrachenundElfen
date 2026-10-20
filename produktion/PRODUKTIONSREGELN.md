@@ -15,13 +15,35 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 ## Ablauf pro Kapitel
 
 1. **Plan:** Ziel, Konflikt, Ergebnis, Kanon und Grenzen festlegen.
-2. **Rohentwurf:** Szene schreiben, ohne neue Annahmen stillschweigend zum Kanon zu machen.
-3. **Delta:** Neue Erkenntnisse als Grün, Gelb oder Rot erfassen.
-4. **Stilprüfung:** Perspektive, Stimme, Rhythmus und Verständlichkeit prüfen.
-5. **Logikprüfung:** Zeitlinie, Motivation, Welt- und Magieregeln prüfen.
-6. **Koautorenprüfung:** Offene Kommentare entscheiden oder ausdrücklich vertagen.
-7. **Überarbeitung:** Entscheidungen umsetzen und Folgekapitel synchronisieren.
-8. **Freigabe:** Kapitelstatus erst nach vollständiger Checkliste ändern.
+2. **Schreibfreigabe:** Der Koautor prüft den Plan und erteilt für eine exakt bezeichnete Planversion sein Go. Ohne übermitteltes und protokolliertes Go beginnt keine Rohfassung.
+3. **Rohentwurf:** Szene schreiben, ohne neue Annahmen stillschweigend zum Kanon zu machen.
+4. **Delta:** Neue Erkenntnisse als Grün, Gelb oder Rot erfassen.
+5. **Stilprüfung:** Perspektive, Stimme, Rhythmus und Verständlichkeit prüfen.
+6. **Logikprüfung:** Zeitlinie, Motivation, Welt- und Magieregeln prüfen.
+7. **Koautorenprüfung:** Der Koautor liest den vollständigen Text und entscheidet offene Kommentare.
+8. **Überarbeitung:** Entscheidungen umsetzen und Folgekapitel synchronisieren.
+9. **Kapitelabnahme:** Der Koautor gibt eine exakt bezeichnete Textversion frei oder fordert eine weitere Überarbeitung.
+10. **Abschluss:** Kapitelstatus erst nach übermitteltem und protokolliertem Abnahmeprotokoll ändern.
+
+## Zwei verbindliche Freigabetore
+
+### Tor 1 · Schreibfreigabe
+
+- nennt Kapitelnummer, Kapiteltitel und exakte Planversion,
+- bestätigt Ziel, Konflikt, Ergebnis und Perspektive,
+- bestätigt Weltregeln, Setups, Payoffs und Folgen für spätere Kapitel,
+- lautet entweder `Schreibfreigabe erteilt` oder `Noch nicht freigegeben – Änderungen erforderlich`,
+- verliert bei jeder inhaltlichen Änderung des Plans ihre Gültigkeit.
+
+### Tor 2 · Kapitelabnahme
+
+- nennt Kapitelnummer, Kapiteltitel und exakte Textversion,
+- bestätigt die vollständige Lektüre,
+- bestätigt Figurenlogik, Stil, Kontinuität und Deltas,
+- lautet entweder `Kapitel freigegeben` oder `Nicht freigegeben – Überarbeitung erforderlich`,
+- verliert bei jeder nachträglichen Textänderung ihre Gültigkeit.
+
+Die Webseite erzeugt für beide Tore datierte Protokolle mit Kennung. Da sie keine externe Speicherung verwendet, gilt eine Entscheidung erst nach Übermittlung an den anderen Autor und Eintrag in das Projektprotokoll.
 
 ## Delta-Klassen
 
@@ -41,6 +63,7 @@ Ein Kapitel ist erst freigegeben, wenn:
 - alle gelben und roten Deltas entschieden sind,
 - betroffene Planungsdateien und spätere Kapitelkarten synchronisiert sind,
 - Rechtschreibung und Format geprüft wurden.
+- das Abnahmeprotokoll die freigegebene Textversion eindeutig nennt.
 
 ## Zusammenarbeit
 

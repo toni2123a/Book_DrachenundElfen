@@ -8,7 +8,7 @@ Das Projekt übernimmt nur das Arbeitsprinzip aus `TheBookV2`: Ideen werden gesa
 
 ## Aktueller Stand
 
-Das Grundgerüst ist vollständig: Trilogiebogen, Welt- und Magieregeln, Figurenbögen, 36 Kapitel für Band 1, Geheimnisarchitektur, Setups/Payoffs und Finale. Die öffentliche Seite zeigt diesen Plan und erstellt ausschließlich lokale Änderungswünsche.
+Das Grundgerüst ist vollständig: Trilogiebogen, Welt- und Magieregeln, Figurenbögen, 36 Kapitel für Band 1, Geheimnisarchitektur, Setups/Payoffs und Finale. Die öffentliche Seite zeigt diesen Plan, erstellt Änderungswünsche und führt durch zwei Freigabetore pro Kapitel.
 
 ## Verbindliche Planung
 
@@ -28,8 +28,10 @@ Das Grundgerüst ist vollständig: Trilogiebogen, Welt- und Magieregeln, Figuren
 1. Ein Änderungswunsch wird über die Planungsseite oder in `ideen/IDEEN_INBOX.md` formuliert.
 2. Beide Autoren prüfen Folgen für Figuren, Weltregeln, spätere Kapitel, Foreshadowing und Folgebände.
 3. Eine Annahme wird in `planung/ENTSCHEIDUNGEN.md` dokumentiert und gleichzeitig in allen betroffenen Planungsdateien synchronisiert.
-4. Kapitel werden mit `scripts/neues-kapitel.ps1` als Plan, Rohentwurf und Delta angelegt.
-5. Nach größeren Änderungen läuft `scripts/projekt-check.ps1` als Strukturprüfung.
+4. Der Koautor erteilt für die konkrete Kapitelplan-Version die Schreibfreigabe.
+5. Erst danach entsteht die Rohfassung mit Plan, Rohentwurf und Delta.
+6. Der Koautor nimmt die konkrete Textversion ab oder fordert Überarbeitung.
+7. Nach größeren Änderungen läuft `scripts/projekt-check.ps1` als Strukturprüfung.
 
 ## Wichtiges Prinzip
 

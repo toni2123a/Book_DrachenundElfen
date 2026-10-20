@@ -18,6 +18,7 @@ Stand: 20. Oktober 2026
 - [x] Enthüllungsleiter, Setups und Payoffs
 - [x] Finale und Anschluss an Band 2
 - [x] Webseite als vollständige Planansicht mit lokalem Änderungswunschformular
+- [x] zweistufiger Koautoren-Workflow für Schreibfreigabe und Kapitelabnahme
 
 ## Als Nächstes
 
@@ -26,11 +27,13 @@ Stand: 20. Oktober 2026
 - [ ] Inhaltsgrenzen der Autoren dokumentieren
 - [ ] Kapitel 1 als Drei-Dateien-Paket anlegen
 - [ ] Szenenplan für Kapitel 1 erstellen
-- [ ] Rohfassung erst nach Freigabe des Grundgerüsts beginnen
+- [ ] Schreibfreigabe des Koautors für die konkrete Kapitel-1-Planversion einholen
+- [ ] Rohfassung erst nach protokolliertem Go beginnen
+- [ ] fertige Textversion durch den Koautor abnehmen lassen
 
 ## Aktives Kapitel
 
-Noch keines. Der nächste kontrollierte Schritt ist die Szenenplanung für Kapitel 1 „Das Kind ohne Vorleben“.
+Noch keines. Der nächste kontrollierte Schritt ist die Szenenplanung für Kapitel 1 „Das Kind ohne Vorleben“. Danach wartet das Kapitel am ersten Freigabetor auf das Go des Koautors.
 
 ## Offene Punkte
 

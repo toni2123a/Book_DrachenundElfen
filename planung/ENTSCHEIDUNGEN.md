@@ -99,6 +99,17 @@ Hier werden verbindliche kreative Entscheidungen nachvollziehbar festgehalten. E
 - **Synchronisiert in:** `planung/STORY_BIBLE.md`, `planung/SCHREIBSTIL.md`, `planung/PLOT_BAUPLAN.md`, `planung/BAND1_BAUPLAN.md`, Webseite
 - **Später zu prüfen:** Zielwortzahl nach vollständiger erster Fassung
 
+### E-009 · Zweistufige Kapitel-Freigabe
+
+- **Datum:** 2026-10-20
+- **Beteiligte:** Projektgründer; Koautor als Freigabeinstanz
+- **Bezug:** Produktionsworkflow
+- **Entscheidung:** Für jedes Kapitel sind zwei getrennte Koautorenentscheidungen erforderlich: ein Go für die konkrete Planversion vor dem Schreiben und eine Abnahme der konkreten Textversion nach Prüfung und Überarbeitung.
+- **Status:** Angenommen
+- **Begründung:** Planung und Ausführung werden getrennt bestätigt; keine unbemerkte Änderung kann eine ältere Freigabe mitnutzen.
+- **Synchronisiert in:** `produktion/PRODUKTIONSREGELN.md`, `PROJEKTSTATUS.md`, Webseite, Freigabevorlagen
+- **Später zu prüfen:** optionaler automatischer Versand, falls später ein eigener Übermittlungsdienst gewünscht wird
+
 ## Vorlage
 
 ### E-NNN · Kurztitel

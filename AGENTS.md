@@ -30,4 +30,4 @@ Für jedes aktive Kapitel gehören drei Dateien zusammen:
 - `KAPITEL_NN_ROHENTWURF.md`
 - `KAPITEL_NN_DELTA.md`
 
-Kapitel werden möglichst mit `scripts/neues-kapitel.ps1` angelegt. Vor Abschluss größerer Arbeiten `scripts/projekt-check.ps1` ausführen.
+Vor jeder Überarbeitung einer Szene die bisherige Fassung mit `scripts/szenenfassung.ps1 -Aktion Sichern` ablegen, damit sie auf der Webseite vergleichbar und wiederherstellbar bleibt. Kapitel werden möglichst mit `scripts/neues-kapitel.ps1` angelegt. Vor Abschluss größerer Arbeiten `scripts/projekt-check.ps1` ausführen.

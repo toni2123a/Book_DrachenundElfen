@@ -326,7 +326,7 @@
           <div class="draft-instructions">
             <div>
               <strong>Änderungen direkt am Inhalt</strong>
-              <p>Textstelle markieren und in derselben Szene „Änderung wünschen“ wählen. Ohne Markierung gilt der Wunsch für die ganze Kachel.</p>
+              <p>Unter jeder Szene „Szene freigeben“ oder „Überarbeitung erforderlich“ wählen. Eine vorher markierte Textstelle wird mitgenommen; ohne Markierung gilt der Wunsch für die ganze Szene. Nach einer Überarbeitung lassen sich alte und neue Fassung direkt an der Szene umschalten.</p>
             </div>
             <span class="draft-mode-badge">Draft-Modus aktiv</span>
           </div>
@@ -336,10 +336,9 @@
             <article class="approval-panel">
               <form class="approval-form" id="writingApprovalForm" data-kind="schreibfreigabe">
                 <div class="form-row">
-                  <label>Koautor · Name oder Kürzel<input name="reviewer" autocomplete="name" required placeholder="z. B. AB"></label>
                   <label>Kapitelnummer<input name="chapter" type="number" min="1" max="36" value="1" required></label>
+                  <label>Titel des Kapitels<input name="chapterTitle" value="Das Kind ohne Vorleben" required></label>
                 </div>
-                <label>Titel des Kapitels<input name="chapterTitle" value="Das Kind ohne Vorleben" required></label>
                 <label>geprüfte Planversion<input name="version" value="Plan v1 · 20.10.2026" required></label>
                 <label>Entscheidung<select name="decision" required><option value="">Bitte auswählen</option><option value="Schreibfreigabe erteilt">Schreibfreigabe erteilen</option><option value="Noch nicht freigegeben – Änderungen erforderlich">Noch nicht freigeben</option></select></label>
                 <fieldset>
@@ -438,10 +437,9 @@
               </div>
               <form class="approval-form" id="chapterApprovalForm" data-kind="kapitelabnahme">
                 <div class="form-row">
-                  <label>Koautor · Name oder Kürzel<input name="reviewer" autocomplete="name" required placeholder="z. B. AB"></label>
                   <label>Kapitelnummer<input name="chapter" type="number" min="1" max="36" value="1" readonly required></label>
+                  <label>Titel des Kapitels<input name="chapterTitle" value="Das Kind ohne Vorleben" readonly required></label>
                 </div>
-                <label>Titel des Kapitels<input name="chapterTitle" value="Das Kind ohne Vorleben" readonly required></label>
                 <label>geprüfte Textversion<input name="version" value="Rohentwurf v1 · 20.10.2026" readonly required></label>
                 <section class="approval-assessment" data-chapter-assessment="1" aria-label="KI-Einschätzung für die Kapitelabnahme"></section>
                 <label>Entscheidung<select name="decision" data-scene-gated required><option value="">Bitte auswählen</option><option value="Kapitel freigegeben">Kapitel endgültig freigeben</option><option value="Nicht freigegeben – Überarbeitung erforderlich">Kapitel noch nicht freigeben</option></select></label>
@@ -513,7 +511,6 @@
           <div><small>Draft-Modus</small><h2 id="changeTrayTitle">Gesammelte Änderungswünsche</h2></div>
           <button type="button" class="tray-close" id="closeChangeTray" aria-label="Änderungsablage schließen">×</button>
         </div>
-        <label class="tray-author">Koautor · Name oder Kürzel <input id="changeAuthor" autocomplete="name" placeholder="z. B. AB"></label>
         <div class="tray-list" id="changeList"><p class="tray-empty">Noch keine Änderungswünsche erfasst.</p></div>
         <div class="tray-actions">
           <button class="button button-primary" id="copyAllChanges" type="button">Alle kopieren</button>

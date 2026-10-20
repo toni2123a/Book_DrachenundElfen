@@ -211,7 +211,6 @@ function protocolId(form) {
 function approvalValues(form) {
   const data = new FormData(form);
   return {
-    reviewer: String(data.get('reviewer') || '').trim(),
     chapter: String(data.get('chapter') || '').trim(),
     chapterTitle: String(data.get('chapterTitle') || '').trim(),
     version: String(data.get('version') || '').trim(),
@@ -238,7 +237,6 @@ ${sceneApprovalText()}
 
 Protokoll-ID: ${protocolId(form)}
 Erstellt: ${form.dataset.protocolDate}
-Koautor / geprüft von: ${values.reviewer}
 Kapitel: ${values.chapter} · ${values.chapterTitle}
 Geprüfte Version: ${values.version}
 ${chapterReview}
@@ -276,7 +274,7 @@ function restoreApprovalDraft(form) {
   try {
     const saved = JSON.parse(localStorage.getItem(approvalStorageKey(form)));
     if (!saved) return;
-    for (const name of ['reviewer', 'chapter', 'chapterTitle', 'version', 'decision', 'notes']) {
+    for (const name of ['chapter', 'chapterTitle', 'version', 'decision', 'notes']) {
       const field = form.elements.namedItem(name);
       if (field && saved[name] !== undefined) field.value = saved[name];
     }
@@ -372,8 +370,41 @@ function sceneChangeCount(sceneNumber) {
   return changeNotes.filter((note) => note.target.startsWith(prefix)).length;
 }
 
+// Frühere Szenenfassungen werden mit scripts/szene-sichern.ps1 abgelegt und hier zum Vergleich angeboten.
+const sceneVersionDirectory = 'manuskript/fassungen';
+const sceneVersionManifestPath = `${sceneVersionDirectory}/KAPITEL_01_FASSUNGEN.json`;
+let sceneVersions = {};
+const sceneVersionTexts = new Map();
+
+async function loadSceneVersions() {
+  sceneVersions = {};
+  try {
+    const response = await fetch(sceneVersionManifestPath, { cache: 'no-store' });
+    if (!response.ok) return;
+    const manifest = await response.json();
+    (manifest.szenen || []).forEach((entry) => {
+      sceneVersions[Number(entry.szene)] = entry;
+    });
+  } catch {
+    sceneVersions = {};
+  }
+}
+
+function currentSceneVersion(number) {
+  return sceneVersions[number]?.aktuell || 'v1';
+}
+
+function approvedSceneVersion(number) {
+  const approval = sceneApprovals[number];
+  return approval?.decision === 'approved' ? approval.fassung || 'v1' : '';
+}
+
+function sceneApproved(number) {
+  return approvedSceneVersion(number) === currentSceneVersion(number) && sceneChangeCount(number) === 0;
+}
+
 function allScenesApproved() {
-  return sceneTitles.every((_, index) => sceneApprovals[index + 1]?.decision === 'approved' && sceneChangeCount(index + 1) === 0);
+  return sceneTitles.every((_, index) => sceneApproved(index + 1));
 }
 
 function sceneApprovalText() {
@@ -381,12 +412,14 @@ function sceneApprovalText() {
     const number = index + 1;
     const approval = sceneApprovals[number];
     if (!approval || approval.decision !== 'approved') return `- Szene ${number}: ${title} · NICHT FREIGEGEBEN`;
-    return `- Szene ${number}: ${title} · FREIGEGEBEN von ${approval.reviewer} am ${approval.approvedAt}${approval.note ? ` · ${approval.note}` : ''}`;
+    const version = approvedSceneVersion(number);
+    const restoreHint = version === currentSceneVersion(number) ? '' : ' · Vorfassung, noch nicht im Manuskript wiederhergestellt';
+    return `- Szene ${number}: ${title} · Fassung ${version} FREIGEGEBEN am ${approval.approvedAt}${restoreHint}${approval.note ? ` · ${approval.note}` : ''}`;
   }).join('\n');
 }
 
 function updateChapterGate() {
-  const approvedCount = sceneTitles.filter((_, index) => sceneApprovals[index + 1]?.decision === 'approved' && sceneChangeCount(index + 1) === 0).length;
+  const approvedCount = sceneTitles.filter((_, index) => sceneApproved(index + 1)).length;
   const ready = approvedCount === sceneTitles.length;
   const progress = document.querySelector('#sceneApprovalProgress');
   const panel = document.querySelector('#chapterApprovalPanel');
@@ -419,8 +452,13 @@ function renderSceneApproval(article, index) {
   const number = index + 1;
   const saved = sceneApprovals[number] || {};
   const openChanges = sceneChangeCount(number);
+  const currentVersion = currentSceneVersion(number);
+  const shownVersion = article.dataset.fassung || currentVersion;
+  const approvedVersion = approvedSceneVersion(number);
+  const olderApproved = approvedVersion && approvedVersion !== currentVersion && openChanges === 0;
+  const state = sceneApproved(number) ? 'is-approved' : olderApproved ? 'is-older' : saved.decision === 'changes' || openChanges ? 'needs-changes' : '';
   const panel = document.createElement('section');
-  panel.className = `scene-approval ${saved.decision === 'approved' && openChanges === 0 ? 'is-approved' : saved.decision === 'changes' || openChanges ? 'needs-changes' : ''}`;
+  panel.className = `scene-approval ${state}`;
   panel.setAttribute('aria-label', `Freigabe für Szene ${number}`);
 
   const head = document.createElement('div');
@@ -428,33 +466,43 @@ function renderSceneApproval(article, index) {
   const title = document.createElement('strong');
   title.textContent = `Szenenfreigabe · ${String(number).padStart(2, '0')}`;
   const badge = document.createElement('span');
-  badge.textContent = saved.decision === 'approved' && openChanges === 0 ? 'Freigegeben' : saved.decision === 'changes' || openChanges ? 'Änderung nötig' : 'Prüfung offen';
+  badge.textContent = {
+    'is-approved': 'Freigegeben',
+    'is-older': `Vorfassung ${approvedVersion} gewählt`,
+    'needs-changes': 'Änderung nötig'
+  }[state] || 'Prüfung offen';
   head.append(title, badge);
 
   const hint = document.createElement('p');
-  hint.textContent = openChanges
-    ? `${openChanges} offener Änderungswunsch. Nach der Überarbeitung muss diese Szene erneut freigegeben werden.`
-    : 'Text prüfen, Änderungswünsche direkt an der Szene erfassen und anschließend die Szene freigeben.';
+  if (openChanges) {
+    hint.textContent = `${openChanges} offener Änderungswunsch. Nach der Überarbeitung muss diese Szene erneut freigegeben werden.`;
+  } else if (olderApproved) {
+    hint.textContent = `Freigegeben wurde die Vorfassung ${approvedVersion}. Sie wird im Manuskript wiederhergestellt; erst dann zählt die Freigabe für die Kapitelabnahme.`;
+  } else if (shownVersion !== currentVersion) {
+    hint.textContent = `Angezeigt wird die Vorfassung ${shownVersion}. Eine Freigabe hier bedeutet: Diese Fassung soll statt ${currentVersion} zurück ins Manuskript.`;
+  } else {
+    hint.textContent = 'Text prüfen und die Szene freigeben oder Überarbeitung anfordern. Für eine bestimmte Stelle diese vorher im Text markieren.';
+  }
 
   const form = document.createElement('form');
   form.className = 'scene-approval-form';
-  const reviewer = document.createElement('input');
-  reviewer.required = true;
-  reviewer.placeholder = 'Kürzel';
-  reviewer.value = saved.reviewer || authorField?.value || '';
   const decision = document.createElement('select');
   decision.required = true;
-  [['', 'Bitte auswählen'], ['approved', 'Szene freigeben'], ['changes', 'Überarbeitung erforderlich']].forEach(([value, text]) => {
+  const approveText = shownVersion === currentVersion ? 'Szene freigeben' : `Vorfassung ${shownVersion} freigeben`;
+  [['', 'Bitte auswählen'], ['approved', approveText], ['changes', 'Überarbeitung erforderlich']].forEach(([value, text]) => {
     const option = document.createElement('option');
     option.value = value;
     option.textContent = text;
-    option.selected = saved.decision === value;
+    option.selected = saved.decision === value && (value !== 'approved' || approvedVersion === shownVersion);
     decision.appendChild(option);
   });
   const note = document.createElement('textarea');
   note.rows = 2;
-  note.placeholder = 'Kurzer Vermerk; bei Überarbeitung bitte den Grund nennen.';
-  note.value = saved.note || '';
+  note.placeholder = 'Bei Überarbeitung: Was soll sich ändern? Bei Freigabe optional.';
+  note.value = saved.decision === 'approved' ? saved.note || '' : '';
+  const quoteBox = document.createElement('blockquote');
+  quoteBox.className = 'scene-approval-quote';
+  quoteBox.hidden = true;
   const save = document.createElement('button');
   save.type = 'submit';
   save.className = 'button button-primary';
@@ -462,9 +510,16 @@ function renderSceneApproval(article, index) {
   const status = document.createElement('p');
   status.className = 'scene-approval-status';
   status.setAttribute('role', 'status');
-  status.textContent = saved.approvedAt ? `Gespeichert: ${saved.approvedAt}` : 'Noch keine Szenenentscheidung gespeichert.';
+  status.textContent = saved.approvedAt ? `Gespeichert: ${saved.approvedAt} · Fassung ${approvedVersion}` : 'Noch keine Szenenentscheidung gespeichert.';
 
-  form.append(sceneField('Koautor', reviewer), sceneField('Entscheidung', decision), sceneField('Vermerk', note), save, status);
+  const showQuote = () => {
+    quoteBox.hidden = !article.dataset.quote || decision.value !== 'changes';
+    quoteBox.textContent = `Markierte Textstelle: „${article.dataset.quote || ''}“`;
+  };
+  decision.addEventListener('change', showQuote);
+  article.showSceneQuote = showQuote;
+
+  form.append(sceneField('Entscheidung', decision), sceneField('Vermerk', note), quoteBox, save, status);
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!form.reportValidity()) return;
@@ -473,18 +528,32 @@ function renderSceneApproval(article, index) {
       return;
     }
     if (decision.value === 'changes' && !note.value.trim()) {
-      status.textContent = 'Bitte den Überarbeitungsgrund im Vermerk festhalten.';
+      status.textContent = 'Bitte festhalten, was überarbeitet werden soll.';
       note.focus();
       return;
     }
     sceneApprovals[number] = {
       decision: decision.value,
-      reviewer: reviewer.value.trim(),
-      note: note.value.trim(),
-      version: 'Rohentwurf v1 · 20.10.2026',
+      note: decision.value === 'approved' ? note.value.trim() : '',
+      fassung: shownVersion,
       approvedAt: decision.value === 'approved' ? today() : ''
     };
     persistSceneApprovals();
+    if (decision.value === 'changes') {
+      // Der Überarbeitungswunsch landet in der Ablage und blockiert die Freigabe, bis er erledigt ist.
+      changeNotes.push({
+        id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+        target: article.dataset.changeTarget,
+        quote: article.dataset.quote || '',
+        request: note.value.trim(),
+        createdAt: today()
+      });
+      delete article.dataset.quote;
+      persistChangeNotes();
+      openTray();
+      trayStatus.textContent = 'Überarbeitungswunsch in die Ablage übernommen.';
+      return;
+    }
     renderSceneApproval(article, index);
   });
 
@@ -518,9 +587,97 @@ function appendInlineFormatting(element, text) {
   }
 }
 
+function sceneParagraphs(text) {
+  return text.split(/\r?\n\r?\n/).map((paragraph) => paragraph.trim()).filter(Boolean);
+}
+
+function renderSceneProse(prose, text, compareText = '') {
+  const known = new Set(sceneParagraphs(compareText));
+  prose.replaceChildren();
+  sceneParagraphs(text).forEach((paragraph) => {
+    const p = document.createElement('p');
+    if (compareText && !known.has(paragraph)) p.className = 'is-changed';
+    appendInlineFormatting(p, paragraph);
+    prose.appendChild(p);
+  });
+}
+
+async function sceneVersionText(file) {
+  if (!sceneVersionTexts.has(file)) {
+    const response = await fetch(`${sceneVersionDirectory}/${file}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    sceneVersionTexts.set(file, (await response.text()).trim());
+  }
+  return sceneVersionTexts.get(file);
+}
+
+function renderSceneVersionSwitch(article, index, currentText, prose) {
+  const number = index + 1;
+  const entry = sceneVersions[number];
+  if (!entry?.vorher?.length) return;
+
+  const baseTarget = article.dataset.changeTarget;
+  const current = { fassung: entry.aktuell || 'v1', label: `${entry.aktuell || 'v1'} · aktuell` };
+  const earlier = entry.vorher.slice().reverse().map((version) => ({ ...version, label: `${version.fassung} · vorher` }));
+  const versions = [current, ...earlier];
+  let shown = current;
+
+  const bar = document.createElement('div');
+  bar.className = 'scene-versions';
+  const group = document.createElement('div');
+  group.className = 'scene-version-buttons';
+  group.setAttribute('role', 'group');
+  group.setAttribute('aria-label', `Fassungen von Szene ${number}`);
+  const compareLabel = document.createElement('label');
+  compareLabel.className = 'scene-version-compare';
+  const compare = document.createElement('input');
+  compare.type = 'checkbox';
+  compareLabel.append(compare, document.createTextNode(' Änderungen hervorheben'));
+  const info = document.createElement('p');
+  info.className = 'scene-version-info';
+  info.setAttribute('role', 'status');
+
+  const show = async (version) => {
+    try {
+      const text = version === current ? currentText : await sceneVersionText(version.datei);
+      // Aktuelle Fassung wird mit der jüngsten Vorfassung verglichen, jede Vorfassung mit der aktuellen.
+      const other = version === current ? earlier[0] : current;
+      let otherText = '';
+      if (compare.checked) otherText = other === current ? currentText : await sceneVersionText(other.datei);
+      shown = version;
+      renderSceneProse(prose, text, otherText);
+      article.dataset.fassung = version.fassung;
+      article.dataset.changeTarget = version === current ? baseTarget : `${baseTarget} · Fassung ${version.fassung}`;
+      article.classList.toggle('shows-older-version', version !== current);
+      group.querySelectorAll('button').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.fassung === version.fassung)));
+      info.textContent = version === current
+        ? `Aktuelle Fassung im Manuskript${entry.aktuellSeit ? ` seit ${entry.aktuellSeit}` : ''}.${compare.checked ? ` Markiert: neu gegenüber ${other.fassung}.` : ''}`
+        : `Vorfassung ${version.fassung}, ersetzt am ${version.datum}${version.anlass ? ` · Anlass: ${version.anlass}` : ''}.${compare.checked ? ` Markiert: später geändert in ${current.fassung}.` : ''}`;
+      renderSceneApproval(article, index);
+    } catch {
+      info.textContent = `Fassung ${version.fassung} konnte nicht geladen werden.`;
+    }
+  };
+
+  versions.forEach((version) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.fassung = version.fassung;
+    button.textContent = version.label;
+    button.addEventListener('click', () => show(version));
+    group.appendChild(button);
+  });
+  compare.addEventListener('change', () => show(shown));
+
+  bar.append(group, compareLabel, info);
+  article.querySelector('.draft-scene-header').after(bar);
+  show(current);
+}
+
 async function renderChapterDraft() {
   const reader = document.querySelector('#chapterDraft');
   try {
+    await loadSceneVersions();
     const response = await fetch('manuskript/KAPITEL_01_ROHENTWURF.md', { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const markdown = await response.text();
@@ -547,14 +704,12 @@ async function renderChapterDraft() {
 
       const prose = document.createElement('div');
       prose.className = 'draft-prose';
-      scene.split(/\r?\n\r?\n/).map((paragraph) => paragraph.trim()).filter(Boolean).forEach((paragraph) => {
-        const p = document.createElement('p');
-        appendInlineFormatting(p, paragraph);
-        prose.appendChild(p);
-      });
+      renderSceneProse(prose, scene);
+      article.dataset.fassung = currentSceneVersion(index + 1);
 
       article.append(header, prose);
       reader.appendChild(article);
+      renderSceneVersionSwitch(article, index, scene, prose);
     });
 
     applyEditPolicies();
@@ -567,21 +722,18 @@ async function renderChapterDraft() {
 }
 
 const changeStorageKey = 'haeutung-der-welt-kontextaenderungen-v2';
-const authorStorageKey = 'haeutung-der-welt-koautor-kuerzel-v1';
 const tray = document.querySelector('#changeTray');
 const trayPanel = document.querySelector('#changeTrayPanel');
 const trayToggle = document.querySelector('#changeTrayToggle');
 const trayCount = document.querySelector('#changeCount');
 const trayList = document.querySelector('#changeList');
 const trayStatus = document.querySelector('#changeTrayStatus');
-const authorField = document.querySelector('#changeAuthor');
 let changeNotes = [];
 
 function loadChangeNotes() {
   try {
     const saved = JSON.parse(localStorage.getItem(changeStorageKey));
     changeNotes = Array.isArray(saved) ? saved : [];
-    authorField.value = localStorage.getItem(authorStorageKey) || '';
   } catch {
     changeNotes = [];
     localStorage.removeItem(changeStorageKey);
@@ -748,7 +900,6 @@ function setupChangeTargets(root = document) {
     '.thread-grid article',
     '.quality-gate',
     '.chapter-assessment',
-    '.draft-scene',
     '.spoiler-content > div'
   ];
 
@@ -769,13 +920,11 @@ function setupChangeTargets(root = document) {
 }
 
 function changesDocument() {
-  const author = authorField.value.trim() || 'OFFEN';
   const entries = changeNotes.map((note, index) => `${index + 1}. ${note.target}
 ${note.quote ? `Markierte Textstelle: „${note.quote}“\n` : ''}Wunsch: ${note.request}
 Erfasst: ${note.createdAt}`).join('\n\n');
   return `ÄNDERUNGSWÜNSCHE · KAPITEL-1-DRAFT UND SERIENPLAN
 
-Koautor: ${author}
 Exportiert: ${today()}
 Status: Zur gemeinsamen Prüfung; keine automatische Kanonänderung
 
@@ -786,7 +935,14 @@ Vor Annahme sind Figuren, Weltregeln, spätere Kapitel, Foreshadowing und Folgeb
 
 trayToggle.addEventListener('click', openTray);
 document.querySelector('#closeChangeTray').addEventListener('click', closeTray);
-authorField.addEventListener('input', () => localStorage.setItem(authorStorageKey, authorField.value));
+// Markierter Text in einer Szene wird bei „Überarbeitung erforderlich“ als Zitat mitgenommen.
+document.addEventListener('selectionchange', () => {
+  const selection = window.getSelection();
+  const article = selection?.anchorNode?.parentElement?.closest('#chapterDraft .draft-scene');
+  if (!article || selection.isCollapsed || !article.querySelector('.draft-prose').contains(selection.anchorNode)) return;
+  article.dataset.quote = selection.toString().replace(/\s+/g, ' ').trim().slice(0, 500);
+  article.showSceneQuote?.();
+});
 
 document.querySelector('#copyAllChanges').addEventListener('click', async () => {
   if (!changeNotes.length) {

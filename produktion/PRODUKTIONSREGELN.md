@@ -22,7 +22,7 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 6. **Logikprüfung:** Zeitlinie, Motivation, Welt- und Magieregeln prüfen.
 7. **KI-Einschätzung:** Bewertung, Kurzurteil, Stärken, offene Risiken und Freigabeempfehlung versionsbezogen dokumentieren und auf der Webseite beim Kapitel sowie bei Tor 2 anzeigen.
 8. **Szenenprüfung:** Der Koautor liest jede Szene, erfasst Änderungswünsche direkt am betroffenen Inhalt und gibt die Szene einzeln frei oder fordert Überarbeitung.
-9. **Überarbeitung:** Szenenhinweise umsetzen und Folgekapitel synchronisieren. Ein neuer Änderungswunsch hebt eine vorhandene Szenenfreigabe auf.
+9. **Überarbeitung:** Vor jeder Änderung die bisherige Szene mit `scripts/szenenfassung.ps1 -Aktion Sichern` als Vorfassung ablegen, dann Szenenhinweise umsetzen und Folgekapitel synchronisieren. Ein neuer Änderungswunsch hebt eine vorhandene Szenenfreigabe auf.
 10. **Szenenfreigabe:** Jede überarbeitete Szene erhält eine neue, versionsbezogene Freigabe.
 11. **Kapitelabnahme:** Erst wenn alle Szenen freigegeben sind, kann der Koautor das gesamte Kapitel unter Berücksichtigung der KI-Einschätzung freigeben.
 12. **Abschluss:** Kapitelstatus erst nach übermitteltem und protokolliertem Abnahmeprotokoll ändern.
@@ -40,7 +40,9 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 ### Szenenfreigabe
 
 - steht direkt unter der jeweiligen Szene,
-- nennt Koautor, Entscheidung, Vermerk, Textversion und Zeitpunkt,
+- nennt Entscheidung, Vermerk, Szenenfassung und Zeitpunkt,
+- legt bei `Überarbeitung erforderlich` den Vermerk samt markierter Textstelle als Änderungswunsch in die Ablage,
+- kann auch für eine angezeigte Vorfassung erteilt werden; diese wird dann mit `scripts/szenenfassung.ps1 -Aktion Wiederherstellen` zurück ins Manuskript geholt und zählt erst danach für die Kapitelabnahme,
 - ist nur möglich, wenn für die Szene kein offener Änderungswunsch in der Ablage liegt,
 - wird durch einen neuen Änderungswunsch an der Szene automatisch aufgehoben,
 - lautet entweder `Szene freigegeben` oder `Überarbeitung erforderlich`.
@@ -56,6 +58,20 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 - verliert bei jeder nachträglichen Textänderung ihre Gültigkeit.
 
 Die Webseite erzeugt für Tor 1 und Tor 2 datierte Protokolle mit Kennung. Szenenfreigaben und Änderungswünsche werden auf dem jeweiligen Gerät gespeichert. Die öffentliche GitHub-Pages-Seite besitzt keinen sicheren Schreibzugriff auf GitHub und erzeugt deshalb keine Issues. Entscheidungen und Änderungslisten müssen heruntergeladen oder kopiert, übermittelt und anschließend im Projekt dokumentiert werden.
+
+## Szenenfassungen
+
+Wird eine Szene überarbeitet, bleibt die vorherige Fassung erhalten:
+
+```powershell
+# vor der Überarbeitung: aktuelle Szene als Vorfassung sichern
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\szenenfassung.ps1 -Aktion Sichern -Kapitel 1 -Szene 2 -Anlass "Änderungswunsch: mehr Wärme"
+
+# falls die Vorfassung doch besser war: zurückholen, die verdrängte Fassung bleibt archiviert
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\szenenfassung.ps1 -Aktion Wiederherstellen -Kapitel 1 -Szene 2 -Fassung v1 -Anlass "Koautor bevorzugt v1"
+```
+
+Die Fassungen liegen unter `manuskript/fassungen/`, verzeichnet in `KAPITEL_NN_FASSUNGEN.json`. Die Webseite zeigt an jeder Szene mit Vorfassungen einen Umschalter und markiert auf Wunsch die geänderten Absätze.
 
 ## Änderungsfenster auf der Webseite
 

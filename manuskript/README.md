@@ -12,4 +12,6 @@ Je Kapitel entstehen:
 - `KAPITEL_NN_ROHENTWURF.md` – eigentlicher Text
 - `KAPITEL_NN_DELTA.md` – neue Erkenntnisse, Widersprüche und Folgen
 
+Frühere Szenenfassungen liegen in `fassungen/` und werden mit `scripts/szenenfassung.ps1` gesichert oder wiederhergestellt.
+
 Das Manuskript ist derzeit noch leer, weil Prämisse, Figuren und Weltregeln gemeinsam festgelegt werden müssen.

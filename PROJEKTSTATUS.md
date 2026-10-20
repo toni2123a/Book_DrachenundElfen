@@ -22,6 +22,7 @@ Stand: 20. Oktober 2026
 - [x] Kapitel 1 mit Szenenplan, Rohentwurf v1, Delta und strikter Selbstprüfung
 - [x] sechs rote Fäden aus Kapitel 1 mit späteren Payoffs verknüpft
 - [x] Änderungswünsche direkt an sichtbaren Karten und Textszenen ermöglicht
+- [x] flexible, draftbezogene und verbindliche Bereiche auf der Webseite sichtbar gekennzeichnet
 
 ## Als Nächstes
 

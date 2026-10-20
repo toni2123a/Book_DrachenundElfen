@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Änderungsfenster sichtbar gekennzeichnet
+
+- **Art:** Organisation und Gestaltung
+- **Grund:** Der Koautor soll sofort erkennen, welche Kacheln nur bis zur ersten Kapitelabnahme flexibel sind, welche zum aktuellen Draft gehören und welche Regeln bewusst fest bleiben.
+- **Änderung:** Drei sichtbare Klassen mit Mausover- und Tastaturhinweisen eingeführt: `Flexibel bis Kapitel 1`, `Kapitel-Draft` und `Verbindlicher Rahmen`. Reihen-, Welt-, Figuren- und Plotkacheln schließen nach der dokumentierten Abnahme von Kapitel 1; Kapitelinhalte folgen ihrer eigenen Szenen- und Kapitelabnahme.
+- **Auswirkung:** Änderungswünsche werden zeitlich und inhaltlich klar eingeordnet. Grundlegende Eingriffe nach Kapitel 1 benötigen eine Kanonentscheidung samt Folgenprüfung statt eines beiläufigen Kachelwunsches.
+- **Betroffene Dateien:** `index.html`, `styles.css`, `app.js`, `PROJEKTSTATUS.md`, `produktion/PRODUKTIONSREGELN.md`
+- **Offen:** Kennzeichnung nach der offiziellen Abnahme von Kapitel 1 auf `Fundament fixiert` umstellen.
+
 ### 2026-10-20 · Szenenfreigaben vor Kapitelabnahme eingeführt
 
 - **Art:** Kapitel und Organisation

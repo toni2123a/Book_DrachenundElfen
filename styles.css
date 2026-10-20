@@ -63,10 +63,19 @@ h1 { max-width: 800px; margin: 0; font-size: clamp(64px, 9vw, 126px); font-weigh
 .button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid rgba(209, 154, 87, .58); outline-offset: 3px; }
 
 .quick-facts { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); background: var(--cream); }
-.quick-facts div { padding: 24px clamp(16px, 3vw, 44px); border-right: 1px solid var(--line); }
+.quick-facts div { display: flex; flex-direction: column; padding: 24px clamp(16px, 3vw, 44px); border-right: 1px solid var(--line); }
 .quick-facts div:last-child { border: 0; }
 .quick-facts span { display: block; color: var(--copper-dark); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .quick-facts strong { display: block; margin-top: 5px; color: var(--night); font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(20px, 2vw, 27px); line-height: 1.1; }
+.policy-legend { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(35px, 7vw, 90px); padding-block: 55px; }
+.policy-legend h2 { margin: 0; font-size: clamp(35px, 5vw, 54px); line-height: 1; }
+.policy-legend ul { display: grid; gap: 1px; margin: 0; padding: 0; background: var(--line); list-style: none; }
+.policy-legend li { display: grid; grid-template-columns: 13px 180px 1fr; align-items: center; gap: 12px; padding: 16px 18px; background: var(--white); }
+.policy-legend strong { font-size: 12px; }
+.policy-legend small { color: var(--ink-soft); font-size: 12px; line-height: 1.45; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--copper); }
+.legend-dot.draft { background: #5a8088; }
+.legend-dot.fixed { background: #51585a; }
 
 .manifest { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(40px, 8vw, 110px); padding-block: clamp(90px, 12vw, 160px); }
 .manifest blockquote { align-self: end; margin: 0; padding: 34px; border-top: 4px solid var(--copper); background: var(--cream); color: var(--night); font-size: clamp(28px, 3vw, 42px); font-weight: 600; line-height: 1.12; }
@@ -223,6 +232,16 @@ h1 { max-width: 800px; margin: 0; font-size: clamp(64px, 9vw, 126px); font-weigh
 .scene-approval-status { align-self: center; margin: 0; color: var(--ink-soft); font-family: Inter, sans-serif; font-size: 11px; }
 
 .changeable-card { position: relative; }
+.edit-policy-marker { position: relative; z-index: 3; display: inline-flex; width: max-content; max-width: 100%; align-items: center; gap: 7px; margin-top: 16px; padding: 6px 9px; border: 1px solid #c99456; border-radius: 999px; background: #fff7e9; color: #75471d; cursor: help; font-family: Inter, sans-serif; font-size: 9px; font-weight: 800; letter-spacing: .07em; line-height: 1.2; text-transform: uppercase; }
+.edit-policy-marker b { display: grid; width: 16px; height: 16px; place-items: center; border-radius: 50%; background: currentColor; color: var(--white); font-family: Georgia, serif; font-size: 10px; font-style: italic; text-transform: none; }
+.edit-policy-marker.draft { border-color: #7b9da4; background: #edf5f5; color: #315f68; }
+.edit-policy-marker.fixed, .edit-policy-marker.lockedFoundation { border-color: #909697; background: #edf0ef; color: #3f4b4e; }
+.edit-policy-tooltip { position: absolute; z-index: 20; left: 0; bottom: calc(100% + 9px); width: min(330px, 78vw); padding: 12px 14px; border-radius: 10px; background: var(--night-deep); color: var(--cream); box-shadow: 0 12px 32px rgba(5, 22, 27, .3); font-size: 11px; font-weight: 500; letter-spacing: 0; line-height: 1.5; text-transform: none; visibility: hidden; opacity: 0; pointer-events: none; transform: translateY(5px); transition: opacity .16s ease, transform .16s ease, visibility .16s ease; }
+.edit-policy-marker:hover .edit-policy-tooltip, .edit-policy-marker:focus .edit-policy-tooltip, .edit-policy-marker:focus-visible .edit-policy-tooltip { visibility: visible; opacity: 1; transform: translateY(0); }
+.world-grid .edit-policy-marker, .acts .edit-policy-marker, .chapter-grid .edit-policy-marker, .book-card.featured .edit-policy-marker, .quality-gate .edit-policy-marker { border-color: rgba(231, 181, 115, .7); background: rgba(209, 154, 87, .13); color: var(--copper-light); }
+.magic-system > .edit-policy-marker, .quality-gate > .edit-policy-marker, .manifest > .edit-policy-marker { grid-column: 1 / -1; }
+.chapter-grid .edit-policy-marker { grid-column: 2; }
+.manifest > .edit-policy-marker { margin-top: -55px; }
 .context-change-trigger { align-self: flex-start; margin-top: auto; padding: 7px 11px; border: 1px solid currentColor; border-radius: 999px; background: transparent; color: var(--copper-dark); cursor: pointer; font-size: 11px; font-weight: 700; opacity: .78; }
 .context-change-trigger:hover, .context-change-trigger:focus-visible { opacity: 1; }
 .world-grid .context-change-trigger, .acts .context-change-trigger, .chapter-grid .context-change-trigger, .book-card.featured .context-change-trigger, .quality-gate .context-change-trigger, .approval-panel .context-change-trigger { color: var(--copper-light); }
@@ -362,7 +381,7 @@ footer a { align-self: center; color: var(--ink-soft); font-size: 13px; font-wei
   .series-grid { grid-template-columns: 1fr; }
   .book-card { min-height: auto; }
   .book-card.featured { transform: none; }
-  .change-section, .manifest { grid-template-columns: 1fr; }
+  .change-section, .manifest, .policy-legend { grid-template-columns: 1fr; }
   .approval-panels { grid-template-columns: 1fr; }
   .draft-header, .quality-gate { grid-template-columns: 1fr; }
   .blueprint-grid, .thread-grid { grid-template-columns: 1fr 1fr; }
@@ -382,6 +401,8 @@ footer a { align-self: center; color: var(--ink-soft); font-size: 13px; font-wei
   .quick-facts { grid-template-columns: 1fr 1fr; }
   .quick-facts div:nth-child(2) { border-right: 0; }
   .quick-facts div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .policy-legend li { grid-template-columns: 13px 1fr; }
+  .policy-legend small { grid-column: 2; }
   .world-grid, .character-grid, .chapter-grid, .spoiler-content, .quality-grid { grid-template-columns: 1fr; }
   .blueprint-grid, .thread-grid { grid-template-columns: 1fr; }
   .draft-instructions, .reader-heading { align-items: start; flex-direction: column; }

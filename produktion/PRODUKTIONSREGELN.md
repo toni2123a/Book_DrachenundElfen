@@ -57,6 +57,14 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 
 Die Webseite erzeugt für Tor 1 und Tor 2 datierte Protokolle mit Kennung. Szenenfreigaben und Änderungswünsche werden auf dem jeweiligen Gerät gespeichert. Die öffentliche GitHub-Pages-Seite besitzt keinen sicheren Schreibzugriff auf GitHub und erzeugt deshalb keine Issues. Entscheidungen und Änderungslisten müssen heruntergeladen oder kopiert, übermittelt und anschließend im Projekt dokumentiert werden.
 
+## Änderungsfenster auf der Webseite
+
+- **Flexibel bis Kapitel 1:** Reihenstruktur, Weltbausteine, Figurenfundament, Band- und Kapitelplan können bis zur dokumentierten Abnahme von Kapitel 1 direkt kommentiert werden. Danach werden diese Kacheln gesperrt; Änderungen benötigen eine ausdrückliche Kanonentscheidung und Folgenprüfung.
+- **Kapitel-Draft:** Szenen, rote Fäden und Kapiteleinschätzung bleiben bis zur Freigabe der jeweiligen Szene beziehungsweise des Kapitels direkt kommentierbar. Ein neuer Wunsch hebt die Szenenfreigabe auf.
+- **Verbindlicher Rahmen:** Kernidentität, Qualitätsmaßstab und Freigabelogik werden nicht über beiläufige Kachelwünsche verändert. Änderungen daran benötigen eine bewusste Projektentscheidung.
+
+Die Webseite kennzeichnet die Klassen mit Statusmarken und Erläuterung bei Mausover oder Tastaturfokus. Der Wechsel von `Flexibel bis Kapitel 1` zu `Fundament fixiert` erfolgt erst, nachdem die Kapitelabnahme im Projekt protokolliert wurde, nicht allein durch einen lokal ausgefüllten Browserentwurf.
+
 ## Delta-Klassen
 
 - **Grün:** Konkretisierung ohne Widerspruch oder Folgen für andere Kapitel.

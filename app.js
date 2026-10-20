@@ -47,6 +47,76 @@ const chapterAssessments = {
   }
 };
 
+// Wird erst nach übermittelter und im Projekt protokollierter Kapitelabnahme auf true gesetzt.
+const firstChapterApprovalRecorded = false;
+
+const editPolicyDefinitions = {
+  foundation: {
+    label: 'Flexibel bis Kapitel 1',
+    help: 'Bis zur dokumentierten Abnahme von Kapitel 1 sind hier direkte Änderungswünsche möglich. Danach wird dieses Fundament gesperrt; Änderungen benötigen dann eine begründete Kanonentscheidung mit Folgenprüfung.'
+  },
+  draft: {
+    label: 'Kapitel-Draft',
+    help: 'Dieser Inhalt gehört zur aktuellen Textfassung. Wünsche sind bis zur Szenen- beziehungsweise Kapitelabnahme möglich. Ein neuer Wunsch hebt die Freigabe der betroffenen Szene auf.'
+  },
+  fixed: {
+    label: 'Verbindlicher Rahmen',
+    help: 'Dieser Bereich hält die Identität des Projekts oder den Prüf- und Freigaberahmen stabil. Er wird nicht über beiläufige Änderungswünsche verändert, sondern nur durch eine ausdrückliche Projektentscheidung.'
+  },
+  lockedFoundation: {
+    label: 'Fundament fixiert',
+    help: 'Kapitel 1 ist abgenommen. Dieses Fundament ist deshalb für direkte Wünsche gesperrt. Eine Änderung erfordert eine neue Kanonentscheidung und eine Prüfung aller betroffenen Kapitel.'
+  }
+};
+
+function addEditPolicyMarker(element, policyName) {
+  if (element.querySelector(':scope > .edit-policy-marker')) return;
+  const definition = editPolicyDefinitions[policyName];
+  const marker = document.createElement('span');
+  marker.className = `edit-policy-marker ${policyName}`;
+  marker.tabIndex = 0;
+  marker.setAttribute('role', 'note');
+  marker.setAttribute('aria-label', `${definition.label}: ${definition.help}`);
+  marker.title = definition.help;
+
+  const label = document.createElement('span');
+  label.textContent = definition.label;
+  const info = document.createElement('b');
+  info.setAttribute('aria-hidden', 'true');
+  info.textContent = 'i';
+  const tooltip = document.createElement('span');
+  tooltip.className = 'edit-policy-tooltip';
+  tooltip.setAttribute('role', 'tooltip');
+  tooltip.textContent = definition.help;
+  marker.append(label, info, tooltip);
+  element.appendChild(marker);
+}
+
+function applyEditPolicies(root = document) {
+  const foundationPolicy = firstChapterApprovalRecorded ? 'lockedFoundation' : 'foundation';
+  const groups = [
+    {
+      selector: '.quick-facts > div, .book-card, #welt .world-grid article, #welt .magic-system, #figuren .character-card, #band1 .acts article, #band1 .chapter-grid article, .secrets .spoiler-content > div',
+      policy: foundationPolicy
+    },
+    {
+      selector: '#kapitel1 .blueprint-grid article, #kapitel1 .thread-grid article, #kapitel1 .quality-gate, #kapitel1 .chapter-assessment, #kapitel1 .draft-scene',
+      policy: 'draft'
+    },
+    {
+      selector: '.manifest, .quality-section > .section-shell',
+      policy: 'fixed'
+    }
+  ];
+
+  groups.forEach(({ selector, policy }) => {
+    root.querySelectorAll(selector).forEach((element) => {
+      element.dataset.editPolicy = policy;
+      addEditPolicyMarker(element, policy);
+    });
+  });
+}
+
 function chapterAssessment(chapter) {
   return chapterAssessments[Number(chapter)] || null;
 }
@@ -480,6 +550,7 @@ async function renderChapterDraft() {
       reader.appendChild(article);
     });
 
+    applyEditPolicies();
     setupChangeTargets(reader);
     refreshSceneApprovalPanels();
     updateChapterGate();
@@ -659,6 +730,7 @@ function openInlineEditor(card) {
 
 function setupChangeTargets(root = document) {
   const selectors = [
+    '.quick-facts > div',
     '.book-card',
     '.world-grid article',
     '.magic-system',
@@ -668,11 +740,16 @@ function setupChangeTargets(root = document) {
     '.blueprint-grid article',
     '.thread-grid article',
     '.quality-gate',
+    '.chapter-assessment',
     '.draft-scene',
     '.spoiler-content > div'
   ];
 
   root.querySelectorAll(selectors.join(',')).forEach((card) => {
+    if (card.dataset.editPolicy === 'fixed' || card.dataset.editPolicy === 'lockedFoundation') {
+      card.querySelector(':scope > .context-change-trigger')?.remove();
+      return;
+    }
     if (card.querySelector(':scope > .context-change-trigger')) return;
     card.classList.add('changeable-card');
     const button = document.createElement('button');
@@ -737,6 +814,7 @@ document.querySelector('#clearAllChanges').addEventListener('click', () => {
 loadSceneApprovals();
 loadChangeNotes();
 renderChangeTray();
+applyEditPolicies();
 setupChangeTargets();
 updateChapterGate();
 renderChapterDraft();

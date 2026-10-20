@@ -1,63 +1,127 @@
 # Welt, Drachen, Elfen und Magie
 
-## Leitprinzip
+Status: Kanon für Band 1; spätere Erweiterungen dürfen diese Regeln nicht rückwirkend entwerten.
 
-Jede fantastische Fähigkeit braucht erkennbare Grenzen, Kosten oder Konsequenzen. Neue Regeln dürfen bestehende Probleme nicht rückwirkend bequem lösen.
+## Avara
 
-## Welt
+Avara ist keine einmal erschaffene Welt. Sie ist die jeweils gültige Schicht unzähliger Möglichkeiten. Wenn ein Drache sich häutet, stößt er Wirklichkeiten ab, die beinahe geschehen wären. Die meisten verhärten unsichtbar unter der Gegenwart. Große Häutungen werden zu Landschaften, Ruinen oder verbotenen Möglichkeitsräumen.
 
-- **Name:** OFFEN
-- **Epoche/Technikstand:** OFFEN
-- **Geografie:** OFFEN
-- **Religion/Mythen:** OFFEN
-- **Politische Ordnung:** OFFEN
-- **Wirtschaft/Ressourcen:** OFFEN
-- **Geschichte, die den Plot prägt:** OFFEN
+### Schauplätze in Band 1
+
+| Ort | Funktion | Ungewöhnliches Gesetz |
+| --- | --- | --- |
+| Merea | Hauptstadt der gültigen Wirklichkeit | Alle öffentlichen Türen erhalten jährlich einen amtlichen Namen. |
+| Asra | vor 312 Jahren aus der Geschichte gedrängte Stadt | Gebäude erinnern sich an Bewohner, auch wenn die Welt sie vergessen hat. |
+| Markt der ungelebten Tode | illegaler Handel unter Merea | Verkauft Visionen davon, wie Käufer in anderen Wirklichkeiten starben. |
+| Aufwärtsfluss | Grenze zwischen Merea und Asra | Fließt durch Verwandtschaftsbeziehungen; Reisende bewegen sich über Zugehörigkeit. |
+| Neunte Schuppe | versiegelt beide Städte | Ihr Inneres besteht aus übereinanderliegenden Möglichkeiten statt aus Materie. |
+| Namenloser Bezirk | Krisenzone im letzten Akt | Weiße Motten haben Bezeichnungen gefressen; Navigation ist nur über Beziehungen möglich. |
+
+### Gesellschaft und Technik
+
+- Vorindustrielle Stadtkultur mit Druckereien, Seilaufzügen, Kanälen, Glaswerkstätten und magisch vermessenen Wegen.
+- Möglichkeitssplitter sind streng kontrollierte Ressourcen. Legale Nutzung beschränkt sich auf Rettung, Bauprüfung und Beweisführung.
+- Nullkartografen zeichnen Orte, die aus der gültigen Welt verschwinden. Ihre Karten zeigen Beziehungen, Gerüche und Schwellen statt nur Entfernungen.
+- Die Neunerhalle aus elfischen Chorsprechern, menschlichen Stadtvertretern und drachischen Schwellenhütern verwaltet den Neunten Vertrag.
 
 ## Drachen
 
-- **Wesen und Ursprung:** OFFEN
-- **Intelligenz und Sprache:** OFFEN
-- **Lebensdauer:** OFFEN
-- **Fähigkeiten:** OFFEN
-- **Grenzen/Schwächen:** OFFEN
-- **Gesellschaft/Kultur:** OFFEN
-- **Beziehung zu Elfen:** OFFEN
-- **Beziehung zu anderen Völkern:** OFFEN
-- **Rolle im Hauptkonflikt:** OFFEN
+### Wesen
+
+Drachen sind verkörperte Bedingungen, unter denen Wirklichkeit stabil bleibt. Die bekannten neun sind Schwelle, Entfernung, Gewicht, Richtung, Folge, Gestalt, Bindung, Name und Dauer. Diese Wörter sind menschliche Annäherungen, nicht ihre vollständigen Wesen.
+
+### Lebenszyklus
+
+- Ein neuer Drache beginnt als riesiger, kaum bewusster Wetterkörper.
+- Mit jeder Häutung verliert er ungelebte Möglichkeiten, gewinnt Bewusstsein und verdichtet sich.
+- Uralte Drachen können kleiner als ein Rabe sein, besitzen aber das Gewicht ganzer Türme.
+- Ein Drache stirbt nicht an Alter, sondern wenn sein Gesetz nirgends mehr gilt oder er ihm vollkommen widerspricht.
+
+### Fähigkeiten und Grenzen
+
+- Ein Drache kann sein eigenes Gesetz verstärken, beugen oder an einer Schwelle aussetzen.
+- Er kann kein fremdes Gesetz direkt kontrollieren.
+- Jede bewusste Beugung erzeugt eine Häutung und setzt verworfene Möglichkeiten frei.
+- Drachen kennen viele mögliche Verläufe, aber nicht automatisch die Entscheidungen vernunftbegabter Wesen.
+- Sprache ist gefährlich: Wenn Orr einen Ort als „offen“ oder „geschlossen“ bezeichnet, reagieren benachbarte Schwellen körperlich darauf.
+
+### Orr
+
+Orr verkörpert Schwellen. Er ist uralt, rabengroß, schwarz-kupfern und mehrere Tonnen schwer. Er fliegt nicht durch Auftrieb, sondern erklärt den Abstand zwischen zwei Punkten vorübergehend zur Schwelle. Er war am Neunten Vertrag beteiligt und trägt Mitschuld an Asras Auslöschung.
 
 ## Elfen
 
-- **Ursprung:** OFFEN
-- **Lebensdauer:** OFFEN
-- **Körperliche/mentale Besonderheiten:** OFFEN
-- **Grenzen/Schwächen:** OFFEN
-- **Gesellschaft/Kultur:** OFFEN
-- **Fraktionen oder Völker:** OFFEN
-- **Beziehung zu Drachen:** OFFEN
-- **Beziehung zu anderen Völkern:** OFFEN
-- **Rolle im Hauptkonflikt:** OFFEN
+### Entstehung
 
-## Magiesystem
+Elfen werden nicht biologisch geboren. Vor dem Tod kann ein Elf eine prägende Erinnerung als Samen in einen Chorgarten geben. Drei bis sieben kompatible Samen wachsen über Jahre zu einer neuen Person. Diese besitzt keine vollständigen früheren Leben, sondern Stimmen, Gefühle, Fertigkeiten und blinde Flecken eines inneren Chors.
 
-- **Quelle der Magie:** OFFEN
-- **Wer kann Magie nutzen:** OFFEN
-- **Was Magie leisten kann:** OFFEN
-- **Was Magie niemals kann:** OFFEN
-- **Kosten:** OFFEN
-- **Risiken:** OFFEN
-- **Erkennbarkeit/Beweisbarkeit:** OFFEN
-- **Auswirkungen auf Alltag und Macht:** OFFEN
+### Identität und Kultur
+
+- Verwandtschaft entsteht durch Erinnerungslinien, nicht Blut.
+- Ein neuer Elf ist rechtlich eigenständig, wird gesellschaftlich aber oft als Fortsetzung berühmter Stimmen behandelt.
+- Chorgerichte entscheiden über umstrittene Erinnerungssamen und Erbansprüche.
+- Regelmäßige Resonanzrituale halten die Stimmen unterscheidbar.
+- Ein Chor verändert Erinnerungen beim Wiedererzählen. Offiziell wird diese Formbarkeit heruntergespielt.
+
+### Grenzen
+
+- Zu viele unvereinbare Stimmen können eine Person in Resonanzstarre versetzen.
+- Eine Erinnerung vermittelt Können nur bruchstückhaft; sie ersetzt kein Training.
+- Ein Chor kann lügen, auslassen und unter politischem Druck umgedeutet werden.
+- Elfen leben etwa 180 bis 250 Jahre, sind aber weder unsterblich noch körperlich überlegen.
+
+### Neyras Ausnahme
+
+Neyra wuchs aus einer leeren Samenkapsel. Sie besitzt Gefühle, Fantasie und Persönlichkeit, aber keinen Erinnerungschor. Weil kein geerbtes Narrativ ihre Wahrnehmung auf eine gültige Geschichte festlegt, sieht sie gleichzeitig verworfene und aktuelle Wirklichkeiten.
+
+## Möglichkeitshandwerk
+
+### Grundsatz
+
+Magie erschafft nichts aus dem Nichts. Sie importiert eine Möglichkeit, die in einer Drachenschuppe erhalten blieb, und verbannt dafür einen gleichwertigen Teil der Gegenwart unter die Welthaut.
+
+### Die drei Bedingungen
+
+1. **Naht:** Eine Schuppe, ein Splitter oder ein Ort, an dem Wirklichkeit bereits dünn ist.
+2. **Doppelzeugnis:** Zwei unabhängige Personen beschreiben dieselbe gewünschte Möglichkeit ohne entscheidenden Widerspruch.
+3. **Tausch:** Eine bestehende, vergleichbar bedeutsame Möglichkeit wird geschlossen.
+
+### Der persönliche Preis
+
+Die wirkende Person verliert eine echte künftige Wahl. Die geschlossene Möglichkeit erscheint als schwarze Fuge auf der Haut. Der Preis ist präzise und darf nicht symbolisch umgangen werden: Wer etwa die Möglichkeit opfert, je wieder ein bestimmtes Haus zu betreten, kann dessen Schwelle körperlich nicht mehr überschreiten.
+
+### Festgelegte
+
+Wer zu viele Fugen trägt, wird festgelegt. Ein Festgelegter sieht und vollzieht nur noch eine einzige Folge von Handlungen. Er kann klug und gefährlich sein, aber nicht mehr frei entscheiden. Die Neunerhalle benutzt einzelne Festgelegte als scheinbar unbestechliche Vollstrecker.
+
+### Weiße Motten
+
+Wenn Doppelzeugnisse nicht übereinstimmen oder zwei Wirklichkeiten denselben Platz beanspruchen, entstehen weiße Motten. Sie fressen keine Körper, sondern Namen, Beschriftungen und soziale Zuordnungen. Ein namenlos gewordenes Kind bleibt sichtbar, wird aber von Registern, Wegweisern und schließlich selbst von Bekannten nicht mehr eindeutig erkannt.
+
+### Was Magie niemals kann
+
+- Tote als identische Personen zurückholen
+- zwei Wirklichkeiten ohne Preis vollständig verschmelzen
+- eine nicht bezeugte Möglichkeit präzise auswählen
+- geschlossene Wahlmöglichkeiten wieder öffnen
+- die freie Entscheidung einer Person garantieren
+- Widersprüche dauerhaft verbergen
 
 ## Regelregister
 
-| ID | Regel | Status | Begründung/Folge |
-| --- | --- | --- | --- |
-| W-001 | Fantastische Fähigkeiten erhalten klare Grenzen, Kosten oder Konsequenzen. | vorläufig | Sichert Spannung und innere Logik. |
+| ID | Regel | Folge für den Plot |
+| --- | --- | --- |
+| W-001 | Jede Magie braucht Naht, Doppelzeugnis und Tausch. | Lösungen benötigen Vorbereitung und Verbündete. |
+| W-002 | Magie schließt echte Zukunftsmöglichkeiten. | Jeder große Einsatz verändert einen Figurenbogen. |
+| W-003 | Widersprüche erzeugen weiße Motten. | Lügen und ungenaue Zeugnisse haben sichtbare Folgen. |
+| W-004 | Drachen beherrschen nur ihr eigenes Gesetz. | Orr kann den Konflikt nicht allein lösen. |
+| W-005 | Elfenchöre sind formbar. | Erinnerung ist Beweis und zugleich unzuverlässig. |
+| W-006 | Neyra erkennt mehrere gültige Möglichkeiten. | Sie ist notwendig, aber nicht allwissend. |
+| W-007 | Eine Rückkehr darf niemanden ersetzen. | Begrenzt die moralisch zulässige Lösung. |
 
-## Offene Weltenfragen
+## Auswirkungen auf spätere Bände
 
-1. Warum können Drachen oder Magie den Hauptkonflikt nicht sofort lösen?
-2. Welche historische Verletzung oder Abhängigkeit verbindet Drachen und Elfen?
-3. Welche alltäglichen Folgen hat Magie für Handel, Krieg, Familie und Glauben?
-4. Was glaubt die Welt über sich, das sich im Verlauf als falsch oder unvollständig erweist?
+- Orrs Gesetzesbruch destabilisiert in Band 2 Schwellen und Entfernungen.
+- Asras Rückkehr schafft eine politische Gemeinschaft ohne anerkannten historischen Besitz.
+- Neyra bleibt für Widersprüche empfindlich, verliert aber keine beliebige Superkraft.
+- Die Herkunft der neun Drachengesetze wird erst in Band 3 vollständig geklärt.

@@ -4,24 +4,38 @@ Stand: 20. Oktober 2026
 
 ## Aktuelle Phase
 
-**Ideensammlung und gemeinsames Projektbriefing**
+**Grundgerüst von Reihe und Band 1 abgeschlossen · Änderungswünsche und Szenenplanung**
+
+## Festgelegt
+
+- [x] abgeschlossene Trilogie „Die Häutung der Welt“
+- [x] Band 1 „Unter der neunten Schuppe“
+- [x] High-Concept-Prämisse und Logline
+- [x] Zielgruppe, Ton, Perspektive und Zielumfang
+- [x] Drachen-, Elfen- und Magieregeln
+- [x] Hauptensemble und Figurenbögen
+- [x] Vier-Akt-Struktur mit 36 Kapiteln
+- [x] Enthüllungsleiter, Setups und Payoffs
+- [x] Finale und Anschluss an Band 2
+- [x] Webseite als vollständige Planansicht mit lokalem Änderungswunschformular
 
 ## Als Nächstes
 
-- [ ] Autoren/Autorennamen festlegen
-- [ ] Kernidee und Logline formulieren
-- [ ] Zielgruppe und Subgenre bestimmen
-- [ ] Einzelband oder Reihe entscheiden
-- [ ] Perspektive und Erzählzeit entscheiden
-- [ ] Regeln für Drachen, Elfen und Magie festlegen
-- [ ] Hauptfiguren und zentralen Konflikt anlegen
-- [ ] vorläufigen Plotbauplan erstellen
-- [ ] Umfang und Kapitelzahl festlegen
+- [ ] Änderungswünsche der beiden Autoren sammeln und entscheiden
+- [ ] Namen und Aussprache final bestätigen
+- [ ] Inhaltsgrenzen der Autoren dokumentieren
+- [ ] Kapitel 1 als Drei-Dateien-Paket anlegen
+- [ ] Szenenplan für Kapitel 1 erstellen
+- [ ] Rohfassung erst nach Freigabe des Grundgerüsts beginnen
 
 ## Aktives Kapitel
 
-Noch keines. Kapitelarbeit beginnt erst nach dem gemeinsamen Grundkonzept.
+Noch keines. Der nächste kontrollierte Schritt ist die Szenenplanung für Kapitel 1 „Das Kind ohne Vorleben“.
 
-## Offene Blocker
+## Offene Punkte
 
-- Die inhaltlichen Ideen der beiden Autoren sind noch nicht in der Ideen-Inbox erfasst.
+- Autorenname beziehungsweise Autorennamen
+- endgültige Titelprüfung vor Veröffentlichung
+- konkrete Inhaltsgrenzen der beiden Autoren
+
+Diese Punkte verändern das vorhandene Grundgerüst nicht automatisch. Neue Wünsche werden zuerst als Änderungswunsch dokumentiert.

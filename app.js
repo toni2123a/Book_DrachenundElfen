@@ -1,46 +1,48 @@
-const form = document.querySelector('#ideaForm');
+const form = document.querySelector('#changeForm');
 const statusMessage = document.querySelector('#formStatus');
-const copyButton = document.querySelector('#copyIdea');
-const storageKey = 'drachen-und-elfen-ideenentwurf-v1';
-const issueBaseUrl = 'https://github.com/toni2123a/Book_DrachenundElfen/issues/new';
+const copyButton = document.querySelector('#copyChange');
+const downloadButton = document.querySelector('#downloadChange');
+const storageKey = 'haeutung-der-welt-aenderungswunsch-v1';
 
 function formValues() {
   const data = new FormData(form);
   return {
     author: String(data.get('author') || '').trim(),
-    type: String(data.get('type') || '').trim(),
-    title: String(data.get('title') || '').trim(),
-    proposal: String(data.get('proposal') || '').trim(),
+    area: String(data.get('area') || '').trim(),
+    target: String(data.get('target') || '').trim(),
+    request: String(data.get('request') || '').trim(),
     reason: String(data.get('reason') || '').trim(),
-    consequences: String(data.get('consequences') || '').trim(),
+    preserve: String(data.get('preserve') || '').trim(),
+    impacts: data.getAll('impact').map(String),
     acknowledge: data.get('acknowledge') === 'on'
   };
 }
 
-function ideaMarkdown(values) {
-  const date = new Intl.DateTimeFormat('sv-SE').format(new Date());
-  return `## Ideenkarte
+function changeText(values) {
+  const date = new Intl.DateTimeFormat('de-DE').format(new Date());
+  const impacts = values.impacts.length ? values.impacts.join(', ') : 'noch gemeinsam prüfen';
 
-- **Eingebracht von:** ${values.author || 'OFFEN'}
-- **Datum:** ${date}
-- **Typ:** ${values.type || 'Sonstiges'}
-- **Status:** Neu
+  return `ÄNDERUNGSWUNSCH · DIE HÄUTUNG DER WELT
 
-### Vorschlag
+Eingebracht von: ${values.author || 'OFFEN'}
+Datum: ${date}
+Bereich: ${values.area || 'OFFEN'}
+Betroffene Stelle: ${values.target || 'OFFEN'}
+Status: Zur gemeinsamen Prüfung
 
-${values.proposal || 'Noch nicht ausgefüllt.'}
+GEWÜNSCHTE ÄNDERUNG
+${values.request || 'Noch nicht ausgefüllt.'}
 
-### Warum interessant?
-
+WARUM VERBESSERT DAS DIE GESCHICHTE?
 ${values.reason || 'Noch nicht ausgefüllt.'}
 
-### Mögliche Folgen und offene Fragen
+WAS MUSS ERHALTEN BLEIBEN?
+${values.preserve || 'Keine Vorgabe angegeben.'}
 
-${values.consequences || 'Noch keine angegeben.'}
+AUSWIRKUNGEN PRÜFEN
+${impacts}
 
----
-
-*Über die GitHub-Pages-Buchwerkstatt eingereicht. Dieser Vorschlag wird erst nach gemeinsamer Entscheidung zum Kanon.*`;
+Hinweis: Dieser Wunsch verändert das Grundgerüst erst nach gemeinsamer Entscheidung.`;
 }
 
 function saveDraft() {
@@ -56,43 +58,61 @@ function restoreDraft() {
   try {
     const saved = JSON.parse(localStorage.getItem(storageKey));
     if (!saved) return;
-    for (const [name, value] of Object.entries(saved)) {
+
+    for (const name of ['author', 'area', 'target', 'request', 'reason', 'preserve']) {
       const field = form.elements.namedItem(name);
-      if (!field) continue;
-      if (field.type === 'checkbox') field.checked = Boolean(value);
-      else field.value = value;
+      if (field && saved[name] !== undefined) field.value = saved[name];
     }
+
+    const selectedImpacts = Array.isArray(saved.impacts) ? saved.impacts : [];
+    form.querySelectorAll('input[name="impact"]').forEach((field) => {
+      field.checked = selectedImpacts.includes(field.value);
+    });
+
+    const acknowledgement = form.elements.namedItem('acknowledge');
+    if (acknowledgement) acknowledgement.checked = Boolean(saved.acknowledge);
     statusMessage.textContent = 'Gespeicherten Entwurf wiederhergestellt.';
   } catch {
     localStorage.removeItem(storageKey);
   }
 }
 
-form.addEventListener('input', saveDraft);
+async function copyChange() {
+  if (!form.reportValidity()) return;
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+  try {
+    await navigator.clipboard.writeText(changeText(formValues()));
+    statusMessage.textContent = 'Änderungswunsch in die Zwischenablage kopiert.';
+  } catch {
+    statusMessage.textContent = 'Kopieren war nicht möglich. Bitte als Textdatei herunterladen.';
+  }
+}
+
+function downloadChange() {
   if (!form.reportValidity()) return;
 
   const values = formValues();
-  const params = new URLSearchParams({
-    title: `Idee: ${values.title}`,
-    body: ideaMarkdown(values),
-    labels: 'idee'
-  });
+  const safeTarget = (values.target || 'aenderungswunsch')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 50);
+  const blob = new Blob([changeText(values)], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `aenderungswunsch-${safeTarget || 'entwurf'}.txt`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+  statusMessage.textContent = 'Textdatei heruntergeladen.';
+}
 
-  statusMessage.textContent = 'GitHub wird in einem neuen Tab geöffnet. Dort die Einreichung bestätigen.';
-  window.open(`${issueBaseUrl}?${params.toString()}`, '_blank', 'noopener,noreferrer');
-});
-
-copyButton.addEventListener('click', async () => {
-  const text = `Idee: ${formValues().title || 'Ohne Titel'}\n\n${ideaMarkdown(formValues())}`;
-  try {
-    await navigator.clipboard.writeText(text);
-    statusMessage.textContent = 'Ideenkarte in die Zwischenablage kopiert.';
-  } catch {
-    statusMessage.textContent = 'Kopieren war nicht möglich. Bitte den GitHub-Weg verwenden.';
-  }
-});
+form.addEventListener('input', saveDraft);
+copyButton.addEventListener('click', copyChange);
+downloadButton.addEventListener('click', downloadChange);
 
 restoreDraft();

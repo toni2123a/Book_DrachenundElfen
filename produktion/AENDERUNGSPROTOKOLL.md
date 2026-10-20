@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Serien- und Band-1-Grundgerüst festgelegt
+
+- **Art:** Kanon, Plot, Figur, Welt, Stil und Organisation
+- **Grund:** Die Reihe soll ein eigenständiges, ausgefallenes Fundament erhalten und auf der öffentlichen Seite vollständig prüfbar sein.
+- **Änderung:** Trilogie „Die Häutung der Welt“, Welt- und Magieregeln, Figurenensemble, 36-Kapitel-Bauplan, Enthüllungsleiter, Setups/Payoffs und Bandende ausgearbeitet. Die Webseite zeigt nun den Plan selbst und erfasst ausschließlich lokale Änderungswünsche.
+- **Auswirkung:** Die Konzeptphase ist abgeschlossen. Neue Vorschläge verändern den Kanon erst nach gemeinsamer Entscheidung; Auswirkungen auf Figuren, Weltregeln, spätere Kapitel, Foreshadowing und Folgebände werden ausdrücklich erfasst.
+- **Betroffene Dateien:** `PROJEKTSTATUS.md`, `ideen/IDEEN_INBOX.md`, alle Planungsdateien, Recherchedateien, `index.html`, `styles.css`, `app.js`
+- **Offen:** Autorennamen, finale Titelprüfung, Inhaltsgrenzen und Freigabe vor Beginn von Kapitel 1.
+
 ### 2026-10-20 · GitHub-Pages-Buchwerkstatt ergänzt
 
 - **Art:** Organisation

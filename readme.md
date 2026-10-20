@@ -1,48 +1,40 @@
-# Drachen und Elfen
+# Die Häutung der Welt
 
-Gemeinsamer Arbeitsbereich für ein neues Buchprojekt. Der Arbeitstitel ist vorläufig.
+Gemeinsamer Arbeitsbereich für die geplante Fantasytrilogie. Band 1 trägt den Arbeitstitel „Unter der neunten Schuppe“.
 
-**Buchwerkstatt:** [toni2123a.github.io/Book_DrachenundElfen](https://toni2123a.github.io/Book_DrachenundElfen/)
+**Öffentliche Planungsseite:** [toni2123a.github.io/Book_DrachenundElfen](https://toni2123a.github.io/Book_DrachenundElfen/)
 
-Dieses Repository übernimmt das bewährte Grundprinzip aus `TheBookV2`: Ideen werden erst gesammelt, dann entschieden und anschließend kontrolliert in Story-Bibel, Plot und Manuskript überführt. Der Inhalt des früheren Buchprojekts wird nicht übernommen.
+Das Projekt übernimmt nur das Arbeitsprinzip aus `TheBookV2`: Ideen werden gesammelt, entschieden und kontrolliert in Serienbibel, Story-Bibel, Plot und Manuskript überführt. Figuren, Handlung und Fakten des früheren Buchprojekts werden nicht übernommen.
 
-## Schnellstart
+## Aktueller Stand
 
-1. Neue Einfälle kommen nach [`ideen/IDEEN_INBOX.md`](ideen/IDEEN_INBOX.md).
-2. Beide Autoren prüfen die Idee und dokumentieren die Entscheidung in [`planung/ENTSCHEIDUNGEN.md`](planung/ENTSCHEIDUNGEN.md).
-3. Angenommene Ideen werden in die passende Projektdatei eingearbeitet:
-   - [`planung/STORY_BIBLE.md`](planung/STORY_BIBLE.md) für Prämisse, Kanon und offene Fragen
-   - [`planung/FIGUREN.md`](planung/FIGUREN.md) für Figuren und Beziehungen
-   - [`planung/WELT_UND_MAGIE.md`](planung/WELT_UND_MAGIE.md) für Welt-, Drachen-, Elfen- und Magieregeln
-   - [`planung/PLOT_BAUPLAN.md`](planung/PLOT_BAUPLAN.md) für Dramaturgie, Kapitel und Handlungsfäden
-   - [`planung/SCHREIBSTIL.md`](planung/SCHREIBSTIL.md) für Erzählweise und Sprachregeln
-4. Ein neues Kapitel wird mit `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\neues-kapitel.ps1 -Nummer 1 -Titel "Arbeitstitel"` angelegt.
-5. Nach Änderungen läuft `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\projekt-check.ps1` als schneller Strukturcheck.
+Das Grundgerüst ist vollständig: Trilogiebogen, Welt- und Magieregeln, Figurenbögen, 36 Kapitel für Band 1, Geheimnisarchitektur, Setups/Payoffs und Finale. Die öffentliche Seite zeigt diesen Plan und erstellt ausschließlich lokale Änderungswünsche.
 
-## Ordner
+## Verbindliche Planung
 
-| Pfad | Zweck |
+| Pfad | Inhalt |
 | --- | --- |
-| `ideen/` | ungeprüfte Vorschläge und später verworfene/vertagte Ideen |
-| `planung/` | verbindlicher Projektstand und Bauplan |
-| `manuskript/` | Kapitelplan, Rohentwurf und Erkenntnisse je Kapitel |
-| `produktion/` | Arbeitsregeln, Status und Änderungsverlauf |
-| `recherche/` | Quellen, Faktenprüfung und offene Recherchen |
-| `vorlagen/` | wiederverwendbare Formulare |
-| `scripts/` | kleine Hilfen für Kapitelanlage und Projektprüfung |
-| `index.html`, `styles.css`, `app.js`, `assets/` | öffentliche GitHub-Pages-Buchwerkstatt für den Koautor |
+| `planung/SERIEN_BIBEL.md` | vollständiger Bogen der drei Bände |
+| `planung/STORY_BIBLE.md` | Prämisse und Kanon von Band 1 |
+| `planung/BAND1_BAUPLAN.md` | alle 36 Kapitel, Setups und Payoffs |
+| `planung/PLOT_BAUPLAN.md` | Akte, Zeitdruck und Handlungsfäden |
+| `planung/FIGUREN.md` | Figurenbögen und Beziehungen |
+| `planung/WELT_UND_MAGIE.md` | Welt-, Drachen-, Elfen- und Magieregeln |
+| `planung/SCHREIBSTIL.md` | Perspektive, Ton und Sprachregeln |
+| `planung/ENTSCHEIDUNGEN.md` | angenommene Entscheidungen mit Begründung |
 
-## Wichtiges Arbeitsprinzip
+## Arbeitsablauf
 
-Die Inbox ist kein Kanon. Eine Idee gilt erst dann als verbindlich, wenn sie gemeinsam entschieden, im Entscheidungsprotokoll erfasst und in den betroffenen Planungsdateien synchronisiert wurde. Ein Rohentwurf verändert den Kanon ebenfalls nicht automatisch.
+1. Ein Änderungswunsch wird über die Planungsseite oder in `ideen/IDEEN_INBOX.md` formuliert.
+2. Beide Autoren prüfen Folgen für Figuren, Weltregeln, spätere Kapitel, Foreshadowing und Folgebände.
+3. Eine Annahme wird in `planung/ENTSCHEIDUNGEN.md` dokumentiert und gleichzeitig in allen betroffenen Planungsdateien synchronisiert.
+4. Kapitel werden mit `scripts/neues-kapitel.ps1` als Plan, Rohentwurf und Delta angelegt.
+5. Nach größeren Änderungen läuft `scripts/projekt-check.ps1` als Strukturprüfung.
 
-## Zusammenarbeit über GitHub
+## Wichtiges Prinzip
 
-- Kleine Ergänzungen können direkt in `ideen/IDEEN_INBOX.md` eingetragen werden.
-- Alternativ kann unter **Issues → Neue Buchidee** eine strukturierte Ideenkarte eröffnet werden.
-- Für größere Änderungen empfiehlt sich ein eigener Branch mit Pull Request, damit der zweite Autor Inhalt und Folgen vor dem Zusammenführen prüfen kann.
-- Im Pull Request kurz angeben, welche Entscheidung und welche Planungsdateien betroffen sind.
+Ein Änderungswunsch ist noch kein Kanon. Auch ein Rohentwurf verändert die Planung nicht automatisch. Abweichungen und neue Erkenntnisse werden zuerst im jeweiligen Kapitel-Delta sichtbar gemacht und danach gemeinsam entschieden.
 
-## Nächster gemeinsamer Schritt
+## Nächster Schritt
 
-Beide Autoren füllen zuerst die Projektfragen in [`ideen/IDEEN_INBOX.md`](ideen/IDEEN_INBOX.md) aus. Danach werden Logline, Zielgruppe, Perspektive, Umfang sowie die Grundregeln für Drachen, Elfen und Magie festgelegt.
+Die beiden Autoren prüfen das Grundgerüst auf der Planungsseite. Nach der Freigabe beginnt die Szenenplanung für Kapitel 1 „Das Kind ohne Vorleben“.

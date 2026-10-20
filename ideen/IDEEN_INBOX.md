@@ -63,6 +63,74 @@ Die Vorlage unter „Neue Ideenkarte“ kopieren, vollständig oder stichpunktar
 - **Offene Fragen:** Eine oder mehrere Perspektivfiguren? Gehören sie unterschiedlichen Völkern an?
 - **Status:** Neu
 
+## Ausgearbeitete Konzeptideen
+
+### Idee 006 · Die Häutung der Welt
+
+- **Eingebracht von:** KI-Entwurf im Auftrag des Projektgründers
+- **Datum:** 2026-10-20
+- **Typ:** Prämisse
+- **Vorschlag:** Die Welt besteht aus den abgestreiften, verworfenen Möglichkeiten uralter Drachen. Eine ausgelöschte Stadt beginnt, die Gegenwart zu ersetzen.
+- **Warum interessant:** Verbindet ein starkes Drachenbild mit einem moralischen Konflikt statt einer bloßen Gut-gegen-Böse-Bedrohung.
+- **Mögliche Folgen:** dreibändige Reihe; jede Häutung kann andere Wirklichkeitsregeln freilegen.
+- **Offene Fragen:** keine für das Grundgerüst
+- **Status:** Angenommen · E-002
+
+### Idee 007 · Drachen als Weltgesetze
+
+- **Eingebracht von:** KI-Entwurf im Auftrag des Projektgründers
+- **Datum:** 2026-10-20
+- **Typ:** Welt
+- **Vorschlag:** Drachen verkörpern Gesetze wie Schwelle, Entfernung oder Dauer. Sie beginnen riesig und werden im Alter kleiner, bewusster und dichter.
+- **Warum interessant:** Entfernt Drachen klar von Reittier-, Haustier- und Elementarwesenklischees.
+- **Mögliche Folgen:** Drachen können nur ihr eigenes Gesetz beugen; Orr bleibt mächtig, aber nicht allmächtig.
+- **Offene Fragen:** genaue Benennungen einzelner Drachen in Band 2 und 3
+- **Status:** Angenommen · E-003
+
+### Idee 008 · Elfen als Erinnerungschöre
+
+- **Eingebracht von:** KI-Entwurf im Auftrag des Projektgründers
+- **Datum:** 2026-10-20
+- **Typ:** Welt
+- **Vorschlag:** Elfen entstehen aus drei bis sieben gespendeten Erinnerungssamen und tragen diese als inneren Chor, ohne bloße Wiedergeburten zu sein.
+- **Warum interessant:** Macht Identität, Familie und politische Erinnerung zum greifbaren Konflikt.
+- **Mögliche Folgen:** Chorgerichte, manipulierte Erinnerungen, besondere Stellung der chorlosen Neyra.
+- **Offene Fragen:** regionale Varianten der Chorgärten für spätere Bände
+- **Status:** Angenommen · E-004
+
+### Idee 009 · Magie schließt Zukunft
+
+- **Eingebracht von:** KI-Entwurf im Auftrag des Projektgründers
+- **Datum:** 2026-10-20
+- **Typ:** Magie
+- **Vorschlag:** Möglichkeitshandwerk importiert eine verworfene Wirklichkeit. Als Preis verliert der Wirkende eine reale zukünftige Wahl; zu viele Verluste machen ihn zum Festgelegten.
+- **Warum interessant:** Der Preis ist sichtbar, dauerhaft und erzählerisch statt bloß körperlicher Erschöpfung.
+- **Mögliche Folgen:** schwarze Fugen, Festgelegte, moralisch schwere Magieentscheidungen.
+- **Offene Fragen:** keine für Band 1
+- **Status:** Angenommen · E-005
+
+### Idee 010 · Neyra, Orr, Miran und Sereth
+
+- **Eingebracht von:** KI-Entwurf im Auftrag des Projektgründers
+- **Datum:** 2026-10-20
+- **Typ:** Figur
+- **Vorschlag:** Eine chorlose Elfe, ein schuldiger Gesetzesdrache, ein Kartograf ausgelöschter Orte und eine moralisch nachvollziehbare Archivarin tragen den Konflikt.
+- **Warum interessant:** Jede Figur verkörpert eine andere Antwort auf Erinnerung und Verantwortung.
+- **Mögliche Folgen:** enge personale Perspektive; langsame Beziehung Neyra/Miran; Orr ohne eigene Perspektive.
+- **Offene Fragen:** Autoren können Namen später per Änderungswunsch anpassen.
+- **Status:** Angenommen · E-006
+
+### Idee 011 · Ankunft statt Ersetzung
+
+- **Eingebracht von:** KI-Entwurf im Auftrag des Projektgründers
+- **Datum:** 2026-10-20
+- **Typ:** Plot
+- **Vorschlag:** Im Finale wird weder Merea noch Asra geopfert. Die ausgelöschte Stadt darf als gegenwärtige Gemeinschaft ankommen, ohne heutige Bewohner zu überschreiben.
+- **Warum interessant:** Die Lösung folgt aus Thema und Regeln und vermeidet eine einfache Siegerwirklichkeit.
+- **Mögliche Folgen:** politisch komplexer Ausgangspunkt für Band 2; Neyra gibt die Gewissheit über ihre Herkunft auf.
+- **Offene Fragen:** konkrete Verwaltungsfolgen sind Stoff von Band 2.
+- **Status:** Angenommen · E-007
+
 ## Neue Ideenkarte
 
 ### Idee NNN · Kurztitel

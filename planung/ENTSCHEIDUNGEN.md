@@ -143,6 +143,17 @@ Hier werden verbindliche kreative Entscheidungen nachvollziehbar festgehalten. E
 - **Synchronisiert in:** `AGENTS.md`, Kapitel-1-Trio, Fassungsindex, Produktionsregeln und Freigabestatus, Sicherungs- und Prüfskript, Projektstatus, README und Webseite
 - **Später zu prüfen:** Nach übermittelter und dokumentierter Kapitelabnahme `kapitel1Abgenommen` in `produktion/FREIGABESTATUS.json` auf `true` setzen. Ein lokaler Browserentwurf aktiviert die Versionierung nicht.
 
+### E-013 · GitHub-Arbeitsliste, Verwaltungsseite und Benachrichtigungen
+
+- **Datum:** 2026-10-20
+- **Beteiligte:** Projektgründer
+- **Bezug:** Idee 015; Auftrag zur automatischen Issue-Erstellung, zum Verwaltungszugang und zu E-Mails
+- **Entscheidung:** Nach Verbindung mit GitHub werden neue und vorhandene lokale Änderungswünsche als Issues erfasst. Die eigene Verwaltungsseite verlangt Schreibzugriff auf das Repository und erlaubt Freigeben, Zurückstellen, Bearbeitungsstatus und Abschluss. Freigeben merkt die Änderung vor; es startet keine KI-Umsetzung. Kapitelabnahmen können als vollständiges Protokoll nach GitHub übermittelt werden. Der Projektinhaber wird bei neuen Issues und übermittelten Kapitelabnahmen durch GitHub Actions erwähnt; E-Mails folgen seinen GitHub-Einstellungen.
+- **Status:** Angenommen; ersetzt die Beschränkung auf lokale Änderungswünsche ohne automatische Issues
+- **Begründung:** Eine gemeinsame, prüfbare Arbeitsliste ersetzt die manuelle Übertragung von Downloads. Der GitHub-Schlüssel bleibt pro Sitzung im Arbeitsspeicher und wird nur an die GitHub-API gesendet. Vor Wiederholungen wird nach der Wunschkennung gesucht.
+- **Synchronisiert in:** Webseite und Verwaltungsseite, GitHub-Anbindung und Tests, Benachrichtigungsworkflow, Produktionsregeln, Projektstatus, README und Änderungsprotokoll
+- **Später zu prüfen:** Persönliche GitHub-E-Mail-Zustellung für Erwähnungen. Ein Issue-Status ist keine Kanonentscheidung. Die Übermittlung einer Kapitelabnahme setzt den lokalen Projekt-Freigabestatus nicht automatisch um; E-012 und der v1-Ausgangsstand bleiben gültig.
+
 ## Vorlage
 
 ### E-NNN · Kurztitel

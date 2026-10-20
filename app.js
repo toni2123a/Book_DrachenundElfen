@@ -315,6 +315,42 @@ async function copyApproval(form) {
   }
 }
 
+async function sendApproval(form) {
+  const status = form.querySelector('.form-status');
+  if (form.dataset.kind === 'kapitelabnahme' && !allScenesApproved()) {
+    status.textContent = 'Kapitelabnahme gesperrt: Erst alle Szenen freigeben.';
+    return;
+  }
+  if (!form.reportValidity()) return;
+  if (!githubClient) {
+    status.textContent = 'Bitte zuerst mit GitHub verbinden. Das Protokoll bleibt hier erhalten.';
+    document.querySelector('#githubConnection').open = true;
+    document.querySelector('#githubToken').focus();
+    return;
+  }
+  const button = form.querySelector('[data-action="send"]');
+  if (button.disabled) return;
+  button.disabled = true;
+  const values = approvalValues(form);
+  const text = approvalText(form);
+  try {
+    status.textContent = 'Freigabe wird an GitHub übermittelt …';
+    const issue = await githubClient.createApproval({ id: `protokoll-${protocolId(form)}`, kind: form.dataset.kind,
+      chapter: Number(values.chapter), decision: values.decision, text });
+    status.replaceChildren(document.createTextNode('Freigabeprotokoll übermittelt. '));
+    const link = document.createElement('a');
+    link.href = issue.url;
+    link.textContent = `Issue #${issue.number} öffnen`;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    status.appendChild(link);
+  } catch (error) {
+    status.textContent = error.message;
+  } finally {
+    button.disabled = form.dataset.kind === 'kapitelabnahme' && !allScenesApproved();
+  }
+}
+
 function downloadApproval(form) {
   if (form.dataset.kind === 'kapitelabnahme' && !allScenesApproved()) {
     form.querySelector('.form-status').textContent = 'Kapitelabnahme gesperrt: Erst alle Szenen freigeben.';
@@ -347,6 +383,7 @@ document.querySelectorAll('.approval-form').forEach((approvalForm) => {
 
   approvalForm.querySelector('[data-action="copy"]').addEventListener('click', () => copyApproval(approvalForm));
   approvalForm.querySelector('[data-action="download"]').addEventListener('click', () => downloadApproval(approvalForm));
+  approvalForm.querySelector('[data-action="send"]').addEventListener('click', () => sendApproval(approvalForm));
 });
 
 document.querySelectorAll('.chapter-assessment[data-chapter-assessment]').forEach((container) => {
@@ -554,7 +591,7 @@ function renderSceneApproval(article, index) {
     persistSceneApprovals();
     if (decision.value === 'changes') {
       // Der Überarbeitungswunsch landet in der Ablage und blockiert die Freigabe, bis er erledigt ist.
-      changeNotes.push({
+      addChangeNote({
         id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
         target: article.dataset.changeTarget,
         quote: article.dataset.quote || '',
@@ -562,9 +599,6 @@ function renderSceneApproval(article, index) {
         createdAt: today()
       });
       delete article.dataset.quote;
-      persistChangeNotes();
-      openTray();
-      trayStatus.textContent = 'Überarbeitungswunsch in die Ablage übernommen.';
       return;
     }
     renderSceneApproval(article, index);
@@ -742,6 +776,90 @@ const trayCount = document.querySelector('#changeCount');
 const trayList = document.querySelector('#changeList');
 const trayStatus = document.querySelector('#changeTrayStatus');
 let changeNotes = [];
+let githubClient = null;
+let syncRun = null;
+const syncingIds = new Set();
+
+function addChangeNote(note) {
+  changeNotes.push(note);
+  revokeSceneApprovalForTarget(note.target);
+  persistChangeNotes();
+  openTray();
+  trayStatus.textContent = githubClient ? 'Änderungswunsch gespeichert. Issue wird übermittelt …' : 'Änderungswunsch gespeichert. Für automatische Issues bitte mit GitHub verbinden.';
+  void sendPendingChanges();
+}
+
+async function sendPendingChanges() {
+  if (!githubClient || syncRun) return syncRun;
+  syncRun = (async () => {
+    while (githubClient) {
+      const note = changeNotes.find(entry => !entry.githubIssue);
+      if (!note) break;
+      syncingIds.add(note.id);
+      delete note.syncError;
+      renderChangeTray();
+      try {
+        note.githubIssue = await githubClient.createChange(note);
+        trayStatus.textContent = `Issue #${note.githubIssue.number} wurde erstellt. Weitere Wünsche werden automatisch gesendet.`;
+      } catch (error) {
+        note.syncError = error.message;
+        trayStatus.textContent = `Noch nicht übermittelt: ${error.message}`;
+        if (error.status === 401) disconnectGitHub();
+        break;
+      } finally {
+        syncingIds.delete(note.id);
+        persistChangeNotes();
+      }
+      await new Promise(resolve => setTimeout(resolve, 1100));
+    }
+  })();
+  try { await syncRun; } finally { syncRun = null; renderChangeTray(); }
+}
+
+function disconnectGitHub() {
+  githubClient?.disconnect();
+  githubClient = null;
+  document.querySelector('#githubDisconnect').hidden = true;
+  document.querySelector('#githubToken').disabled = false;
+  document.querySelector('#githubConnectForm button[type="submit"]').disabled = false;
+  document.querySelector('#githubConnectionStatus').textContent = 'Verbindung getrennt. Nicht übermittelte Wünsche bleiben auf diesem Gerät.';
+}
+
+document.querySelector('#githubConnectForm').addEventListener('submit', async event => {
+  event.preventDefault();
+  const field = document.querySelector('#githubToken');
+  const button = event.currentTarget.querySelector('button[type="submit"]');
+  const status = document.querySelector('#githubConnectionStatus');
+  if (!field.value.trim() || button.disabled) return;
+  button.disabled = true;
+  let candidate;
+  try {
+    candidate = BookIssues.createClient({ token: field.value });
+    field.value = '';
+    const user = await candidate.connect();
+    githubClient = candidate;
+    field.disabled = true;
+    document.querySelector('#githubDisconnect').hidden = false;
+    status.textContent = `Verbunden als ${user.login}. Vorhandene und neue Änderungswünsche werden automatisch an GitHub gesendet.`;
+    await sendPendingChanges();
+  } catch (error) {
+    candidate?.disconnect();
+    field.value = '';
+    button.disabled = false;
+    status.textContent = error.message;
+  }
+});
+document.querySelector('#githubDisconnect').addEventListener('click', disconnectGitHub);
+document.querySelector('#sendPendingChanges').addEventListener('click', () => {
+  if (!githubClient) {
+    document.querySelector('#githubConnection').open = true;
+    document.querySelector('#githubToken').focus();
+    trayStatus.textContent = 'Bitte zuerst mit GitHub verbinden.';
+    return;
+  }
+  void sendPendingChanges();
+});
+window.addEventListener('online', () => { if (githubClient) void sendPendingChanges(); });
 
 function loadChangeNotes() {
   try {
@@ -754,7 +872,8 @@ function loadChangeNotes() {
 }
 
 function persistChangeNotes() {
-  localStorage.setItem(changeStorageKey, JSON.stringify(changeNotes));
+  try { localStorage.setItem(changeStorageKey, JSON.stringify(changeNotes)); }
+  catch { trayStatus.textContent = 'Lokales Speichern ist nicht möglich. Bitte Wünsche übermitteln oder herunterladen, bevor du diese Seite schließt.'; }
   renderChangeTray();
   refreshSceneApprovalPanels();
   updateChapterGate();
@@ -774,6 +893,7 @@ function closeTray() {
 
 function renderChangeTray() {
   trayCount.textContent = String(changeNotes.length);
+  document.querySelector('#clearAllChanges').disabled = syncingIds.size > 0;
   trayList.replaceChildren();
 
   if (!changeNotes.length) {
@@ -796,6 +916,7 @@ function renderChangeTray() {
     remove.className = 'tray-remove';
     remove.setAttribute('aria-label', `Änderungswunsch zu ${note.target} entfernen`);
     remove.textContent = '×';
+    remove.disabled = syncingIds.has(note.id);
     remove.addEventListener('click', () => {
       changeNotes = changeNotes.filter((entry) => entry.id !== note.id);
       persistChangeNotes();
@@ -812,6 +933,19 @@ function renderChangeTray() {
     const request = document.createElement('p');
     request.textContent = note.request;
     item.appendChild(request);
+    const sync = document.createElement('p');
+    sync.className = 'issue-sync-status';
+    if (note.githubIssue?.number) {
+      const link = document.createElement('a');
+      link.href = `${BookIssues.repositoryUrl}/issues/${Number(note.githubIssue.number)}`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = `Issue #${note.githubIssue.number} auf GitHub`;
+      sync.appendChild(link);
+    } else {
+      sync.textContent = syncingIds.has(note.id) ? 'Wird an GitHub gesendet …' : note.syncError || 'Noch nicht an GitHub übermittelt.';
+    }
+    item.appendChild(sync);
     trayList.appendChild(item);
   });
 }
@@ -885,18 +1019,14 @@ function openInlineEditor(card) {
       return;
     }
     const target = targetLabel(card);
-    changeNotes.push({
+    addChangeNote({
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
       target,
       quote,
       request,
       createdAt: today()
     });
-    revokeSceneApprovalForTarget(target);
-    persistChangeNotes();
     panel.remove();
-    openTray();
-    trayStatus.textContent = 'Änderungswunsch in die Ablage übernommen.';
   });
 }
 
@@ -935,7 +1065,7 @@ function setupChangeTargets(root = document) {
 function changesDocument() {
   const entries = changeNotes.map((note, index) => `${index + 1}. ${note.target}
 ${note.quote ? `Markierte Textstelle: „${note.quote}“\n` : ''}Wunsch: ${note.request}
-Erfasst: ${note.createdAt}`).join('\n\n');
+Erfasst: ${note.createdAt}${note.githubIssue ? `\nGitHub: ${note.githubIssue.url}` : '\nGitHub: noch nicht übermittelt'}`).join('\n\n');
   return `ÄNDERUNGSWÜNSCHE · KAPITEL-1-DRAFT UND SERIENPLAN
 
 Exportiert: ${today()}
@@ -980,6 +1110,7 @@ document.querySelector('#downloadAllChanges').addEventListener('click', () => {
 });
 
 document.querySelector('#clearAllChanges').addEventListener('click', () => {
+  if (syncingIds.size) return;
   if (!changeNotes.length) return;
   if (!window.confirm('Alle lokal gespeicherten Änderungswünsche wirklich löschen?')) return;
   changeNotes = [];

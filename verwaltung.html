@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Verwaltung · Die Häutung der Welt</title>
+    <link rel="stylesheet" href="styles.css?v=20261020-issues">
+    <script src="github-issues.js?v=20261020-issues" defer></script>
+    <script src="verwaltung.js?v=20261020-issues" defer></script>
+  </head>
+  <body class="admin-page">
+    <a class="skip-link" href="#verwaltung">Zum Inhalt springen</a>
+    <header class="site-header admin-header">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">10</span><span>Die Häutung der Welt</span></a>
+      <a class="card-link" href="index.html#kapitel1">Zurück zum Kapitel</a>
+    </header>
+    <main id="verwaltung" class="section-shell admin-main">
+      <div class="section-intro">
+        <p class="eyebrow">Buchwerkstatt</p>
+        <h1>Änderungen prüfen</h1>
+        <p>Hier sichtest du Issues, gibst Änderungen zur Bearbeitung frei und hältst fest, was erledigt ist. Eine Freigabe merkt den Wunsch vor. Die Umsetzung erfolgt anschließend durch dich oder gemeinsam mit der KI.</p>
+      </div>
+      <section class="github-connect" aria-labelledby="admin-login-title">
+        <h2 id="admin-login-title">Zugang über GitHub</h2>
+        <p>Zum Verwalten brauchst du Schreibzugriff auf das Buchprojekt. Der Schlüssel bleibt nur im Arbeitsspeicher dieses Tabs. Die Issues liegen im öffentlichen Repository.</p>
+        <form id="adminConnectForm" class="github-connect-form">
+          <label>GitHub-Zugangsschlüssel<input id="adminToken" type="password" autocomplete="off" spellcheck="false" maxlength="255" required aria-describedby="adminTokenHelp"></label>
+          <p id="adminTokenHelp">Für den Projektinhaber: nur „Book_DrachenundElfen“ auswählen und „Issues: Lesen und Schreiben“ erlauben. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Schlüssel bei GitHub erstellen</a>. <a href="produktion/GITHUB_ANBINDUNG.md">Anleitung für beide Autoren</a>.</p>
+          <div class="form-actions"><button class="button button-primary" type="submit">Verwaltung öffnen</button><button id="adminDisconnect" class="button button-secondary light-button" type="button" hidden>Abmelden</button></div>
+        </form>
+        <p id="adminConnectionStatus" class="form-status" role="status" aria-live="polite">Noch nicht verbunden.</p>
+      </section>
+      <section class="admin-notifications" aria-labelledby="notification-title">
+        <h2 id="notification-title">E-Mail bei neuen Issues und Kapitelabnahmen</h2>
+        <p>GitHub Actions erwähnt den Projektinhaber bei einem neuen Issue und bei einer übermittelten Kapitelabnahme. Wähle in deinen GitHub-Einstellungen die Zustellung von Erwähnungen per E-Mail. Für andere Issues kann GitHub zusätzliche Hinweise senden, wenn du das Repository beobachtest.</p>
+        <a class="card-link" href="https://github.com/settings/notifications" target="_blank" rel="noopener noreferrer">E-Mail-Einstellungen bei GitHub öffnen</a>
+        <p class="form-status">Eine Freigabe in der Arbeitsliste betrifft den Änderungswunsch. Die Kapitelabnahme wird im Kapitelbereich über „Freigabe übermitteln“ dokumentiert.</p>
+      </section>
+      <section id="adminWorkspace" hidden aria-labelledby="issues-title">
+        <div class="admin-toolbar">
+          <h2 id="issues-title">Issues</h2>
+          <button id="refreshIssues" class="button button-secondary light-button" type="button">Aktualisieren</button>
+          <button id="exportApproved" class="button button-primary" type="button">Arbeitsliste herunterladen</button>
+        </div>
+        <p id="issueSummary" role="status" aria-live="polite"></p>
+        <div class="admin-filters">
+          <label>Status<select id="issueFilter"><option value="open">Alle offenen Issues</option><option value="new">Neu</option><option value="approved">Freigegeben</option><option value="working">In Arbeit</option><option value="deferred">Zurückgestellt</option><option value="done">Erledigt</option><option value="rejected">Abgelehnt</option><option value="all">Alle Issues</option></select></label>
+          <label>Suche<input id="issueSearch" type="search" placeholder="Kapitel, Textstelle oder Stichwort"></label>
+        </div>
+        <p id="adminActionStatus" class="form-status" role="status" aria-live="polite"></p>
+        <div id="adminIssues" class="admin-issues"></div>
+      </section>
+      <noscript><p>Die Issue-Verwaltung benötigt JavaScript.</p></noscript>
+    </main>
+  </body>
+</html>

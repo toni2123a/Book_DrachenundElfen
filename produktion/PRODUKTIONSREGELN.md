@@ -57,7 +57,13 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 - lautet entweder `Kapitel freigegeben` oder `Nicht freigegeben – Überarbeitung erforderlich`,
 - verliert bei jeder nachträglichen Textänderung ihre Gültigkeit.
 
-Die Webseite erzeugt für Tor 1 und Tor 2 datierte Protokolle mit Kennung. Szenenfreigaben und Änderungswünsche werden auf dem jeweiligen Gerät gespeichert. Die öffentliche GitHub-Pages-Seite besitzt keinen sicheren Schreibzugriff auf GitHub und erzeugt deshalb keine Issues. Entscheidungen und Änderungslisten müssen heruntergeladen oder kopiert, übermittelt und anschließend im Projekt dokumentiert werden.
+Die Webseite erzeugt für Tor 1 und Tor 2 datierte Protokolle mit Kennung. Szenenfreigaben und Änderungswünsche werden auf dem jeweiligen Gerät gespeichert. Nach Verbindung mit GitHub werden neue und vorhandene Änderungswünsche automatisch als öffentliche Issues übertragen. Bei Fehlern bleiben sie lokal erhalten und können erneut gesendet oder exportiert werden. Ein Issue-Link bestätigt die Übertragung.
+
+Die eigene Verwaltungsseite zeigt die gemeinsamen Issues. Schreibberechtigte Projektbeteiligte können Änderungen freigeben, zurückstellen, in Bearbeitung nehmen und abschließen. Freigeben bedeutet Vormerken zur späteren Umsetzung; es ändert weder Kanon noch Manuskript und startet keine automatische KI-Bearbeitung. Vor Umsetzung bleiben Entscheidungsprotokoll und Folgenprüfung erforderlich. Die lokale Ablage zu leeren schließt keine GitHub-Issues.
+
+„Freigabe übermitteln“ überträgt das vollständige Schreibfreigabe- oder Kapitelabnahmeprotokoll nach GitHub. Die Kapitelabnahme bleibt von den Szenenfreigaben abhängig. Übermittelte Protokolle werden anschließend in den Projektstatus und die betroffenen Dateien übernommen. Sie sind von der Freigabe einzelner Änderungswünsche getrennt. Der Projektinhaber wird beim Eingang eines Issues und bei einer übermittelten Kapitelabnahme durch GitHub Actions erwähnt. Die E-Mail-Zustellung richtet sich nach seinen persönlichen GitHub-Einstellungen.
+
+Der GitHub-Schlüssel bleibt nur im Arbeitsspeicher des geöffneten Tabs. Einrichtung, Token-Berechtigungen, Wiederholungsfälle und Mailzustellung stehen in `produktion/GITHUB_ANBINDUNG.md`.
 
 ## Szenenfassungen
 

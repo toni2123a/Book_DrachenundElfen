@@ -11,8 +11,9 @@
     <meta property="og:url" content="https://toni2123a.github.io/Book_DrachenundElfen/">
     <meta property="og:image" content="https://toni2123a.github.io/Book_DrachenundElfen/assets/hero-worldskin.webp">
     <title>Die Häutung der Welt · Band-1-Plan</title>
-    <link rel="stylesheet" href="styles.css?v=20261020-7">
-    <script src="app.js?v=20261020-7" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261020-issues">
+    <script src="github-issues.js?v=20261020-issues" defer></script>
+    <script src="app.js?v=20261020-issues" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -32,6 +33,7 @@
         <a href="#band1">Band 1</a>
         <a href="#kapitel1">Kapitel 1</a>
         <a href="#freigaben">Freigaben</a>
+        <a href="verwaltung.html">Verwaltung</a>
         <a href="#kapitel1" class="nav-cta">Draft lesen</a>
       </nav>
     </header>
@@ -339,6 +341,18 @@
             <span class="draft-mode-badge">Draft-Modus aktiv</span>
           </div>
 
+          <details class="github-connect" id="githubConnection">
+            <summary>GitHub verbinden und Änderungswünsche übermitteln</summary>
+            <p>Nach dem Verbinden werden vorhandene und neue Änderungswünsche automatisch als Issues in der Buchwerkstatt angelegt. Die Issues sind öffentlich. Ohne Verbindung bleiben deine Wünsche auf diesem Gerät erhalten.</p>
+            <form id="githubConnectForm" class="github-connect-form">
+              <label>GitHub-Zugangsschlüssel<input id="githubToken" type="password" autocomplete="off" spellcheck="false" maxlength="255" required aria-describedby="githubTokenHelp"></label>
+              <p id="githubTokenHelp">Der Schlüssel bleibt nur im Arbeitsspeicher dieses Tabs. Er wird direkt an GitHub gesendet. Für den Projektinhaber genügt ein auf dieses Repository begrenzter Schlüssel mit „Issues: Lesen und Schreiben“. <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Schlüssel bei GitHub erstellen</a>. <a href="produktion/GITHUB_ANBINDUNG.md">Anleitung für beide Autoren</a>.</p>
+              <div class="form-actions"><button class="button button-primary" type="submit">Verbinden und Wünsche senden</button><button class="button button-secondary light-button" id="githubDisconnect" type="button" hidden>Verbindung trennen</button></div>
+            </form>
+            <p class="form-status" id="githubConnectionStatus" role="status" aria-live="polite">Noch nicht mit GitHub verbunden.</p>
+            <p><a href="verwaltung.html">Zur Verwaltung: Issues prüfen, freigeben und abarbeiten</a></p>
+          </details>
+
           <details class="chapter-inline-gate plan-gate">
             <summary><span class="stage-badge">Tor 1</span><strong>Schreibfreigabe des Kapitelplans</strong><small>Für neue Kapitel vor dem ersten Rohentwurf öffnen.</small></summary>
             <article class="approval-panel">
@@ -357,7 +371,7 @@
                 </fieldset>
                 <label>Anmerkung oder notwendige Änderung<textarea name="notes" rows="3" required placeholder="Bei Freigabe z. B. ‚ohne weitere Anmerkung‘; sonst konkret ändern."></textarea></label>
                 <label class="consent"><input type="checkbox" name="declaration" required><span>Diese Entscheidung gilt ausschließlich für die oben genannte Planversion.</span></label>
-                <div class="form-actions"><button class="button button-primary" type="button" data-action="copy">Protokoll kopieren</button><button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button></div>
+                <div class="form-actions"><button class="button button-primary" type="button" data-action="send">Freigabe übermitteln</button><button class="button button-secondary light-button" type="button" data-action="copy">Protokoll kopieren</button><button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button></div>
                 <p class="form-status" role="status" aria-live="polite">Noch keine Schreibfreigabe erstellt.</p>
               </form>
             </article>
@@ -436,7 +450,7 @@
               <p>Jede Szene wird direkt unter ihrem Text freigegeben. Erst bei drei freigegebenen Szenen wird die endgültige Kapitelabnahme entsperrt.</p>
             </div>
             <div class="scene-progress" id="sceneApprovalProgress" role="status" aria-live="polite"><strong>0 von 3 Szenen freigegeben</strong><span>Kapitelabnahme gesperrt</span></div>
-            <div class="storage-warning"><strong>Keine automatische Issue-Erstellung</strong><p>Änderungswünsche bleiben auf diesem Gerät. Die öffentliche Seite besitzt aus Sicherheitsgründen keinen Schreibzugriff auf GitHub. Nutzt „Alle herunterladen“, damit die Punkte anschließend einzeln im Projekt abgearbeitet werden können.</p></div>
+            <div class="storage-warning"><strong>Issues und Benachrichtigungen</strong><p>Nach <a href="#githubConnection">Verbindung mit GitHub</a> werden Änderungswünsche automatisch als Issues übermittelt. „Freigabe übermitteln“ dokumentiert die Kapitelentscheidung auf GitHub. Neue Issues und übermittelte Kapitelabnahmen lösen einen Hinweis an den Projektinhaber aus. Die E-Mail-Zustellung folgt seinen GitHub-Einstellungen. In der <a href="verwaltung.html">Verwaltung</a> werden Änderungen zur Bearbeitung vorgemerkt.</p></div>
 
             <article class="approval-panel final-approval-panel is-locked" id="chapterApprovalPanel">
               <div class="panel-heading">
@@ -459,7 +473,7 @@
                 </fieldset>
                 <label>Abnahmevermerk<textarea name="notes" rows="4" data-scene-gated required placeholder="Gesamturteil oder verbleibende kapitelübergreifende Punkte."></textarea></label>
                 <label class="consent"><input type="checkbox" name="declaration" data-scene-gated required><span>Diese Entscheidung gilt für die genannte Textversion und alle drei protokollierten Szenenfreigaben.</span></label>
-                <div class="form-actions"><button class="button button-primary" type="button" data-action="copy" data-scene-gated>Protokoll kopieren</button><button class="button button-secondary light-button" type="button" data-action="download" data-scene-gated>Protokoll herunterladen</button></div>
+                <div class="form-actions"><button class="button button-primary" type="button" data-action="send" data-scene-gated>Freigabe übermitteln</button><button class="button button-secondary light-button" type="button" data-action="copy" data-scene-gated>Protokoll kopieren</button><button class="button button-secondary light-button" type="button" data-action="download" data-scene-gated>Protokoll herunterladen</button></div>
                 <p class="form-status" role="status" aria-live="polite">Kapitelabnahme gesperrt: Noch sind nicht alle Szenen freigegeben.</p>
               </form>
             </article>
@@ -522,11 +536,13 @@
         </div>
         <div class="tray-list" id="changeList"><p class="tray-empty">Noch keine Änderungswünsche erfasst.</p></div>
         <div class="tray-actions">
+          <button class="button button-primary" id="sendPendingChanges" type="button">Offene Wünsche senden</button>
+          <a class="button button-secondary" href="verwaltung.html">Issues verwalten</a>
           <button class="button button-primary" id="copyAllChanges" type="button">Alle kopieren</button>
           <button class="button button-secondary" id="downloadAllChanges" type="button">Alle herunterladen</button>
-          <button class="text-button" id="clearAllChanges" type="button">Ablage leeren</button>
+          <button class="text-button" id="clearAllChanges" type="button">Lokale Ablage leeren</button>
         </div>
-        <p class="form-status" id="changeTrayStatus" role="status" aria-live="polite">Änderungen werden nur auf diesem Gerät gespeichert.</p>
+        <p class="form-status" id="changeTrayStatus" role="status" aria-live="polite">Mit GitHub verbinden, um Wünsche automatisch als Issues zu senden. Entfernen aus der Ablage löscht keine GitHub-Issues.</p>
       </div>
     </aside>
   </body>

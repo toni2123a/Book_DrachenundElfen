@@ -164,6 +164,17 @@ Die Vorlage unter „Neue Ideenkarte“ kopieren, vollständig oder stichpunktar
 - **Offene Fragen:** keine; keine Änderung am Erzähltext oder am Kanon
 - **Status:** Angenommen · E-012
 
+### Idee 015 · Automatische Issues, Verwaltungszugang und E-Mail-Hinweise
+
+- **Eingebracht von:** Projektgründer
+- **Datum:** 2026-10-20
+- **Typ:** Organisation und Webseite
+- **Vorschlag:** Änderungswünsche nach GitHub übertragen. Eine eigene Verwaltungsseite zeigt Issues und merkt freigegebene Wünsche zur späteren Bearbeitung vor. E-Mail-Hinweise sollen beim Eingang eines Issues und bei einer übermittelten Kapitelabnahme erfolgen.
+- **Warum interessant:** Die Autoren sehen eine gemeinsame Arbeitsliste und erfahren, wann der nächste Schritt möglich ist.
+- **Mögliche Folgen:** Direkte GitHub-Verbindung pro Sitzung, ohne Zugangsdaten im öffentlichen Code oder Browserspeicher. Neue und bisher lokal erfasste Wünsche werden nach Verbindung gesendet. Die Verwaltung verlangt Schreibzugriff. GitHub Actions benachrichtigt den Projektinhaber; die Mailzustellung folgt dessen Kontoeinstellungen.
+- **Offene Fragen:** Keine automatische KI-Umsetzung gewünscht. Der Projektgründer wählte ausdrücklich das Vormerken. Persönliche E-Mail-Einstellungen müssen in GitHub aktiviert sein.
+- **Status:** Angenommen · E-013
+
 ## Neue Ideenkarte
 
 ### Idee NNN · Kurztitel

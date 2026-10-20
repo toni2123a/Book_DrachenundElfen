@@ -13,7 +13,13 @@ $requiredFiles = @(
     'planung/ENTSCHEIDUNGEN.md',
     'produktion/PRODUKTIONSREGELN.md',
     'produktion/AENDERUNGSPROTOKOLL.md',
-    'produktion/FREIGABESTATUS.json'
+    'produktion/FREIGABESTATUS.json',
+    'produktion/GITHUB_ANBINDUNG.md',
+    'github-issues.js',
+    'verwaltung.html',
+    'verwaltung.js',
+    '.github/workflows/issue-benachrichtigung.yml',
+    'scripts/issue-benachrichtigung.cjs'
 )
 
 $problems = [System.Collections.Generic.List[string]]::new()

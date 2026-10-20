@@ -1,0 +1,27 @@
+name: Buchwerkstatt-Benachrichtigung
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: buchwerkstatt-mail-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  hinweis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Benachrichtigungscode laden
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Projektinhaber benachrichtigen
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/issue-benachrichtigung.cjs

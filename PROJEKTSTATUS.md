@@ -1,6 +1,6 @@
 # Projektstatus
 
-Stand: 20. Oktober 2026 (nach E-012, neuer v1-Ausgangsstand)
+Stand: 20. Oktober 2026 (nach E-013, GitHub-Arbeitsliste und Verwaltungszugang)
 
 ## Aktuelle Phase
 
@@ -17,7 +17,9 @@ Stand: 20. Oktober 2026 (nach E-012, neuer v1-Ausgangsstand)
 - [x] Vier-Akt-Struktur mit 36 Kapiteln
 - [x] Enthüllungsleiter, Setups und Payoffs
 - [x] Finale und Anschluss an Band 2
-- [x] Webseite als vollständige Planansicht mit lokalen, kontextbezogenen Änderungswünschen
+- [x] Webseite als vollständige Planansicht mit kontextbezogenen Änderungswünschen und automatischer GitHub-Übertragung nach Verbindung
+- [x] eigene Verwaltungsseite mit GitHub-Zugang, Issue-Freigabe, Bearbeitungsstatus und exportierbarer Arbeitsliste
+- [x] Freigabeprotokolle nach GitHub übermittelbar; Benachrichtigungsworkflow für neue Issues und übermittelte Kapitelabnahmen ergänzt
 - [x] Koautoren-Workflow mit Planfreigabe, Freigabe jeder Szene und gesperrter Kapitelabnahme
 - [x] Tal-Linie (E-010): verhasster Gegner, Zwangsverbündeter, verlorene Liebe, Opfer, Wiederkehr in fremder Jahreszeit; Grundgerüst angepasst
 - [x] Kapitel 1 gezielt überarbeitet und als aktueller Rohentwurf v1 gesetzt, 2.992 Wörter mit Szenenplan, Delta und Selbstprüfung
@@ -30,6 +32,8 @@ Stand: 20. Oktober 2026 (nach E-012, neuer v1-Ausgangsstand)
 
 ## Als Nächstes
 
+- [ ] GitHub-Verbindung auf dem jeweiligen Autorengerät herstellen; Zugangsschlüssel bleiben nur pro geöffnetem Tab gültig
+- [ ] persönliche GitHub-E-Mail-Zustellung für Erwähnungen aktivieren und Eingang einer Testnachricht prüfen
 - [ ] Änderungswünsche der beiden Autoren sammeln und entscheiden
 - [ ] Namen und Aussprache final bestätigen
 - [ ] Inhaltsgrenzen der Autoren dokumentieren

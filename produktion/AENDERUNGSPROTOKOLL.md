@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Automatische Issues, Verwaltungsseite und Benachrichtigungen ergänzt
+
+- **Art:** Webseite, Organisation und Freigabeablauf
+- **Grund:** Der Projektgründer möchte Änderungswünsche automatisch als Issues erfassen, sie über einen eigenen Zugang endgültig zur Bearbeitung vormerken und bei neuen Issues sowie Kapitelabnahmen per E-Mail benachrichtigt werden.
+- **Änderung:** Idee 015 und E-013 dokumentiert. GitHub-Verbindung pro Sitzung mit ausschließlich im Arbeitsspeicher gehaltenem Schlüssel ergänzt. Beide Eingabewege senden Wünsche nach Verbindung automatisch; offene Übertragungen bleiben lokal erhalten. Kennungen ermöglichen die Wiederaufnahme nach unbekanntem Ausgang. Eigene Verwaltungsseite mit Schreibrechteprüfung, Statuswechseln und Arbeitslistenexport angelegt. Freigabeprotokolle können aus den vorhandenen Toren nach GitHub übermittelt werden. Benachrichtigungsworkflow erwähnt den Projektinhaber bei Issue-Eingang und übermittelter Kapitelabnahme.
+- **Auswirkung:** Gemeinsame Arbeitsliste auf GitHub. Eine Issue-Freigabe startet keine KI und ersetzt keine Kanonentscheidung. Kapitel 1 bleibt unverändert v1; die Szenenversionierung bleibt bis zur dokumentierten Abnahme ausgesetzt. Alte lokale Änderungswünsche bleiben erhalten. Persönliche Mailzustellung wird in GitHub eingestellt; die Webseite kann sie nicht selbst ändern.
+- **Betroffene Dateien:** Buchseite und neue Verwaltungsseite, gemeinsamer GitHub-Client, Tests und Benachrichtigungsworkflow, Einrichtungsanleitung, Produktionsregeln, Projektstatus, README, Inbox und Entscheidungen.
+- **Offen:** Die Autoren müssen ihre jeweilige Browsersitzung mit GitHub verbinden. Der Projektinhaber aktiviert die persönliche E-Mail-Zustellung für Erwähnungen.
+
 ### 2026-10-20 · Aktuellen Text auf v1 gesetzt, Versionierung bis zur Kapitelabnahme ausgesetzt
 
 - **Art:** Organisation und Versionsverwaltung

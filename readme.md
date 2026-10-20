@@ -10,6 +10,12 @@ Das Projekt übernimmt nur das Arbeitsprinzip aus `TheBookV2`: Ideen werden gesa
 
 Das Grundgerüst enthält seit E-010 die Tal-Linie von Intrige und früherer Liebe über Zwangsbündnis, Opfer und Wiederkehr bis zur Befreiung der verdrängten Völker und Rettung der Drachen. Die Wiederkehrmechanik bleibt offen. Kapitel 1 „Das Kind ohne Vorleben“ bildet nach E-012 den aktuellen Rohentwurf v1 mit 2.992 Wörtern und einer internen Selbstbewertung von 96/100. Die älteren Szenenfassungen sind entfernt. Bis zur dokumentierten Abnahme von Kapitel 1 wird direkt am aktuellen v1-Stand gearbeitet. Erst danach beginnt die Szenenversionierung mit Archiv und Versionsvergleich. Maßgeblich ist `kapitel1Abgenommen` in `produktion/FREIGABESTATUS.json`. Die öffentliche Seite zeigt Serienplan, Kapitelbauplan, rote Fäden, Qualitätsprüfung und vollständigen Text. Änderungswünsche werden direkt an der betroffenen Karte oder markierten Textstelle gesammelt; jede Szene wird einzeln freigegeben. Die endgültige Kapitelabnahme wird erst nach Freigabe aller Szenen entsperrt.
 
+## GitHub-Arbeitsliste
+
+Auf der Buchseite lassen sich nach Verbindung mit GitHub neue und vorhandene lokale Änderungswünsche automatisch als Issues senden. Die [Verwaltung](https://toni2123a.github.io/Book_DrachenundElfen/verwaltung.html) zeigt die gemeinsame Liste und erlaubt Projektbeteiligten mit Schreibzugriff, Änderungen zur Bearbeitung freizugeben, zurückzustellen und abzuschließen. Eine Freigabe merkt den Wunsch vor; die Umsetzung folgt gesondert.
+
+Kapitelentscheidungen können über „Freigabe übermitteln“ als vollständiges Protokoll nach GitHub übertragen werden. Neue Issues und übermittelte Kapitelabnahmen lösen eine Erwähnung des Projektinhabers aus. E-Mails folgen den persönlichen GitHub-Benachrichtigungseinstellungen. Zugangsschlüssel werden ausschließlich pro Sitzung im Arbeitsspeicher gehalten. Die [Einrichtungsanleitung](produktion/GITHUB_ANBINDUNG.md) beschreibt die Verbindung für beide Autoren und die E-Mail-Einstellung.
+
 ## Verbindliche Planung
 
 | Pfad | Inhalt |

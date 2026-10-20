@@ -2,6 +2,8 @@
 
 Gemeinsamer Arbeitsbereich für ein neues Buchprojekt. Der Arbeitstitel ist vorläufig.
 
+**Buchwerkstatt:** [toni2123a.github.io/Book_DrachenundElfen](https://toni2123a.github.io/Book_DrachenundElfen/)
+
 Dieses Repository übernimmt das bewährte Grundprinzip aus `TheBookV2`: Ideen werden erst gesammelt, dann entschieden und anschließend kontrolliert in Story-Bibel, Plot und Manuskript überführt. Der Inhalt des früheren Buchprojekts wird nicht übernommen.
 
 ## Schnellstart
@@ -28,6 +30,7 @@ Dieses Repository übernimmt das bewährte Grundprinzip aus `TheBookV2`: Ideen w
 | `recherche/` | Quellen, Faktenprüfung und offene Recherchen |
 | `vorlagen/` | wiederverwendbare Formulare |
 | `scripts/` | kleine Hilfen für Kapitelanlage und Projektprüfung |
+| `docs/` | öffentliche GitHub-Pages-Buchwerkstatt für den Koautor |
 
 ## Wichtiges Arbeitsprinzip
 

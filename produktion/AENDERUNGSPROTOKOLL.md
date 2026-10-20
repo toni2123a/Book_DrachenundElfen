@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · GitHub-Pages-Buchwerkstatt ergänzt
+
+- **Art:** Organisation
+- **Grund:** Der Koautor soll den Projektstand über eine Webseite lesen und neue Ideen strukturiert einreichen können.
+- **Änderung:** Öffentliche Projektseite mit Arbeitsablauf, Status, Links zu den Planungsdateien und Ideenformular angelegt.
+- **Auswirkung:** Das Formular erzeugt ein vorbefülltes GitHub-Issue; dadurch bleibt jede Einreichung prüfbar und verändert den Kanon nicht automatisch.
+- **Betroffene Dateien:** `docs/`, `README.md`
+- **Offen:** Inhaltliche Projektideen der Autoren einreichen und gemeinsam entscheiden.
+
 ### 2026-10-20 · Projektgrundstruktur angelegt
 
 - **Art:** Organisation

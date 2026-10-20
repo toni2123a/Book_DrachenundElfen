@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Kapitel 1 geschrieben und Webseite in Draft-Modus versetzt
+
+- **Art:** Kapitel, Plot und Organisation
+- **Grund:** Kapitel 1 soll als vollständiger Entwurf lesbar und direkt an den sichtbaren Inhalten kommentierbar sein.
+- **Änderung:** Szenenplan, 2.778 Wörter Rohentwurf und Delta für „Das Kind ohne Vorleben“ erstellt. Sechs rote Fäden, Folgekapitel und eine gewichtete 100-Punkte-Prüfung dokumentiert. Das separate Änderungsformular wurde durch kontextbezogene Änderungsfelder an Karten und Textszenen plus lokale Änderungsablage ersetzt.
+- **Auswirkung:** Der Koautor kann beim Lesen genau an der betroffenen Kachel oder markierten Textstelle reagieren. Gelbe und rote Manuskriptannahmen bleiben außerhalb des Kanons, bis sie entschieden sind.
+- **Betroffene Dateien:** `manuskript/KAPITEL_01_PLAN.md`, `manuskript/KAPITEL_01_ROHENTWURF.md`, `manuskript/KAPITEL_01_DELTA.md`, `PROJEKTSTATUS.md`, `index.html`, `styles.css`, `app.js`
+- **Offen:** Koautorenfeedback, Deltaentscheidungen, Rohentwurf v2 und Abnahme.
+
 ### 2026-10-20 · Titelmotiv an „Die Häutung der Welt“ angepasst
 
 - **Art:** Gestaltung

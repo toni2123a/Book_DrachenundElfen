@@ -186,94 +186,313 @@ document.querySelectorAll('.approval-form').forEach((approvalForm) => {
   approvalForm.querySelector('[data-action="download"]').addEventListener('click', () => downloadApproval(approvalForm));
 });
 
-const changeForm = document.querySelector('#changeForm');
-const changeStatus = document.querySelector('#formStatus');
-const changeStorageKey = 'haeutung-der-welt-aenderungswunsch-v1';
+const sceneTitles = [
+  'Das gestohlene Gestern',
+  'Das Fest der benannten Türen',
+  'Der Name, den es nicht gibt'
+];
 
-function changeValues() {
-  const data = new FormData(changeForm);
-  return {
-    author: String(data.get('author') || '').trim(),
-    area: String(data.get('area') || '').trim(),
-    target: String(data.get('target') || '').trim(),
-    request: String(data.get('request') || '').trim(),
-    reason: String(data.get('reason') || '').trim(),
-    preserve: String(data.get('preserve') || '').trim(),
-    impacts: data.getAll('impact').map(String),
-    acknowledge: data.get('acknowledge') === 'on'
-  };
-}
-
-function changeText(values) {
-  const impacts = values.impacts.length ? values.impacts.join(', ') : 'noch gemeinsam prüfen';
-  return `ÄNDERUNGSWUNSCH · DIE HÄUTUNG DER WELT
-
-Eingebracht von: ${values.author || 'OFFEN'}
-Datum: ${today()}
-Bereich: ${values.area || 'OFFEN'}
-Betroffene Stelle: ${values.target || 'OFFEN'}
-Status: Zur gemeinsamen Prüfung
-
-GEWÜNSCHTE ÄNDERUNG
-${values.request || 'Noch nicht ausgefüllt.'}
-
-WARUM VERBESSERT DAS DIE GESCHICHTE?
-${values.reason || 'Noch nicht ausgefüllt.'}
-
-WAS MUSS ERHALTEN BLEIBEN?
-${values.preserve || 'Keine Vorgabe angegeben.'}
-
-AUSWIRKUNGEN PRÜFEN
-${impacts}
-
-Hinweis: Dieser Wunsch verändert das Grundgerüst erst nach gemeinsamer Entscheidung.`;
-}
-
-function saveChangeDraft() {
-  try {
-    localStorage.setItem(changeStorageKey, JSON.stringify(changeValues()));
-    changeStatus.textContent = 'Entwurf auf diesem Gerät gespeichert.';
-  } catch {
-    changeStatus.textContent = 'Der Entwurf konnte nicht lokal gespeichert werden.';
+function appendInlineFormatting(element, text) {
+  const fragments = text.split(/(\*\*[^*]+\*\*)/g);
+  for (const fragment of fragments) {
+    if (fragment.startsWith('**') && fragment.endsWith('**')) {
+      const strong = document.createElement('strong');
+      strong.textContent = fragment.slice(2, -2);
+      element.appendChild(strong);
+    } else {
+      element.appendChild(document.createTextNode(fragment.replaceAll('`', '')));
+    }
   }
 }
 
-function restoreChangeDraft() {
+async function renderChapterDraft() {
+  const reader = document.querySelector('#chapterDraft');
+  try {
+    const response = await fetch('manuskript/KAPITEL_01_ROHENTWURF.md', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const markdown = await response.text();
+    const body = markdown
+      .replace(/^#.*\r?\n+/, '')
+      .replace(/^\*\*Status:\*\*.*\r?\n+/, '')
+      .replace(/<!--[^]*?-->\s*/, '')
+      .trim();
+    const scenes = body.split(/\r?\n\* \* \*\r?\n/);
+
+    reader.replaceChildren();
+    scenes.forEach((scene, index) => {
+      const article = document.createElement('article');
+      article.className = 'draft-scene';
+      article.dataset.changeTarget = `Kapitel 1 · Szene ${index + 1} · ${sceneTitles[index] || 'Fortsetzung'}`;
+
+      const header = document.createElement('div');
+      header.className = 'draft-scene-header';
+      const label = document.createElement('span');
+      label.textContent = `Szene ${String(index + 1).padStart(2, '0')}`;
+      const title = document.createElement('h3');
+      title.textContent = sceneTitles[index] || `Szene ${index + 1}`;
+      header.append(label, title);
+
+      const prose = document.createElement('div');
+      prose.className = 'draft-prose';
+      scene.split(/\r?\n\r?\n/).map((paragraph) => paragraph.trim()).filter(Boolean).forEach((paragraph) => {
+        const p = document.createElement('p');
+        appendInlineFormatting(p, paragraph);
+        prose.appendChild(p);
+      });
+
+      article.append(header, prose);
+      reader.appendChild(article);
+    });
+
+    setupChangeTargets(reader);
+  } catch {
+    reader.innerHTML = '<p class="reader-error">Der Kapiteltext konnte nicht geladen werden. Bitte die Seite neu laden.</p>';
+  }
+}
+
+const changeStorageKey = 'haeutung-der-welt-kontextaenderungen-v2';
+const authorStorageKey = 'haeutung-der-welt-koautor-kuerzel-v1';
+const tray = document.querySelector('#changeTray');
+const trayPanel = document.querySelector('#changeTrayPanel');
+const trayToggle = document.querySelector('#changeTrayToggle');
+const trayCount = document.querySelector('#changeCount');
+const trayList = document.querySelector('#changeList');
+const trayStatus = document.querySelector('#changeTrayStatus');
+const authorField = document.querySelector('#changeAuthor');
+let changeNotes = [];
+
+function loadChangeNotes() {
   try {
     const saved = JSON.parse(localStorage.getItem(changeStorageKey));
-    if (!saved) return;
-    for (const name of ['author', 'area', 'target', 'request', 'reason', 'preserve']) {
-      const field = changeForm.elements.namedItem(name);
-      if (field && saved[name] !== undefined) field.value = saved[name];
-    }
-    changeForm.querySelectorAll('input[name="impact"]').forEach((field) => {
-      field.checked = Array.isArray(saved.impacts) && saved.impacts.includes(field.value);
-    });
-    changeForm.elements.namedItem('acknowledge').checked = Boolean(saved.acknowledge);
-    changeStatus.textContent = 'Gespeicherten Entwurf wiederhergestellt.';
+    changeNotes = Array.isArray(saved) ? saved : [];
+    authorField.value = localStorage.getItem(authorStorageKey) || '';
   } catch {
+    changeNotes = [];
     localStorage.removeItem(changeStorageKey);
   }
 }
 
-changeForm.addEventListener('input', saveChangeDraft);
-changeForm.addEventListener('submit', (event) => event.preventDefault());
+function persistChangeNotes() {
+  localStorage.setItem(changeStorageKey, JSON.stringify(changeNotes));
+  renderChangeTray();
+}
 
-document.querySelector('#copyChange').addEventListener('click', async () => {
-  if (!changeForm.reportValidity()) return;
+function openTray() {
+  trayPanel.hidden = false;
+  trayToggle.hidden = true;
+  trayToggle.setAttribute('aria-expanded', 'true');
+}
+
+function closeTray() {
+  trayPanel.hidden = true;
+  trayToggle.hidden = false;
+  trayToggle.setAttribute('aria-expanded', 'false');
+}
+
+function renderChangeTray() {
+  trayCount.textContent = String(changeNotes.length);
+  trayList.replaceChildren();
+
+  if (!changeNotes.length) {
+    const empty = document.createElement('p');
+    empty.className = 'tray-empty';
+    empty.textContent = 'Noch keine Änderungswünsche erfasst.';
+    trayList.appendChild(empty);
+    return;
+  }
+
+  changeNotes.forEach((note) => {
+    const item = document.createElement('article');
+    item.className = 'tray-item';
+    const head = document.createElement('div');
+    head.className = 'tray-item-head';
+    const target = document.createElement('strong');
+    target.textContent = note.target;
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'tray-remove';
+    remove.setAttribute('aria-label', `Änderungswunsch zu ${note.target} entfernen`);
+    remove.textContent = '×';
+    remove.addEventListener('click', () => {
+      changeNotes = changeNotes.filter((entry) => entry.id !== note.id);
+      persistChangeNotes();
+    });
+    head.append(target, remove);
+    item.appendChild(head);
+
+    if (note.quote) {
+      const quote = document.createElement('blockquote');
+      quote.textContent = `„${note.quote}“`;
+      item.appendChild(quote);
+    }
+
+    const request = document.createElement('p');
+    request.textContent = note.request;
+    item.appendChild(request);
+    trayList.appendChild(item);
+  });
+}
+
+function targetLabel(card) {
+  if (card.dataset.changeTarget) return card.dataset.changeTarget;
+  const section = card.closest('section');
+  const sectionTitle = section?.querySelector(':scope > .section-shell .section-intro h2, :scope > .section-intro h2, h2')?.textContent.trim();
+  const cardTitle = card.querySelector('h3, h4')?.textContent.trim();
+  const number = card.querySelector(':scope > b')?.textContent.trim();
+  return [sectionTitle, number ? `Kapitel ${number}` : '', cardTitle].filter(Boolean).join(' · ') || 'Sichtbare Inhaltskachel';
+}
+
+function selectedQuoteWithin(card) {
+  const selection = window.getSelection();
+  if (!selection || selection.isCollapsed || !selection.anchorNode || !card.contains(selection.anchorNode)) return '';
+  return selection.toString().replace(/\s+/g, ' ').trim().slice(0, 500);
+}
+
+function closeInlineEditors(except) {
+  document.querySelectorAll('.inline-change').forEach((panel) => {
+    if (panel !== except) panel.remove();
+  });
+}
+
+function openInlineEditor(card) {
+  const existing = card.querySelector(':scope > .inline-change');
+  if (existing) {
+    existing.remove();
+    return;
+  }
+
+  const quote = selectedQuoteWithin(card);
+  closeInlineEditors();
+  const panel = document.createElement('div');
+  panel.className = 'inline-change';
+  const label = document.createElement('span');
+  label.className = 'inline-change-label';
+  label.textContent = `Änderung zu: ${targetLabel(card)}`;
+  panel.appendChild(label);
+
+  if (quote) {
+    const quoteBox = document.createElement('blockquote');
+    quoteBox.className = 'inline-change-quote';
+    quoteBox.textContent = `Markiert: „${quote}“`;
+    panel.appendChild(quoteBox);
+  }
+
+  const textarea = document.createElement('textarea');
+  textarea.placeholder = quote ? 'Wie soll diese Textstelle geändert werden?' : 'Was soll an dieser Kachel geändert werden?';
+  textarea.setAttribute('aria-label', 'Gewünschte Änderung');
+  const actions = document.createElement('div');
+  actions.className = 'inline-change-actions';
+  const save = document.createElement('button');
+  save.type = 'button';
+  save.className = 'save-context-change';
+  save.textContent = 'In Ablage übernehmen';
+  const cancel = document.createElement('button');
+  cancel.type = 'button';
+  cancel.textContent = 'Abbrechen';
+  actions.append(save, cancel);
+  panel.append(textarea, actions);
+  card.appendChild(panel);
+  textarea.focus();
+
+  cancel.addEventListener('click', () => panel.remove());
+  save.addEventListener('click', () => {
+    const request = textarea.value.trim();
+    if (!request) {
+      textarea.focus();
+      return;
+    }
+    changeNotes.push({
+      id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      target: targetLabel(card),
+      quote,
+      request,
+      createdAt: today()
+    });
+    persistChangeNotes();
+    panel.remove();
+    openTray();
+    trayStatus.textContent = 'Änderungswunsch in die Ablage übernommen.';
+  });
+}
+
+function setupChangeTargets(root = document) {
+  const selectors = [
+    '.book-card',
+    '.world-grid article',
+    '.magic-system',
+    '.character-card',
+    '.acts article',
+    '.chapter-grid article',
+    '.blueprint-grid article',
+    '.thread-grid article',
+    '.quality-gate',
+    '.draft-scene',
+    '.spoiler-content > div'
+  ];
+
+  root.querySelectorAll(selectors.join(',')).forEach((card) => {
+    if (card.querySelector(':scope > .context-change-trigger')) return;
+    card.classList.add('changeable-card');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'context-change-trigger';
+    button.textContent = 'Änderung wünschen';
+    button.addEventListener('click', () => openInlineEditor(card));
+    card.appendChild(button);
+  });
+}
+
+function changesDocument() {
+  const author = authorField.value.trim() || 'OFFEN';
+  const entries = changeNotes.map((note, index) => `${index + 1}. ${note.target}
+${note.quote ? `Markierte Textstelle: „${note.quote}“\n` : ''}Wunsch: ${note.request}
+Erfasst: ${note.createdAt}`).join('\n\n');
+  return `ÄNDERUNGSWÜNSCHE · KAPITEL-1-DRAFT UND SERIENPLAN
+
+Koautor: ${author}
+Exportiert: ${today()}
+Status: Zur gemeinsamen Prüfung; keine automatische Kanonänderung
+
+${entries}
+
+Vor Annahme sind Figuren, Weltregeln, spätere Kapitel, Foreshadowing und Folgebände zu prüfen.`;
+}
+
+trayToggle.addEventListener('click', openTray);
+document.querySelector('#closeChangeTray').addEventListener('click', closeTray);
+authorField.addEventListener('input', () => localStorage.setItem(authorStorageKey, authorField.value));
+
+document.querySelector('#copyAllChanges').addEventListener('click', async () => {
+  if (!changeNotes.length) {
+    trayStatus.textContent = 'Noch keine Änderungswünsche vorhanden.';
+    return;
+  }
   try {
-    await navigator.clipboard.writeText(changeText(changeValues()));
-    changeStatus.textContent = 'Änderungswunsch in die Zwischenablage kopiert.';
+    await navigator.clipboard.writeText(changesDocument());
+    trayStatus.textContent = 'Alle Änderungswünsche kopiert.';
   } catch {
-    changeStatus.textContent = 'Kopieren war nicht möglich. Bitte als Textdatei herunterladen.';
+    trayStatus.textContent = 'Kopieren war nicht möglich. Bitte herunterladen.';
   }
 });
 
-document.querySelector('#downloadChange').addEventListener('click', () => {
-  if (!changeForm.reportValidity()) return;
-  const values = changeValues();
-  downloadText(changeText(values), `aenderungswunsch-${safeFilename(values.target)}.txt`);
-  changeStatus.textContent = 'Textdatei heruntergeladen.';
+document.querySelector('#downloadAllChanges').addEventListener('click', () => {
+  if (!changeNotes.length) {
+    trayStatus.textContent = 'Noch keine Änderungswünsche vorhanden.';
+    return;
+  }
+  downloadText(changesDocument(), `aenderungswuensche-kapitel-01-${new Date().toISOString().slice(0, 10)}.txt`);
+  trayStatus.textContent = 'Änderungswünsche heruntergeladen.';
 });
 
-restoreChangeDraft();
+document.querySelector('#clearAllChanges').addEventListener('click', () => {
+  if (!changeNotes.length) return;
+  if (!window.confirm('Alle lokal gespeicherten Änderungswünsche wirklich löschen?')) return;
+  changeNotes = [];
+  persistChangeNotes();
+  trayStatus.textContent = 'Änderungsablage geleert.';
+});
+
+loadChangeNotes();
+renderChangeTray();
+setupChangeTargets();
+renderChapterDraft();

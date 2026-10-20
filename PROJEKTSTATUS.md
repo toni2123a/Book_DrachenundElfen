@@ -4,7 +4,7 @@ Stand: 20. Oktober 2026
 
 ## Aktuelle Phase
 
-**Grundgerüst von Reihe und Band 1 abgeschlossen · Änderungswünsche und Szenenplanung**
+**Kapitel 1 im Draft-Modus · kontextbezogene Koautorenprüfung**
 
 ## Festgelegt
 
@@ -19,26 +19,33 @@ Stand: 20. Oktober 2026
 - [x] Finale und Anschluss an Band 2
 - [x] Webseite als vollständige Planansicht mit lokalem Änderungswunschformular
 - [x] zweistufiger Koautoren-Workflow für Schreibfreigabe und Kapitelabnahme
+- [x] Kapitel 1 mit Szenenplan, Rohentwurf v1, Delta und strikter Selbstprüfung
+- [x] sechs rote Fäden aus Kapitel 1 mit späteren Payoffs verknüpft
+- [x] Änderungswünsche direkt an sichtbaren Karten und Textszenen ermöglicht
 
 ## Als Nächstes
 
 - [ ] Änderungswünsche der beiden Autoren sammeln und entscheiden
 - [ ] Namen und Aussprache final bestätigen
 - [ ] Inhaltsgrenzen der Autoren dokumentieren
-- [ ] Kapitel 1 als Drei-Dateien-Paket anlegen
-- [ ] Szenenplan für Kapitel 1 erstellen
-- [ ] Schreibfreigabe des Koautors für die konkrete Kapitel-1-Planversion einholen
-- [ ] Rohfassung erst nach protokolliertem Go beginnen
-- [ ] fertige Textversion durch den Koautor abnehmen lassen
+- [ ] Koautor prüft Plan v1 und Rohentwurf v1 direkt auf der Webseite
+- [ ] kontextbezogene Änderungswünsche sammeln und gemeinsam entscheiden
+- [ ] rote und gelbe Deltas aus Kapitel 1 klären
+- [ ] notwendige Änderungen als Rohentwurf v2 umsetzen
+- [ ] konkrete Textversion durch den Koautor abnehmen lassen
 
 ## Aktives Kapitel
 
-Noch keines. Der nächste kontrollierte Schritt ist die Szenenplanung für Kapitel 1 „Das Kind ohne Vorleben“. Danach wartet das Kapitel am ersten Freigabetor auf das Go des Koautors.
+**Kapitel 1 · „Das Kind ohne Vorleben“ · Rohentwurf v1**
+
+Der Entwurf umfasst 2.778 Wörter und erreicht in der internen Qualitätsmatrix 96 von 100 Punkten. Diese Selbsteinschätzung ersetzt weder die Koautorenprüfung noch ein unabhängiges Lektorat. Das Kapitel bleibt bis zur dokumentierten Abnahme im Draft-Modus.
 
 ## Offene Punkte
 
 - Autorenname beziehungsweise Autorennamen
 - endgültige Titelprüfung vor Veröffentlichung
 - konkrete Inhaltsgrenzen der beiden Autoren
+- Identität der Frau hinter der roten Tür (`OFFEN`, rotes Kapitel-Delta)
+- körperlicher Reifungsprozess junger Elfen (gelbes Kapitel-Delta)
 
 Diese Punkte verändern das vorhandene Grundgerüst nicht automatisch. Neue Wünsche werden zuerst als Änderungswunsch dokumentiert.

@@ -8,7 +8,7 @@ Das Projekt übernimmt nur das Arbeitsprinzip aus `TheBookV2`: Ideen werden gesa
 
 ## Aktueller Stand
 
-Das Grundgerüst ist vollständig: Trilogiebogen, Welt- und Magieregeln, Figurenbögen, 36 Kapitel für Band 1, Geheimnisarchitektur, Setups/Payoffs und Finale. Die öffentliche Seite zeigt diesen Plan, erstellt Änderungswünsche und führt durch zwei Freigabetore pro Kapitel.
+Das Grundgerüst ist vollständig. Kapitel 1 „Das Kind ohne Vorleben“ liegt als Rohentwurf v1 vor. Die öffentliche Seite zeigt Serienplan, Kapitelbauplan, rote Fäden, Qualitätsprüfung und vollständigen Text; Änderungswünsche werden direkt an der betroffenen Karte oder markierten Textstelle gesammelt.
 
 ## Verbindliche Planung
 

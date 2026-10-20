@@ -23,6 +23,7 @@ Stand: 20. Oktober 2026
 - [x] sechs rote Fäden aus Kapitel 1 mit späteren Payoffs verknüpft
 - [x] Änderungswünsche direkt an sichtbaren Karten und Textszenen ermöglicht
 - [x] flexible, draftbezogene und verbindliche Bereiche auf der Webseite sichtbar gekennzeichnet
+- [x] Kapitelansicht, Änderungsablage und Freigaben für Smartphone und Tablet optimiert
 
 ## Als Nächstes
 

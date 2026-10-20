@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Mobile Leseansicht für Kapitel und Freigaben optimiert
+
+- **Art:** Gestaltung und Bedienbarkeit
+- **Grund:** Der Koautor soll Kapitel bequem auf Smartphone und Tablet lesen, kommentieren und Szene für Szene freigeben können.
+- **Änderung:** Responsive Navigation, einspaltige Handy-Kacheln, ruhigere Lesebreite, skalierende Kapiteltypografie, größere Touchflächen, mobil stapelnde Formulare und Safe-Area-Abstände ergänzt. Überbreite Statusmarkierungen wurden begrenzt.
+- **Auswirkung:** Kapiteltext, Änderungswünsche, Szenenfreigaben und die abschließende Kapitelabnahme funktionieren ohne seitliches Scrollen auf typischen Handy- und Tabletbreiten.
+- **Betroffene Dateien:** `index.html`, `styles.css`, `app.js`, `PROJEKTSTATUS.md`
+- **Offen:** keines
+
 ### 2026-10-20 · Änderungsfenster sichtbar gekennzeichnet
 
 - **Art:** Organisation und Gestaltung

@@ -818,6 +818,32 @@ document.querySelector('#clearAllChanges').addEventListener('click', () => {
   trayStatus.textContent = 'Änderungsablage geleert.';
 });
 
+const navToggle = document.querySelector('#navToggle');
+const mainNav = document.querySelector('#mainNav');
+
+function closeMainNav() {
+  mainNav.classList.remove('is-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Menü öffnen');
+}
+
+navToggle.addEventListener('click', () => {
+  const shouldOpen = !mainNav.classList.contains('is-open');
+  mainNav.classList.toggle('is-open', shouldOpen);
+  navToggle.setAttribute('aria-expanded', String(shouldOpen));
+  navToggle.setAttribute('aria-label', shouldOpen ? 'Menü schließen' : 'Menü öffnen');
+});
+
+mainNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMainNav));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMainNav();
+});
+document.addEventListener('click', (event) => {
+  if (!mainNav.classList.contains('is-open')) return;
+  if (mainNav.contains(event.target) || navToggle.contains(event.target)) return;
+  closeMainNav();
+});
+
 loadSceneApprovals();
 loadChangeNotes();
 renderChangeTray();

@@ -5,7 +5,7 @@
 - **Ort und Zeit:** Erinnerungsarchiv und Platz der Neun Türen in Merea; Abend des jährlichen Türenfests
 - **Zielwortzahl:** 2.700 bis 3.200 Wörter
 - **Akt/Abschnitt:** Akt I · Die falsche Erinnerung
-- **Fassung:** Plan v2 · redaktionell präzisiert nach E-011 · 20. Oktober 2026
+- **Fassung:** Plan v1 · aktueller Ausgangsstand nach E-012 · 20. Oktober 2026
 
 ## Aufgabe im Gesamtplot
 

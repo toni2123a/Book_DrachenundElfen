@@ -22,7 +22,7 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 6. **Logikprüfung:** Zeitlinie, Motivation, Welt- und Magieregeln prüfen.
 7. **KI-Einschätzung:** Bewertung, Kurzurteil, Stärken, offene Risiken und Freigabeempfehlung versionsbezogen dokumentieren und auf der Webseite beim Kapitel sowie bei Tor 2 anzeigen.
 8. **Szenenprüfung:** Der Koautor liest jede Szene, erfasst Änderungswünsche direkt am betroffenen Inhalt und gibt die Szene einzeln frei oder fordert Überarbeitung.
-9. **Überarbeitung:** Vor jeder Änderung die bisherige Szene mit `scripts/szenenfassung.ps1 -Aktion Sichern` als Vorfassung ablegen, dann Szenenhinweise umsetzen und Folgekapitel synchronisieren. Ein neuer Änderungswunsch hebt eine vorhandene Szenenfreigabe auf.
+9. **Überarbeitung:** Bis zur dokumentierten Abnahme von Kapitel 1 direkt am aktuellen v1-Stand arbeiten, ohne Szenenarchiv oder höhere Versionsnummer. Erst nach dieser Abnahme vor jeder Änderung die bisherige Szene mit `scripts/szenenfassung.ps1 -Aktion Sichern` als Vorfassung ablegen. Szenenhinweise umsetzen und Folgekapitel synchronisieren. Ein neuer Änderungswunsch hebt eine vorhandene Szenenfreigabe auf.
 10. **Szenenfreigabe:** Jede überarbeitete Szene erhält eine neue, versionsbezogene Freigabe.
 11. **Kapitelabnahme:** Erst wenn alle Szenen freigegeben sind, kann der Koautor das gesamte Kapitel unter Berücksichtigung der KI-Einschätzung freigeben.
 12. **Abschluss:** Kapitelstatus erst nach übermitteltem und protokolliertem Abnahmeprotokoll ändern.
@@ -42,7 +42,7 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 - steht direkt unter der jeweiligen Szene,
 - nennt Entscheidung, Vermerk, Szenenfassung und Zeitpunkt,
 - legt bei `Überarbeitung erforderlich` den Vermerk samt markierter Textstelle als Änderungswunsch in die Ablage,
-- kann auch für eine angezeigte Vorfassung erteilt werden; diese wird dann mit `scripts/szenenfassung.ps1 -Aktion Wiederherstellen` zurück ins Manuskript geholt und zählt erst danach für die Kapitelabnahme,
+- kann nach Beginn der Versionierung auch für eine angezeigte Vorfassung erteilt werden; diese wird dann mit `scripts/szenenfassung.ps1 -Aktion Wiederherstellen` zurück ins Manuskript geholt und zählt erst danach für die Kapitelabnahme,
 - ist nur möglich, wenn für die Szene kein offener Änderungswunsch in der Ablage liegt,
 - wird durch einen neuen Änderungswunsch an der Szene automatisch aufgehoben,
 - lautet entweder `Szene freigegeben` oder `Überarbeitung erforderlich`.
@@ -61,7 +61,11 @@ Die Webseite erzeugt für Tor 1 und Tor 2 datierte Protokolle mit Kennung. Szene
 
 ## Szenenfassungen
 
-Wird eine Szene überarbeitet, bleibt die vorherige Fassung erhalten:
+Die Szenenversionierung beginnt erst nach übermittelter und im Projekt dokumentierter Abnahme von Kapitel 1. Bis dahin bleibt der aktuelle Entwurf v1; Änderungen werden direkt eingearbeitet. Es werden keine Vorfassungen archiviert, hochgezählt oder auf der Webseite angeboten.
+
+Der bestätigte Projektstatus steht in `produktion/FREIGABESTATUS.json`. Erst nach protokollierter Kapitelabnahme wird `kapitel1Abgenommen` auf `true` gesetzt. Webseite und Sicherungsskript verwenden denselben Status. Lokal ausgefüllte Freigabeformulare ändern ihn nicht. Solange er `false` ist, sperrt das Skript sowohl Sichern als auch Wiederherstellen.
+
+Die abgenommene v1 bildet den Ausgangsstand. Bei der ersten anschließenden Überarbeitung wird sie gesichert; der neue Text erhält v2. Ab dann bleibt bei jeder Überarbeitung die vorherige Fassung erhalten:
 
 ```powershell
 # vor der Überarbeitung: aktuelle Szene als Vorfassung sichern

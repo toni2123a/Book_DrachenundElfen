@@ -30,4 +30,4 @@ Für jedes aktive Kapitel gehören drei Dateien zusammen:
 - `KAPITEL_NN_ROHENTWURF.md`
 - `KAPITEL_NN_DELTA.md`
 
-Vor jeder Überarbeitung einer Szene die bisherige Fassung mit `scripts/szenenfassung.ps1 -Aktion Sichern` ablegen, damit sie auf der Webseite vergleichbar und wiederherstellbar bleibt. Kapitel werden möglichst mit `scripts/neues-kapitel.ps1` angelegt. Vor Abschluss größerer Arbeiten `scripts/projekt-check.ps1` ausführen.
+Bis zur dokumentierten Abnahme von Kapitel 1 wird direkt am aktuellen v1-Stand gearbeitet. Keine Szenenfassungen archivieren oder Versionsnummern erhöhen. Erst nach der Abnahme beginnt die Versionierung: `kapitel1Abgenommen` in `produktion/FREIGABESTATUS.json` auf `true` setzen und vor jeder weiteren Szenenüberarbeitung die bisherige Fassung mit `scripts/szenenfassung.ps1 -Aktion Sichern` ablegen. Die abgenommene v1 ist der Ausgangsstand. Kapitel werden möglichst mit `scripts/neues-kapitel.ps1` angelegt. Vor Abschluss größerer Arbeiten `scripts/projekt-check.ps1` ausführen.

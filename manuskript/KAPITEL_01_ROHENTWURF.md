@@ -1,6 +1,6 @@
 # Kapitel 1 · Das Kind ohne Vorleben
 
-**Status:** Rohentwurf v2 · Draft-Modus · Koautoren-Abnahme ausstehend
+**Status:** Rohentwurf v1 · Draft-Modus · Koautoren-Abnahme ausstehend
 
 <!-- Neue Kanonannahmen stehen zusätzlich in KAPITEL_01_DELTA.md. -->
 

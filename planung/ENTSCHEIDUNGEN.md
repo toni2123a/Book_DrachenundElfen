@@ -132,6 +132,17 @@ Hier werden verbindliche kreative Entscheidungen nachvollziehbar festgehalten. E
 - **Synchronisiert in:** `manuskript/KAPITEL_01_PLAN.md`, `manuskript/KAPITEL_01_ROHENTWURF.md`, `manuskript/KAPITEL_01_DELTA.md`, `planung/STORY_BIBLE.md`, `planung/FIGUREN.md`, `planung/WELT_UND_MAGIE.md`, `planung/PLOT_BAUPLAN.md`, `planung/BAND1_BAUPLAN.md`, `planung/SERIEN_BIBEL.md`, `PROJEKTSTATUS.md`, `produktion/AENDERUNGSPROTOKOLL.md`, Webseite
 - **Später zu prüfen:** Bestehende gelbe und rote Deltas bleiben entscheidungspflichtig. Keine neue Weltregel oder gemeinsame Vorgeschichte für Neyra und Phae wird angenommen. Kapitel 2 muss die zerstörte Kapsel berücksichtigen; ihre Herkunft bleibt offen.
 
+### E-012 · Neuer v1-Ausgangsstand und späterer Beginn der Versionierung
+
+- **Datum:** 2026-10-20
+- **Beteiligte:** Projektgründer
+- **Bezug:** Idee 014; ausdrücklicher Änderungsauftrag nach E-011
+- **Entscheidung:** Der aktuell überarbeitete Kapiteltext wird unverändert als Rohentwurf v1 geführt; der zugehörige Plan wird Plan v1. Die drei älteren v1-Szenen werden aus dem Arbeitsarchiv gelöscht und der Fassungsindex geleert. Vor der dokumentierten Kapitelabnahme werden keine Szenenfassungen archiviert oder hochgezählt. Die abgenommene v1 bildet den Ausgangsstand für spätere Versionen.
+- **Status:** Angenommen; ersetzt die bisherige Pflicht zur Szenensicherung vor der ersten Kapitelabnahme sowie die bisherigen Versionsbezeichnungen von E-011
+- **Begründung:** Die Autoren möchten die Versionierung erst beginnen, wenn Kapitel 1 freigegeben ist. Die bisherige Git-Historie wird nicht umgeschrieben.
+- **Synchronisiert in:** `AGENTS.md`, Kapitel-1-Trio, Fassungsindex, Produktionsregeln und Freigabestatus, Sicherungs- und Prüfskript, Projektstatus, README und Webseite
+- **Später zu prüfen:** Nach übermittelter und dokumentierter Kapitelabnahme `kapitel1Abgenommen` in `produktion/FREIGABESTATUS.json` auf `true` setzen. Ein lokaler Browserentwurf aktiviert die Versionierung nicht.
+
 ## Vorlage
 
 ### E-NNN · Kurztitel

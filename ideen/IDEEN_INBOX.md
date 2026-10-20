@@ -153,6 +153,17 @@ Die Vorlage unter „Neue Ideenkarte“ kopieren, vollständig oder stichpunktar
 - **Offene Fragen:** Bestehende Deltas bleiben offen; keine neue Vorgeschichte für Neyra und Phae.
 - **Status:** Angenommen als redaktioneller Arbeitsauftrag · E-011; keine Kapitelabnahme oder neue Kanonfestlegung
 
+### Idee 014 · Versionierung erst nach Abnahme von Kapitel 1
+
+- **Eingebracht von:** Projektgründer
+- **Datum:** 2026-10-20
+- **Typ:** Organisation
+- **Vorschlag:** Den aktuellen überarbeiteten Text als Rohentwurf v1 führen und die drei älteren v1-Szenen aus dem Arbeitsarchiv entfernen. Bis zur dokumentierten Abnahme von Kapitel 1 wird direkt am aktuellen Stand gearbeitet. Erst danach beginnt die Szenenversionierung.
+- **Warum interessant:** Die erste Freigabe legt einen eindeutigen Ausgangsstand fest.
+- **Mögliche Folgen:** Plan, Delta, Webseite und Regeln werden auf den neuen v1-Ausgangsstand angepasst. Szenensicherung und Versionsvergleich bleiben bis zur Kapitelabnahme deaktiviert. Bestehende lokale Freigaben werden nicht auf den neuen Ausgangsstand übertragen.
+- **Offene Fragen:** keine; keine Änderung am Erzähltext oder am Kanon
+- **Status:** Angenommen · E-012
+
 ## Neue Ideenkarte
 
 ### Idee NNN · Kurztitel

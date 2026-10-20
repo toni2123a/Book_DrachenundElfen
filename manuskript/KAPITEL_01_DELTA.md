@@ -2,10 +2,10 @@
 
 ## Status
 
-- **Rohfassung:** v2 · gezielte Überarbeitung nach E-011 · 2.992 Wörter
+- **Rohfassung:** v1 · aktueller Ausgangsstand nach E-012 · 2.992 Wörter
 - **Prüfdatum:** 20. Oktober 2026
 - **Kapitelstatus:** Draft; Koautorenprüfung und Abnahme ausstehend
-- **Vorfassungen:** Alle drei Szenen der Tal-Fassung v1 sind vor der Überarbeitung mit `scripts/szenenfassung.ps1 -Aktion Sichern` archiviert und auf der Webseite vergleichbar. Der ältere Entwurf vor E-010 liegt weiterhin nur in der Git-Historie.
+- **Versionierung:** Die drei älteren Szenenfassungen wurden auf ausdrücklichen Auftrag entfernt, der Fassungsindex ist leer. Bis zur dokumentierten Abnahme von Kapitel 1 wird direkt am aktuellen v1-Stand gearbeitet. Danach beginnt die Versionierung mit der abgenommenen v1 als Ausgangsstand.
 - **Zählweise:** Durch Leerraum getrennte Wörter im Erzähltext, ohne Überschrift, Status, Kommentar und Szenentrenner. Szene 1: 1.083; Szene 2: 932; Szene 3: 977 Wörter.
 
 ## Grün · Konkretisierungen ohne Folgeänderung
@@ -28,7 +28,7 @@
 ### D-02 · Zehn Atemzüge im Neunerritual
 
 - **Annahme:** Der Zeremonialtext enthält unbemerkt einen zehnten Atemzug.
-- **Präzisierung v2:** Neyra bemerkt ihn bei zwei verschiedenen Chorsprecherinnen und anschließend bei Phae. Warum er ihr erst jetzt auffällt und ob sie die frühere Länge korrekt erinnert, bleibt `OFFEN`.
+- **Präzisierung:** Neyra bemerkt ihn bei zwei verschiedenen Chorsprecherinnen und anschließend bei Phae. Warum er ihr erst jetzt auffällt und ob sie die frühere Länge korrekt erinnert, bleibt `OFFEN`.
 - **Folgen:** Kapitel 17 muss zeigen, warum diese Spur trotz offizieller Tilgung erhalten blieb.
 - **Empfehlung:** annehmen
 
@@ -76,24 +76,6 @@
 
 ## Strikte Selbstprüfung · Rohfassung v1
 
-Historische Einschätzung der 2.975 Wörter langen Vorfassung. Für die aktuelle Fassung gilt die folgende v2-Prüfung.
-
-| Kriterium | Gewicht | Erreicht | Begründung |
-| --- | ---: | ---: | --- |
-| Einstieg | 10 | 10 | Eine Figur, die nie zu spät kommt, ist zu spät; Spannung in den ersten Zeilen |
-| Figurenbindung | 15 | 13 | Wunsch, Scham und Trotz tragen; die Wärme zwischen Neyra und Phae ist knapper als gewünscht |
-| Konflikt | 15 | 15 | Jede Szene hat Ziel, Widerstand, Entscheidung und Folge |
-| Weltenbau | 10 | 9 | Fast alles über Handlung; die Erweckungs- und Chorpassage ist dicht |
-| Rote Fäden | 10 | 10 | Sieben Fäden mit Folgekapiteln |
-| Spannung | 10 | 9 | Steigerung klar; Szene 2 hat am meisten Zeremonie |
-| Sprache | 10 | 9 | Konkrete Bilder; Feinschliff nach Koautorenfeedback |
-| Dialog | 5 | 5 | Neyra trocken, Phae gebrochen, Tal förmlich |
-| Kapitelhaken | 10 | 10 | Persönliche Unmöglichkeit und Tals Satz fallen zusammen |
-| Kanontreue | 5 | 4 | Kapsel, Mutter und Tals Andeutung sind als Delta markiert |
-| **Gesamt** | **100** | **94** | **knapp unter der internen Schwelle von 95; keine Qualitätsgarantie** |
-
-## Strikte Selbstprüfung · Rohfassung v2
-
 | Kriterium | Gewicht | Erreicht | Textbeleg und verbleibende Grenze |
 | --- | ---: | ---: | --- |
 | Einstieg | 10 | 10 | Innerhalb der ersten 150 Wörter sind Neyras Kapselziel, Tals übliche Pause und sein ausbleibendes Umkehren gesetzt. |
@@ -108,7 +90,7 @@ Historische Einschätzung der 2.975 Wörter langen Vorfassung. Für die aktuelle
 | Kanontreue | 5 | 4 | Linke Fugenhand, Sprecherrollen und vier zusätzliche Atemzüge konsistent. Offene Deltas und die ungeklärte Tal-Mechanik verhindern eine vorbehaltlose volle Wertung. |
 | **Gesamt** | **100** | **96** | **9,6/10; interne Schwelle von 95 erreicht. Selbsteinschätzung, keine unabhängige Abnahme oder Qualitätsgarantie.** |
 
-## Änderungen und Folgenprüfung · v2
+## Änderungen und Folgenprüfung · aktueller v1-Stand
 
 - **Figuren:** Neyras Wunsch und Scham früher konkretisiert. Phaes Hilfe gehört zum aktuellen Szenengeschehen; keine neue gemeinsame Vergangenheit eingeführt. Der verletzende Satz bleibt ohne sofortige Versöhnung.
 - **Logik:** Tal hält insgesamt sieben statt drei Atemzüge. Die linke Fugenhand berührt Neyra, der rechte Handschuh wird nicht abgestreift. Tal wird nur aus Neyras beobachtbarem Verhalten beurteilt.
@@ -119,7 +101,7 @@ Historische Einschätzung der 2.975 Wörter langen Vorfassung. Für die aktuelle
 - **Kapitel 14/35:** Freiwilliger Beistand bleibt als Zugehörigkeitsmotiv vorbereitet; keine neue Erinnerungslinie zwischen Neyra und Phae.
 - **Kapitel 16/20/28:** Birnengeruch, rote Tür und Mutterbild bleiben miteinander verbunden. Identität und Ursprung bleiben offen.
 - **Kapitel 19/21/28/33/35/36 und Folgebände:** Verspätung, zitternde Hand und „Nicht schon wieder“ bleiben erhalten. Das Zittern belegt keine Heilung. Wiederkehr und fugenfreie Hände dürfen den Preis nicht rückwirkend aufheben.
-- **Status:** E-011 autorisiert die Überarbeitung. Szenen- und Kapitelabnahme bleiben ausstehend; die Bewertung erteilt keine Freigabe.
+- **Status:** E-011 autorisiert die Überarbeitung, E-012 legt den neuen v1-Ausgangsstand und den späteren Beginn der Versionierung fest. Szenen- und Kapitelabnahme bleiben ausstehend; die Bewertung erteilt keine Freigabe.
 
 ## Abgleich des Grundgerüsts · Tal-Linie nach E-010
 
@@ -147,11 +129,14 @@ Historische Einschätzung der 2.975 Wörter langen Vorfassung. Für die aktuelle
 
 Grüne Punkte können nach Koautorenprüfung übernommen werden. Gelbe und rote Punkte bleiben bis zu einer ausdrücklichen Entscheidung außerhalb des Kanons. D-05 und D-06 gehören zu E-010 und gelten mit dieser Entscheidung als Arbeitsgrundlage.
 
-## Technische Prüfung · v2
+## Technische Prüfung · aktueller v1-Stand
 
 - `scripts/projekt-check.ps1` erfolgreich: Pflichtdateien und Kapitel-Trio vollständig.
 - `node --check app.js` und `git diff --check` erfolgreich.
 - Wortzahl aus dem Erzähltext neu ermittelt: 2.992 Wörter; dieselbe Zahl in Delta, Projektstatus, README und Webseite.
 - Die zehn Webwertungen ergeben 96/100 und stimmen mit der aktuellen Delta-Matrix und der KI-Einschätzung überein.
-- Originalfunktionen aus `app.js` mit echten Kapitel- und Archivdateien in einer DOM-Simulation ausgeführt: v2/v1-Umschaltung und Differenzmarkierungen für alle drei Szenen erfolgreich. Alte v1-Freigaben zählen nicht für v2; ein offener Änderungswunsch sperrt die Abnahme.
-- **Prüfgrenze:** Kein Browser angebunden. Eine visuelle Prüfung der Webseite und eine echte Browserinteraktion wurden daher nicht durchgeführt. Die DOM-Simulation prüft Funktionsverhalten, keine Darstellung.
+- Versionsvergleich und Archivierung bleiben bis zur dokumentierten Kapitelabnahme deaktiviert. Frühere lokale Szenenfreigaben und Abnahmeentwürfe werden wegen des neuen v1-Ausgangsstands nicht übernommen. Änderungswünsche bleiben erhalten.
+- Erzähltext gegen den letzten Commit verglichen: unverändert, weiterhin 2.992 Wörter. Die drei alten Szenendateien sind entfernt, der Fassungsindex ist leer.
+- Originalfunktionen aus `app.js` geprüft: Vor Abnahme wird kein Szenenarchiv geladen. Bestätigter Status aktiviert die Versionierung; ein fehlgeschlagener Abruf oder ein ungültiger Status aktiviert sie nicht.
+- Echtes Sicherungsskript in einem isolierten Testprojekt geprüft: Vor Abnahme bleiben Sichern und Wiederherstellen ohne Dateiveränderung gesperrt. Nach Abnahme funktionieren Sicherung der v1, Hochzählen auf v2 und Wiederherstellung.
+- **Prüfgrenze:** Kein Browser angebunden. Eine visuelle Prüfung der Webseite und eine echte Browserinteraktion wurden daher nicht durchgeführt.

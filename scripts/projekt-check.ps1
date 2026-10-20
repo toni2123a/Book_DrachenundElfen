@@ -12,7 +12,8 @@ $requiredFiles = @(
     'planung/SCHREIBSTIL.md',
     'planung/ENTSCHEIDUNGEN.md',
     'produktion/PRODUKTIONSREGELN.md',
-    'produktion/AENDERUNGSPROTOKOLL.md'
+    'produktion/AENDERUNGSPROTOKOLL.md',
+    'produktion/FREIGABESTATUS.json'
 )
 
 $problems = [System.Collections.Generic.List[string]]::new()
@@ -25,6 +26,30 @@ foreach ($relativePath in $requiredFiles) {
 }
 
 $manuscriptDirectory = Join-Path $projectRoot 'manuskript'
+$approvalPath = Join-Path $projectRoot 'produktion/FREIGABESTATUS.json'
+if (Test-Path -LiteralPath $approvalPath -PathType Leaf) {
+    try {
+        $approval = Get-Content -LiteralPath $approvalPath -Raw | ConvertFrom-Json
+        if ($approval.kapitel1Abgenommen -isnot [bool]) {
+            $problems.Add('Freigabestatus: kapitel1Abgenommen muss true oder false sein.')
+        } elseif (-not $approval.kapitel1Abgenommen) {
+            $versionDirectory = Join-Path $manuscriptDirectory 'fassungen'
+            $archives = @(Get-ChildItem -LiteralPath $versionDirectory -Filter 'KAPITEL_*_SZENE_*_v*.md' -File -ErrorAction SilentlyContinue)
+            if ($archives.Count -gt 0) {
+                $problems.Add('Vor Abnahme von Kapitel 1 dürfen keine archivierten Szenenfassungen vorhanden sein.')
+            }
+            foreach ($manifestFile in @(Get-ChildItem -LiteralPath $versionDirectory -Filter 'KAPITEL_*_FASSUNGEN.json' -File -ErrorAction SilentlyContinue)) {
+                $manifest = Get-Content -LiteralPath $manifestFile.FullName -Raw | ConvertFrom-Json
+                if (@($manifest.szenen).Count -gt 0) {
+                    $problems.Add("Fassungsindex vor Kapitelabnahme nicht leer: $($manifestFile.Name)")
+                }
+            }
+        }
+    } catch {
+        $problems.Add("Freigabestatus oder Fassungsindex unlesbar: $($_.Exception.Message)")
+    }
+}
+
 $chapterFiles = @(Get-ChildItem -LiteralPath $manuscriptDirectory -Filter 'KAPITEL_*.md' -File -ErrorAction SilentlyContinue)
 $chapterCodes = @(
     $chapterFiles |

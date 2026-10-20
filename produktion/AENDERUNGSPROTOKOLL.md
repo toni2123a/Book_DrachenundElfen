@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Aktuellen Text auf v1 gesetzt, Versionierung bis zur Kapitelabnahme ausgesetzt
+
+- **Art:** Organisation und Versionsverwaltung
+- **Grund:** Ausdrücklicher Auftrag des Projektgründers, den aktuellen Text als v1 zu führen, die alte v1 zu löschen und erst nach der Abnahme von Kapitel 1 mit der Versionierung zu beginnen.
+- **Änderung:** Idee 014 und E-012 dokumentiert. Der Erzähltext bleibt unverändert. Plan, Rohentwurf, Delta, Status und Webseite führen den aktuellen v1-Stand mit 2.992 Wörtern und 96/100. Die drei alten Szenendateien sind gelöscht, der Fassungsindex ist leer. Webseite und Sicherungsskript lesen den gemeinsamen Freigabestatus; vor der Kapitelabnahme ist die Szenenversionierung deaktiviert. Die Projektregeln wurden entsprechend angepasst.
+- **Auswirkung:** Frühere lokale Szenenfreigaben und Abnahmeentwürfe werden nicht übernommen, vorhandene Änderungswünsche bleiben erhalten. Die frühere Git-Historie bleibt bestehen. Versionsbezeichnungen in älteren Protokolleinträgen beschreiben den damaligen Stand und gelten nicht für den aktuellen Ausgangsstand.
+- **Betroffene Dateien/Kapitel:** Kapitel-1-Trio, Fassungsindex und alte Szenendateien, Projektregeln, Freigabestatus und Skripte, Entscheidungen, Inbox, Status, README und Webseite.
+- **Offen:** Abnahme von Kapitel 1. Erst nach dokumentierter Abnahme `kapitel1Abgenommen` in `produktion/FREIGABESTATUS.json` auf `true` setzen.
+
 ### 2026-10-20 · Kapitel 1 als v2 überarbeitet und Tal-Linie abgeglichen
 
 - **Art:** Kapitel, Stil, Logik und Planungsabgleich

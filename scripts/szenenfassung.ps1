@@ -30,6 +30,15 @@ $manifestPath = Join-Path $versionDirectory "KAPITEL_${chapterCode}_FASSUNGEN.js
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 $today = (Get-Date).ToString('dd.MM.yyyy')
 
+$approvalPath = Join-Path $projectRoot 'produktion/FREIGABESTATUS.json'
+if (-not (Test-Path -LiteralPath $approvalPath -PathType Leaf)) {
+    throw 'Freigabestatus fehlt. Szenenversionierung bleibt bis zur dokumentierten Abnahme von Kapitel 1 gesperrt.'
+}
+$approval = [System.IO.File]::ReadAllText($approvalPath, $utf8) | ConvertFrom-Json
+if ($approval.kapitel1Abgenommen -isnot [bool] -or $approval.kapitel1Abgenommen -ne $true) {
+    throw 'Szenenversionierung beginnt erst nach der dokumentierten Abnahme von Kapitel 1. Bis dahin direkt am aktuellen v1-Stand arbeiten.'
+}
+
 if ($Aktion -eq 'Wiederherstellen' -and -not $Fassung) {
     throw 'Zum Wiederherstellen bitte -Fassung angeben, z. B. -Fassung v1.'
 }

@@ -1,44 +1,4 @@
 {
   "kapitel": 1,
-  "szenen": [
-    {
-      "szene": 1,
-      "aktuell": "v2",
-      "aktuellSeit": "20.10.2026",
-      "vorher": [
-        {
-          "fassung": "v1",
-          "datum": "20.10.2026",
-          "datei": "KAPITEL_01_SZENE_01_v1.md",
-          "anlass": "Gezielte Überarbeitung nach Qualitätsprüfung: Logik, Figurenbindung, Spannung und Sprache"
-        }
-      ]
-    },
-    {
-      "szene": 2,
-      "aktuell": "v2",
-      "aktuellSeit": "20.10.2026",
-      "vorher": [
-        {
-          "fassung": "v1",
-          "datum": "20.10.2026",
-          "datei": "KAPITEL_01_SZENE_02_v1.md",
-          "anlass": "Gezielte Überarbeitung nach Qualitätsprüfung: Logik, Figurenbindung, Spannung und Sprache"
-        }
-      ]
-    },
-    {
-      "szene": 3,
-      "aktuell": "v2",
-      "aktuellSeit": "20.10.2026",
-      "vorher": [
-        {
-          "fassung": "v1",
-          "datum": "20.10.2026",
-          "datei": "KAPITEL_01_SZENE_03_v1.md",
-          "anlass": "Gezielte Überarbeitung nach Qualitätsprüfung: Logik, Figurenbindung, Spannung und Sprache"
-        }
-      ]
-    }
-  ]
+  "szenen": []
 }

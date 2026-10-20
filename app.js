@@ -40,15 +40,27 @@ const chapterTitles = [
 const chapterAssessments = {
   1: {
     score: '9,6 / 10',
-    verdict: 'Rohentwurf v2 erreicht intern 96 von 100 Punkten. Neyras Ziel steht im Einstieg, ihre Freundschaft mit Phae wird durch Hilfe, Verletzung und ein gebrochenes Versprechen greifbar. Die Tal-Linie bleibt als Rätsel vorbereitet.',
+    verdict: 'Rohentwurf v1 erreicht intern 96 von 100 Punkten. Neyras Ziel steht im Einstieg, ihre Freundschaft mit Phae wird durch Hilfe, Verletzung und ein gebrochenes Versprechen greifbar. Die Tal-Linie bleibt als Rätsel vorbereitet.',
     strengths: 'Ziel und erste Abweichung liegen in den ersten 150 Wörtern. Leiterhilfe und Schlussgriff verbinden die drei Szenen emotional. Zwischen den Türbenennungen halten Kapsel, Fluchtweg und Tals Blick die Spannung. Linke Fugenhand, vier zusätzliche Atemzüge und Sprecherrollen sind konsistent; alle sieben roten Fäden bleiben erhalten.',
     risks: 'Die Wirkung der Freundschaft und einige Bildwiederholungen brauchen Leserfeedback. Türprüfung, Elfenalter (D-03), Mutter-Paradox (D-04) und Tals Wiederkehrmechanik bleiben offen. „Nicht schon wieder“ bleibt bewusst doppeldeutig (D-06). Fugenfreie Hände bei der Wiederkehr sind ein ungeklärter Bildvorschlag, keine bestätigte Magieregel.',
-    recommendation: 'Rohentwurf v2 liegt über der internen Schwelle von 95 Punkten und bleibt im Draft-Modus. Alle drei Szenen in v2 neu prüfen. Kapitelabnahme erst nach Koautorenprüfung der Tal-Linie (E-010) sowie Entscheidung oder bewusster Offenhaltung der Deltas. 9,6/10 ist eine Selbsteinschätzung und keine unabhängige Qualitätsgarantie.'
+    recommendation: 'Rohentwurf v1 liegt über der internen Schwelle von 95 Punkten und bleibt im Draft-Modus. Alle drei Szenen im aktuellen Stand prüfen. Die Versionierung beginnt erst nach dokumentierter Abnahme von Kapitel 1. Kapitelabnahme erst nach Koautorenprüfung der Tal-Linie (E-010) sowie Entscheidung oder bewusster Offenhaltung der Deltas. 9,6/10 ist eine Selbsteinschätzung und keine unabhängige Qualitätsgarantie.'
   }
 };
 
-// Wird erst nach übermittelter und im Projekt protokollierter Kapitelabnahme auf true gesetzt.
-const firstChapterApprovalRecorded = false;
+// Maßgeblich ist die übermittelte und im Projekt protokollierte Kapitelabnahme.
+let firstChapterApprovalRecorded = false;
+
+async function loadProjectApproval() {
+  firstChapterApprovalRecorded = false;
+  try {
+    const response = await fetch('produktion/FREIGABESTATUS.json', { cache: 'no-store' });
+    if (!response.ok) return;
+    const status = await response.json();
+    firstChapterApprovalRecorded = status.kapitel1Abgenommen === true;
+  } catch {
+    // Ohne bestätigten Projektstatus bleiben Fundamentänderungen möglich und die Versionierung aus.
+  }
+}
 
 const editPolicyDefinitions = {
   foundation: {
@@ -255,7 +267,7 @@ Diese Entscheidung gilt ausschließlich für die oben genannte Version. Sie wird
 }
 
 function approvalStorageKey(form) {
-  return `haeutung-der-welt-${form.dataset.kind}-v2`;
+  return `haeutung-der-welt-${form.dataset.kind}-neustart-20261020`;
 }
 
 function saveApprovalDraft(form) {
@@ -347,7 +359,7 @@ const sceneTitles = [
   'Der Name, den es nicht gibt'
 ];
 
-const sceneApprovalStorageKey = 'haeutung-der-welt-kapitel-01-szenenfreigaben-v2';
+const sceneApprovalStorageKey = 'haeutung-der-welt-kapitel-01-szenenfreigaben-neustart-20261020';
 let sceneApprovals = {};
 
 function loadSceneApprovals() {
@@ -378,6 +390,7 @@ const sceneVersionTexts = new Map();
 
 async function loadSceneVersions() {
   sceneVersions = {};
+  if (!firstChapterApprovalRecorded) return;
   try {
     const response = await fetch(sceneVersionManifestPath, { cache: 'no-store' });
     if (!response.ok) return;
@@ -1000,10 +1013,15 @@ document.addEventListener('click', (event) => {
   closeMainNav();
 });
 
-loadSceneApprovals();
-loadChangeNotes();
-renderChangeTray();
-applyEditPolicies();
-setupChangeTargets();
-updateChapterGate();
-renderChapterDraft();
+async function initializeProject() {
+  await loadProjectApproval();
+  loadSceneApprovals();
+  loadChangeNotes();
+  renderChangeTray();
+  applyEditPolicies();
+  setupChangeTargets();
+  updateChapterGate();
+  await renderChapterDraft();
+}
+
+initializeProject();

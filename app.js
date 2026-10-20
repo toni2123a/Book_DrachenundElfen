@@ -149,6 +149,13 @@ function approvalText(form) {
   const values = approvalValues(form);
   const isWritingApproval = form.dataset.kind === 'schreibfreigabe';
   const label = isWritingApproval ? 'SCHREIBFREIGABE' : 'KAPITELABNAHME';
+  const chapterReview = isWritingApproval ? '' : `
+KI-EINSCHÄTZUNG ZUM KAPITEL
+${chapterAssessmentText(values.chapter)}
+
+SZENENFREIGABEN
+${sceneApprovalText()}
+`;
 
   return `${label} · DIE HÄUTUNG DER WELT
 
@@ -157,9 +164,7 @@ Erstellt: ${form.dataset.protocolDate}
 Koautor / geprüft von: ${values.reviewer}
 Kapitel: ${values.chapter} · ${values.chapterTitle}
 Geprüfte Version: ${values.version}
-
-KI-EINSCHÄTZUNG ZUM KAPITEL
-${chapterAssessmentText(values.chapter)}
+${chapterReview}
 
 ENTSCHEIDUNG
 ${values.decision}
@@ -175,7 +180,7 @@ Diese Entscheidung gilt ausschließlich für die oben genannte Version. Sie wird
 }
 
 function approvalStorageKey(form) {
-  return `haeutung-der-welt-${form.dataset.kind}-v1`;
+  return `haeutung-der-welt-${form.dataset.kind}-v2`;
 }
 
 function saveApprovalDraft(form) {
@@ -209,6 +214,10 @@ function restoreApprovalDraft(form) {
 }
 
 async function copyApproval(form) {
+  if (form.dataset.kind === 'kapitelabnahme' && !allScenesApproved()) {
+    form.querySelector('.form-status').textContent = 'Kapitelabnahme gesperrt: Erst alle Szenen freigeben.';
+    return;
+  }
   if (!form.reportValidity()) return;
   const status = form.querySelector('.form-status');
   try {
@@ -220,6 +229,10 @@ async function copyApproval(form) {
 }
 
 function downloadApproval(form) {
+  if (form.dataset.kind === 'kapitelabnahme' && !allScenesApproved()) {
+    form.querySelector('.form-status').textContent = 'Kapitelabnahme gesperrt: Erst alle Szenen freigeben.';
+    return;
+  }
   if (!form.reportValidity()) return;
   const values = approvalValues(form);
   const id = protocolId(form);
@@ -258,6 +271,162 @@ const sceneTitles = [
   'Das Fest der benannten Türen',
   'Der Name, den es nicht gibt'
 ];
+
+const sceneApprovalStorageKey = 'haeutung-der-welt-kapitel-01-szenenfreigaben-v1';
+let sceneApprovals = {};
+
+function loadSceneApprovals() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(sceneApprovalStorageKey));
+    sceneApprovals = saved && typeof saved === 'object' ? saved : {};
+  } catch {
+    sceneApprovals = {};
+    localStorage.removeItem(sceneApprovalStorageKey);
+  }
+}
+
+function persistSceneApprovals() {
+  localStorage.setItem(sceneApprovalStorageKey, JSON.stringify(sceneApprovals));
+  updateChapterGate();
+}
+
+function sceneChangeCount(sceneNumber) {
+  const prefix = `Kapitel 1 · Szene ${sceneNumber} ·`;
+  return changeNotes.filter((note) => note.target.startsWith(prefix)).length;
+}
+
+function allScenesApproved() {
+  return sceneTitles.every((_, index) => sceneApprovals[index + 1]?.decision === 'approved' && sceneChangeCount(index + 1) === 0);
+}
+
+function sceneApprovalText() {
+  return sceneTitles.map((title, index) => {
+    const number = index + 1;
+    const approval = sceneApprovals[number];
+    if (!approval || approval.decision !== 'approved') return `- Szene ${number}: ${title} · NICHT FREIGEGEBEN`;
+    return `- Szene ${number}: ${title} · FREIGEGEBEN von ${approval.reviewer} am ${approval.approvedAt}${approval.note ? ` · ${approval.note}` : ''}`;
+  }).join('\n');
+}
+
+function updateChapterGate() {
+  const approvedCount = sceneTitles.filter((_, index) => sceneApprovals[index + 1]?.decision === 'approved' && sceneChangeCount(index + 1) === 0).length;
+  const ready = approvedCount === sceneTitles.length;
+  const progress = document.querySelector('#sceneApprovalProgress');
+  const panel = document.querySelector('#chapterApprovalPanel');
+  const form = document.querySelector('#chapterApprovalForm');
+
+  if (progress) {
+    progress.querySelector('strong').textContent = `${approvedCount} von ${sceneTitles.length} Szenen freigegeben`;
+    progress.querySelector('span').textContent = ready ? 'Kapitelabnahme entsperrt' : 'Kapitelabnahme gesperrt';
+    progress.classList.toggle('is-ready', ready);
+  }
+  panel?.classList.toggle('is-locked', !ready);
+  form?.querySelectorAll('[data-scene-gated]').forEach((control) => {
+    control.disabled = !ready;
+  });
+  if (form && !ready) form.querySelector('.form-status').textContent = 'Kapitelabnahme gesperrt: Noch sind nicht alle Szenen freigegeben.';
+  if (form && ready && form.querySelector('.form-status').textContent.startsWith('Kapitelabnahme gesperrt')) {
+    form.querySelector('.form-status').textContent = 'Alle Szenen sind freigegeben. Die Kapitelabnahme ist jetzt möglich.';
+  }
+}
+
+function sceneField(labelText, control) {
+  const label = document.createElement('label');
+  label.textContent = labelText;
+  label.appendChild(control);
+  return label;
+}
+
+function renderSceneApproval(article, index) {
+  article.querySelector(':scope > .scene-approval')?.remove();
+  const number = index + 1;
+  const saved = sceneApprovals[number] || {};
+  const openChanges = sceneChangeCount(number);
+  const panel = document.createElement('section');
+  panel.className = `scene-approval ${saved.decision === 'approved' && openChanges === 0 ? 'is-approved' : saved.decision === 'changes' || openChanges ? 'needs-changes' : ''}`;
+  panel.setAttribute('aria-label', `Freigabe für Szene ${number}`);
+
+  const head = document.createElement('div');
+  head.className = 'scene-approval-head';
+  const title = document.createElement('strong');
+  title.textContent = `Szenenfreigabe · ${String(number).padStart(2, '0')}`;
+  const badge = document.createElement('span');
+  badge.textContent = saved.decision === 'approved' && openChanges === 0 ? 'Freigegeben' : saved.decision === 'changes' || openChanges ? 'Änderung nötig' : 'Prüfung offen';
+  head.append(title, badge);
+
+  const hint = document.createElement('p');
+  hint.textContent = openChanges
+    ? `${openChanges} offener Änderungswunsch. Nach der Überarbeitung muss diese Szene erneut freigegeben werden.`
+    : 'Text prüfen, Änderungswünsche direkt an der Szene erfassen und anschließend die Szene freigeben.';
+
+  const form = document.createElement('form');
+  form.className = 'scene-approval-form';
+  const reviewer = document.createElement('input');
+  reviewer.required = true;
+  reviewer.placeholder = 'Kürzel';
+  reviewer.value = saved.reviewer || authorField?.value || '';
+  const decision = document.createElement('select');
+  decision.required = true;
+  [['', 'Bitte auswählen'], ['approved', 'Szene freigeben'], ['changes', 'Überarbeitung erforderlich']].forEach(([value, text]) => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = text;
+    option.selected = saved.decision === value;
+    decision.appendChild(option);
+  });
+  const note = document.createElement('textarea');
+  note.rows = 2;
+  note.placeholder = 'Kurzer Vermerk; bei Überarbeitung bitte den Grund nennen.';
+  note.value = saved.note || '';
+  const save = document.createElement('button');
+  save.type = 'submit';
+  save.className = 'button button-primary';
+  save.textContent = 'Szenenentscheidung speichern';
+  const status = document.createElement('p');
+  status.className = 'scene-approval-status';
+  status.setAttribute('role', 'status');
+  status.textContent = saved.approvedAt ? `Gespeichert: ${saved.approvedAt}` : 'Noch keine Szenenentscheidung gespeichert.';
+
+  form.append(sceneField('Koautor', reviewer), sceneField('Entscheidung', decision), sceneField('Vermerk', note), save, status);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    if (decision.value === 'approved' && sceneChangeCount(number) > 0) {
+      status.textContent = 'Freigabe nicht möglich: Zuerst die offenen Änderungswünsche abarbeiten und aus der Ablage entfernen.';
+      return;
+    }
+    if (decision.value === 'changes' && !note.value.trim()) {
+      status.textContent = 'Bitte den Überarbeitungsgrund im Vermerk festhalten.';
+      note.focus();
+      return;
+    }
+    sceneApprovals[number] = {
+      decision: decision.value,
+      reviewer: reviewer.value.trim(),
+      note: note.value.trim(),
+      version: 'Rohentwurf v1 · 20.10.2026',
+      approvedAt: decision.value === 'approved' ? today() : ''
+    };
+    persistSceneApprovals();
+    renderSceneApproval(article, index);
+  });
+
+  panel.append(head, hint, form);
+  article.appendChild(panel);
+}
+
+function refreshSceneApprovalPanels() {
+  document.querySelectorAll('#chapterDraft .draft-scene').forEach((article, index) => renderSceneApproval(article, index));
+}
+
+function revokeSceneApprovalForTarget(target) {
+  const match = target.match(/^Kapitel 1 · Szene (\d+)/);
+  if (!match) return;
+  const number = Number(match[1]);
+  const current = sceneApprovals[number] || {};
+  sceneApprovals[number] = { ...current, decision: 'changes', approvedAt: '', note: current.note || 'Neuer Änderungswunsch erfasst.' };
+  persistSceneApprovals();
+}
 
 function appendInlineFormatting(element, text) {
   const fragments = text.split(/(\*\*[^*]+\*\*)/g);
@@ -312,6 +481,8 @@ async function renderChapterDraft() {
     });
 
     setupChangeTargets(reader);
+    refreshSceneApprovalPanels();
+    updateChapterGate();
   } catch {
     reader.innerHTML = '<p class="reader-error">Der Kapiteltext konnte nicht geladen werden. Bitte die Seite neu laden.</p>';
   }
@@ -342,6 +513,8 @@ function loadChangeNotes() {
 function persistChangeNotes() {
   localStorage.setItem(changeStorageKey, JSON.stringify(changeNotes));
   renderChangeTray();
+  refreshSceneApprovalPanels();
+  updateChapterGate();
 }
 
 function openTray() {
@@ -468,13 +641,15 @@ function openInlineEditor(card) {
       textarea.focus();
       return;
     }
+    const target = targetLabel(card);
     changeNotes.push({
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      target: targetLabel(card),
+      target,
       quote,
       request,
       createdAt: today()
     });
+    revokeSceneApprovalForTarget(target);
     persistChangeNotes();
     panel.remove();
     openTray();
@@ -559,7 +734,9 @@ document.querySelector('#clearAllChanges').addEventListener('click', () => {
   trayStatus.textContent = 'Änderungsablage geleert.';
 });
 
+loadSceneApprovals();
 loadChangeNotes();
 renderChangeTray();
 setupChangeTargets();
+updateChapterGate();
 renderChapterDraft();

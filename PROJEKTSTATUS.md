@@ -17,8 +17,8 @@ Stand: 20. Oktober 2026
 - [x] Vier-Akt-Struktur mit 36 Kapiteln
 - [x] Enthüllungsleiter, Setups und Payoffs
 - [x] Finale und Anschluss an Band 2
-- [x] Webseite als vollständige Planansicht mit lokalem Änderungswunschformular
-- [x] zweistufiger Koautoren-Workflow für Schreibfreigabe und Kapitelabnahme
+- [x] Webseite als vollständige Planansicht mit lokalen, kontextbezogenen Änderungswünschen
+- [x] Koautoren-Workflow mit Planfreigabe, Freigabe jeder Szene und gesperrter Kapitelabnahme
 - [x] Kapitel 1 mit Szenenplan, Rohentwurf v1, Delta und strikter Selbstprüfung
 - [x] sechs rote Fäden aus Kapitel 1 mit späteren Payoffs verknüpft
 - [x] Änderungswünsche direkt an sichtbaren Karten und Textszenen ermöglicht
@@ -28,7 +28,8 @@ Stand: 20. Oktober 2026
 - [ ] Änderungswünsche der beiden Autoren sammeln und entscheiden
 - [ ] Namen und Aussprache final bestätigen
 - [ ] Inhaltsgrenzen der Autoren dokumentieren
-- [ ] Koautor prüft Plan v1 und Rohentwurf v1 direkt auf der Webseite
+- [ ] Koautor prüft Rohentwurf v1 Szene für Szene direkt auf der Webseite
+- [ ] alle drei Szenen einzeln freigeben; erst danach Kapitelabnahme durchführen
 - [ ] kontextbezogene Änderungswünsche sammeln und gemeinsam entscheiden
 - [ ] rote und gelbe Deltas aus Kapitel 1 klären
 - [ ] notwendige Änderungen als Rohentwurf v2 umsetzen

@@ -11,8 +11,8 @@
     <meta property="og:url" content="https://toni2123a.github.io/Book_DrachenundElfen/">
     <meta property="og:image" content="https://toni2123a.github.io/Book_DrachenundElfen/assets/hero-worldskin.webp">
     <title>Die Häutung der Welt · Band-1-Plan</title>
-    <link rel="stylesheet" href="styles.css?v=20261020-2">
-    <script src="app.js?v=20261020-2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261020-3">
+    <script src="app.js?v=20261020-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -316,6 +316,31 @@
             <span class="draft-mode-badge">Draft-Modus aktiv</span>
           </div>
 
+          <details class="chapter-inline-gate plan-gate">
+            <summary><span class="stage-badge">Tor 1</span><strong>Schreibfreigabe des Kapitelplans</strong><small>Für neue Kapitel vor dem ersten Rohentwurf öffnen.</small></summary>
+            <article class="approval-panel">
+              <form class="approval-form" id="writingApprovalForm" data-kind="schreibfreigabe">
+                <div class="form-row">
+                  <label>Koautor · Name oder Kürzel<input name="reviewer" autocomplete="name" required placeholder="z. B. AB"></label>
+                  <label>Kapitelnummer<input name="chapter" type="number" min="1" max="36" value="1" required></label>
+                </div>
+                <label>Titel des Kapitels<input name="chapterTitle" value="Das Kind ohne Vorleben" required></label>
+                <label>geprüfte Planversion<input name="version" value="Plan v1 · 20.10.2026" required></label>
+                <label>Entscheidung<select name="decision" required><option value="">Bitte auswählen</option><option value="Schreibfreigabe erteilt">Schreibfreigabe erteilen</option><option value="Noch nicht freigegeben – Änderungen erforderlich">Noch nicht freigeben</option></select></label>
+                <fieldset>
+                  <legend>Plan geprüft</legend>
+                  <label><input type="checkbox" name="check" value="Ziel, Konflikt und Ergebnis" required> Ziel, Konflikt und Ergebnis</label>
+                  <label><input type="checkbox" name="check" value="Figurenmotivation und Perspektive" required> Figurenmotivation und Perspektive</label>
+                  <label><input type="checkbox" name="check" value="Weltregeln, Setups und Folgekapitel" required> Weltregeln, Setups und Folgekapitel</label>
+                </fieldset>
+                <label>Anmerkung oder notwendige Änderung<textarea name="notes" rows="3" required placeholder="Bei Freigabe z. B. ‚ohne weitere Anmerkung‘; sonst konkret ändern."></textarea></label>
+                <label class="consent"><input type="checkbox" name="declaration" required><span>Diese Entscheidung gilt ausschließlich für die oben genannte Planversion.</span></label>
+                <div class="form-actions"><button class="button button-primary" type="button" data-action="copy">Protokoll kopieren</button><button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button></div>
+                <p class="form-status" role="status" aria-live="polite">Noch keine Schreibfreigabe erstellt.</p>
+              </form>
+            </article>
+          </details>
+
           <div class="blueprint-grid">
             <article data-change-target="Kapitel 1 · Szene 1 · Das gestohlene Gestern">
               <span>Szene 01</span>
@@ -380,6 +405,43 @@
             <div class="reader-loading">Kapiteltext wird geladen …</div>
           </div>
           <noscript><p class="reader-error">Zum Laden des Kapiteltexts muss JavaScript aktiviert sein.</p></noscript>
+
+          <section class="chapter-final-gate" id="freigaben" aria-labelledby="chapter-approval-title">
+            <div class="gate-intro">
+              <p class="eyebrow">Finales Tor · erst nach allen Szenen</p>
+              <h3 id="chapter-approval-title">Kapitel 1 abnehmen</h3>
+              <p>Jede Szene wird direkt unter ihrem Text freigegeben. Erst bei drei freigegebenen Szenen wird die endgültige Kapitelabnahme entsperrt.</p>
+            </div>
+            <div class="scene-progress" id="sceneApprovalProgress" role="status" aria-live="polite"><strong>0 von 3 Szenen freigegeben</strong><span>Kapitelabnahme gesperrt</span></div>
+            <div class="storage-warning"><strong>Keine automatische Issue-Erstellung</strong><p>Änderungswünsche bleiben auf diesem Gerät. Die öffentliche Seite besitzt aus Sicherheitsgründen keinen Schreibzugriff auf GitHub. Nutzt „Alle herunterladen“, damit die Punkte anschließend einzeln im Projekt abgearbeitet werden können.</p></div>
+
+            <article class="approval-panel final-approval-panel is-locked" id="chapterApprovalPanel">
+              <div class="panel-heading">
+                <span class="stage-badge">Kapitelabnahme</span>
+                <h3>Alle Szenen gemeinsam bestätigen</h3>
+                <p>Die Szenenfreigaben werden automatisch in das Abnahmeprotokoll übernommen.</p>
+              </div>
+              <form class="approval-form" id="chapterApprovalForm" data-kind="kapitelabnahme">
+                <div class="form-row">
+                  <label>Koautor · Name oder Kürzel<input name="reviewer" autocomplete="name" required placeholder="z. B. AB"></label>
+                  <label>Kapitelnummer<input name="chapter" type="number" min="1" max="36" value="1" readonly required></label>
+                </div>
+                <label>Titel des Kapitels<input name="chapterTitle" value="Das Kind ohne Vorleben" readonly required></label>
+                <label>geprüfte Textversion<input name="version" value="Rohentwurf v1 · 20.10.2026" readonly required></label>
+                <section class="approval-assessment" data-chapter-assessment="1" aria-label="KI-Einschätzung für die Kapitelabnahme"></section>
+                <label>Entscheidung<select name="decision" data-scene-gated required><option value="">Bitte auswählen</option><option value="Kapitel freigegeben">Kapitel endgültig freigeben</option><option value="Nicht freigegeben – Überarbeitung erforderlich">Kapitel noch nicht freigeben</option></select></label>
+                <fieldset>
+                  <legend>Kapitelübergreifend geprüft</legend>
+                  <label><input type="checkbox" name="check" value="Deltas und spätere Auswirkungen" data-scene-gated required> Deltas und spätere Auswirkungen</label>
+                  <label><input type="checkbox" name="check" value="KI-Einschätzung, Risiken und Freigabeempfehlung berücksichtigt" data-scene-gated required> KI-Einschätzung, Risiken und Freigabeempfehlung berücksichtigt</label>
+                </fieldset>
+                <label>Abnahmevermerk<textarea name="notes" rows="4" data-scene-gated required placeholder="Gesamturteil oder verbleibende kapitelübergreifende Punkte."></textarea></label>
+                <label class="consent"><input type="checkbox" name="declaration" data-scene-gated required><span>Diese Entscheidung gilt für die genannte Textversion und alle drei protokollierten Szenenfreigaben.</span></label>
+                <div class="form-actions"><button class="button button-primary" type="button" data-action="copy" data-scene-gated>Protokoll kopieren</button><button class="button button-secondary light-button" type="button" data-action="download" data-scene-gated>Protokoll herunterladen</button></div>
+                <p class="form-status" role="status" aria-live="polite">Kapitelabnahme gesperrt: Noch sind nicht alle Szenen freigegeben.</p>
+              </form>
+            </article>
+          </section>
         </div>
       </section>
 
@@ -416,143 +478,6 @@
         </div>
       </section>
 
-      <section class="approval-section" id="freigaben" aria-labelledby="approval-title">
-        <div class="section-shell">
-          <div class="section-intro light">
-            <p class="eyebrow">Verbindlicher Vier-Augen-Workflow</p>
-            <h2 id="approval-title">Kein Kapitel ohne Go.<br>Kein Kapitel ohne Abnahme.</h2>
-            <p>Jedes Kapitel passiert zwei getrennte Freigabetore. Eine Freigabe gilt immer nur für die im Protokoll genannte Kapitel- und Versionsnummer.</p>
-          </div>
-
-          <ol class="approval-flow">
-            <li><span>01</span><div><strong>Kapitelplan lesen</strong><p>Ziel, Konflikt, Ergebnis, Kanon und spätere Auswirkungen prüfen.</p></div></li>
-            <li><span>02</span><div><strong>Schreibfreigabe geben</strong><p>Erst das bestätigte Go erlaubt die Rohfassung dieser Planversion.</p></div></li>
-            <li><span>03</span><div><strong>Kapitel prüfen</strong><p>Den fertigen Text vollständig lesen, Deltas und Folgen kontrollieren.</p></div></li>
-            <li><span>04</span><div><strong>Kapitel abnehmen</strong><p>Freigeben oder mit konkreten Überarbeitungswünschen zurückgeben.</p></div></li>
-          </ol>
-
-          <div class="approval-note">
-            <strong>Wichtig</strong>
-            <p>Die Webseite versendet nichts automatisch. Sie erstellt ein datiertes Freigabeprotokoll. Verbindlich wird die Entscheidung, sobald dieses Protokoll an den anderen Autor übermittelt und im Projekt dokumentiert wurde.</p>
-          </div>
-
-          <div class="approval-panels">
-            <article class="approval-panel">
-              <div class="panel-heading">
-                <span class="stage-badge">Tor 1</span>
-                <h3>Go für das Schreiben</h3>
-                <p>Bestätigt den fertigen Kapitelplan – noch nicht den späteren Text.</p>
-              </div>
-              <form class="approval-form" id="writingApprovalForm" data-kind="schreibfreigabe">
-                <div class="form-row">
-                  <label>
-                    Koautor · Name oder Kürzel
-                    <input name="reviewer" autocomplete="name" required placeholder="z. B. AB">
-                  </label>
-                  <label>
-                    Kapitelnummer
-                    <input name="chapter" type="number" min="1" max="36" value="1" required>
-                  </label>
-                </div>
-                <label>
-                  Titel des Kapitels
-                  <input name="chapterTitle" value="Das Kind ohne Vorleben" required>
-                </label>
-                <label>
-                  geprüfte Planversion
-                  <input name="version" value="Plan v1 · 20.10.2026" required>
-                </label>
-                <label>
-                  Entscheidung
-                  <select name="decision" required>
-                    <option value="">Bitte auswählen</option>
-                    <option value="Schreibfreigabe erteilt">Schreibfreigabe erteilen</option>
-                    <option value="Noch nicht freigegeben – Änderungen erforderlich">Noch nicht freigeben</option>
-                  </select>
-                </label>
-                <fieldset>
-                  <legend>Geprüft und verstanden</legend>
-                  <label><input type="checkbox" name="check" value="Ziel, Konflikt und Ergebnis" required> Ziel, Konflikt und Ergebnis</label>
-                  <label><input type="checkbox" name="check" value="Figurenmotivation und Perspektive" required> Figurenmotivation und Perspektive</label>
-                  <label><input type="checkbox" name="check" value="Welt- und Magieregeln" required> Welt- und Magieregeln</label>
-                  <label><input type="checkbox" name="check" value="Setups, Payoffs und Folgekapitel" required> Setups, Payoffs und Folgekapitel</label>
-                </fieldset>
-                <label>
-                  Anmerkung oder notwendige Änderung
-                  <textarea name="notes" rows="4" required placeholder="Bei Freigabe z. B. ‚ohne weitere Anmerkung‘; sonst konkrete Änderungen nennen."></textarea>
-                </label>
-                <label class="consent">
-                  <input type="checkbox" name="declaration" required>
-                  <span>Diese Entscheidung gilt ausschließlich für die oben genannte Planversion.</span>
-                </label>
-                <div class="form-actions">
-                  <button class="button button-primary" type="button" data-action="copy">Protokoll kopieren</button>
-                  <button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button>
-                </div>
-                <p class="form-status" role="status" aria-live="polite">Noch keine Schreibfreigabe erstellt.</p>
-              </form>
-            </article>
-
-            <article class="approval-panel">
-              <div class="panel-heading">
-                <span class="stage-badge">Tor 2</span>
-                <h3>Abnahme des Kapitels</h3>
-                <p>Bestätigt den geprüften Kapiteltext oder verlangt eine neue Textversion.</p>
-              </div>
-              <form class="approval-form" id="chapterApprovalForm" data-kind="kapitelabnahme">
-                <div class="form-row">
-                  <label>
-                    Koautor · Name oder Kürzel
-                    <input name="reviewer" autocomplete="name" required placeholder="z. B. AB">
-                  </label>
-                  <label>
-                    Kapitelnummer
-                    <input name="chapter" type="number" min="1" max="36" value="1" required>
-                  </label>
-                </div>
-                <label>
-                  Titel des Kapitels
-                  <input name="chapterTitle" value="Das Kind ohne Vorleben" required>
-                </label>
-                <label>
-                  geprüfte Textversion
-                  <input name="version" value="Rohentwurf v1 · 20.10.2026" required>
-                </label>
-                <section class="approval-assessment" data-chapter-assessment="1" aria-label="KI-Einschätzung für die Kapitelabnahme"></section>
-                <label>
-                  Entscheidung
-                  <select name="decision" required>
-                    <option value="">Bitte auswählen</option>
-                    <option value="Kapitel freigegeben">Kapitel endgültig freigeben</option>
-                    <option value="Nicht freigegeben – Überarbeitung erforderlich">Überarbeitung verlangen</option>
-                  </select>
-                </label>
-                <fieldset>
-                  <legend>Vollständig geprüft</legend>
-                  <label><input type="checkbox" name="check" value="Kapitel vollständig gelesen" required> Kapitel vollständig gelesen</label>
-                  <label><input type="checkbox" name="check" value="Figuren, Logik und Magieregeln" required> Figuren, Logik und Magieregeln</label>
-                  <label><input type="checkbox" name="check" value="Stil, Verständlichkeit und Kontinuität" required> Stil, Verständlichkeit und Kontinuität</label>
-                  <label><input type="checkbox" name="check" value="Deltas und spätere Auswirkungen" required> Deltas und spätere Auswirkungen</label>
-                  <label><input type="checkbox" name="check" value="KI-Einschätzung, Risiken und Freigabeempfehlung berücksichtigt" required> KI-Einschätzung, Risiken und Freigabeempfehlung berücksichtigt</label>
-                </fieldset>
-                <label>
-                  Abnahmevermerk oder Überarbeitungsauftrag
-                  <textarea name="notes" rows="4" required placeholder="Bei Abnahme z. B. ‚freigegeben ohne Restpunkte‘; sonst Änderungen konkret benennen."></textarea>
-                </label>
-                <label class="consent">
-                  <input type="checkbox" name="declaration" required>
-                  <span>Diese Entscheidung gilt ausschließlich für die oben genannte Textversion.</span>
-                </label>
-                <div class="form-actions">
-                  <button class="button button-primary" type="button" data-action="copy">Protokoll kopieren</button>
-                  <button class="button button-secondary light-button" type="button" data-action="download">Protokoll herunterladen</button>
-                </div>
-                <p class="form-status" role="status" aria-live="polite">Noch keine Kapitelabnahme erstellt.</p>
-              </form>
-            </article>
-          </div>
-        </div>
-      </section>
 
     </main>
 

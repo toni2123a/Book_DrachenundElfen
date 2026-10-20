@@ -8,7 +8,7 @@ Das Projekt übernimmt nur das Arbeitsprinzip aus `TheBookV2`: Ideen werden gesa
 
 ## Aktueller Stand
 
-Das Grundgerüst ist vollständig. Kapitel 1 „Das Kind ohne Vorleben“ liegt als Rohentwurf v1 vor. Die öffentliche Seite zeigt Serienplan, Kapitelbauplan, rote Fäden, Qualitätsprüfung und vollständigen Text; Änderungswünsche werden direkt an der betroffenen Karte oder markierten Textstelle gesammelt.
+Das Grundgerüst ist vollständig. Kapitel 1 „Das Kind ohne Vorleben“ liegt als Rohentwurf v1 vor. Die öffentliche Seite zeigt Serienplan, Kapitelbauplan, rote Fäden, Qualitätsprüfung und vollständigen Text. Änderungswünsche werden direkt an der betroffenen Karte oder markierten Textstelle gesammelt; jede Szene wird einzeln freigegeben. Die endgültige Kapitelabnahme wird erst nach Freigabe aller Szenen entsperrt.
 
 ## Verbindliche Planung
 
@@ -39,4 +39,4 @@ Ein Änderungswunsch ist noch kein Kanon. Auch ein Rohentwurf verändert die Pla
 
 ## Nächster Schritt
 
-Die beiden Autoren prüfen das Grundgerüst auf der Planungsseite. Nach der Freigabe beginnt die Szenenplanung für Kapitel 1 „Das Kind ohne Vorleben“.
+Der Koautor prüft Kapitel 1 Szene für Szene auf der Planungsseite. Änderungswünsche werden überarbeitet und die betroffene Szene anschließend erneut freigegeben. Erst nach drei Szenenfreigaben folgt die endgültige Kapitelabnahme.

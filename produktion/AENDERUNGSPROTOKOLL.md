@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Szenenfreigaben vor Kapitelabnahme eingeführt
+
+- **Art:** Kapitel und Organisation
+- **Grund:** Direkte Änderungswünsche an einzelnen Szenen benötigen eine ebenso genaue Freigabe statt eines losgelösten allgemeinen Formularblocks.
+- **Änderung:** Jede Szene erhält eine eigene Entscheidung mit Koautor, Vermerk und Status. Offene oder neu erfasste Änderungswünsche sperren beziehungsweise widerrufen die Szenenfreigabe. Die Kapitelabnahme steht nun direkt unter dem Kapitel und wird erst nach Freigabe aller Szenen entsperrt. Der alte untere Doppelbereich wurde entfernt; Tor 1 ist als aufklappbare Planfreigabe in das Kapitel integriert.
+- **Auswirkung:** Der Koautor arbeitet Szene für Szene. Das abschließende Protokoll enthält alle Szenenfreigaben und die KI-Einschätzung. Die statische Webseite erzeugt aus Sicherheitsgründen keine GitHub-Issues; Exporte bleiben erforderlich.
+- **Betroffene Dateien:** `index.html`, `styles.css`, `app.js`, `README.md`, `PROJEKTSTATUS.md`, `vorlagen/SZENENKARTE.md`, `vorlagen/KAPITELABNAHME.md`, `produktion/PRODUKTIONSREGELN.md`
+- **Offen:** Entscheidung, ob später ein authentifizierter Dienst für automatische GitHub-Issues eingerichtet werden soll.
+
 ### 2026-10-20 · KI-Einschätzung in Kapitel und Abnahme verankert
 
 - **Art:** Kapitel und Organisation

@@ -131,6 +131,28 @@ Die Vorlage unter „Neue Ideenkarte“ kopieren, vollständig oder stichpunktar
 - **Offene Fragen:** konkrete Verwaltungsfolgen sind Stoff von Band 2.
 - **Status:** Angenommen · E-007
 
+### Idee 012 · Tal: Gegner, Zwangsverbündeter, verlorene Liebe
+
+- **Eingebracht von:** Projektgründer (Wunsch), KI-Ausarbeitung
+- **Datum:** 2026-10-20
+- **Typ:** Plot
+- **Vorschlag:** Eine Spur Intrigen und Liebe: Der verhasste Gegenspieler wird zum Zwangsverbündeten und entpuppt sich als Liebe aus einem früheren Weltabschnitt. Er wird trotzdem geopfert, um die Auslöschung zu verhindern, taucht in einer fremden Jahreszeit wieder auf und nimmt dort seine Verantwortung als Befreier des Volkes und, abweichend vom bisherigen Drehbuch, als Retter der Drachen an.
+- **Warum interessant:** Gibt dem Finale einen zweiten, persönlichen Preis, spiegelt Mirans Thema und öffnet Band 2 und 3.
+- **Mögliche Folgen:** Tal wird von der Randfigur zur Hauptlinie. Kapitel 1, 5, 7, 19, 21, 22, 23, 28, 29, 33, 35 und 36 ändern sich. Band 2 und 3 erhalten Tals Rolle als Befreier und Retter.
+- **Offene Fragen:** Mechanik der Wiederkehr, Platzierung der Rollen in Band 2 und 3, ob Tal eine eigene Perspektive bekommt.
+- **Status:** Angenommen · E-010
+
+### Idee 013 · Kapitel 1 gezielt überarbeiten
+
+- **Eingebracht von:** Projektgründer, auf Grundlage der gemeinsamen Qualitätsprüfung
+- **Datum:** 2026-10-20
+- **Typ:** Szene und Stil
+- **Vorschlag:** Die drei bestehenden Szenen erhalten. Neyras Ziel früher zeigen, Phaes Nähe durch den vorhandenen Leiter- und Handkontakt erfahrbar machen, die Zeremonie straffen und Fehler bei Tals Fugenhand, Atemzügen und Sprecherrollen beheben. Die sichtbare Öffnung auf die neun ausgestellten Türen begrenzen.
+- **Warum interessant:** Verbessert Figurenbindung und Verständlichkeit, ohne den Auftakt oder seine Rätsel neu aufzubauen.
+- **Mögliche Folgen:** Rohentwurf v2 mit gesicherten Vorfassungen; Kapitelplan, Delta und Webanzeige werden synchronisiert. Kapitel 2 übernimmt die Prüfung der stadtweiten Wirkung. Die Identität der Frau und die offenen Weltregeln werden dadurch nicht entschieden.
+- **Offene Fragen:** Bestehende Deltas bleiben offen; keine neue Vorgeschichte für Neyra und Phae.
+- **Status:** Angenommen als redaktioneller Arbeitsauftrag · E-011; keine Kapitelabnahme oder neue Kanonfestlegung
+
 ## Neue Ideenkarte
 
 ### Idee NNN · Kurztitel

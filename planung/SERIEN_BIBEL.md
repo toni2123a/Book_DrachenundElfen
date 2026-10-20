@@ -24,6 +24,7 @@ Eine riesige Drachenschuppe versiegelt die Hauptstadt Merea. Neun Nächte lang �
 - **Eigenständige Auflösung:** Asra kehrt als ankommende Stadt zurück, ohne Merea zu überschreiben.
 - **Bleibender Preis:** Neyra vernichtet die einzige Möglichkeit, ihre Herkunft jemals als fertige Wahrheit zu erfahren.
 - **Serienöffnung:** Orr bricht ein Drachengesetz; dadurch werden die neun Weltgesetze veränderbar.
+- **Zweite Liebes- und Intrigenlinie:** Tal, Vollstrecker der Neunerhalle und verlorene Liebe aus einem verworfenen Weltabschnitt, wird zum Zwangsverbündeten und als zweiter Preis geopfert. Er taucht am Bandende in einer fremden Jahreszeit wieder auf.
 
 ### Band 2 · Die Stadt, die sich selbst vergaß
 
@@ -33,6 +34,7 @@ Das gebrochene Gesetz löst Entfernungen von Orten. Inseln treiben durch Häuser
 - **Eigenständige Auflösung:** Die wandernden Gebiete erhalten ein freiwilliges Netz aus Ankerorten.
 - **Bleibender Preis:** Miran gibt die sichere Vergangenheit mit seiner zurückgekehrten Schwester auf, damit sie eine eigene Zukunft wählen kann.
 - **Serienöffnung:** Die neun Drachen waren nicht die Schöpfer der Gesetze, sondern deren Gefangene.
+- **Tal:** Er gewinnt in einer fremden Jahreszeit seinen freien Willen zurück und wird zum Befreier der verdrängten Völker. Das ist seine Verantwortung aus dem Opfer in Band 1.
 
 ### Band 3 · Der Drache ohne Gesetz
 
@@ -41,6 +43,11 @@ Alle neun Gesetze beginnen einander zu widersprechen. Die Welt kann entweder in 
 - **Kernfrage:** Wie viel Unsicherheit erträgt Freiheit?
 - **Reihenabschluss:** Die Gesetze werden von Herrschaft zu verhandelbaren Beziehungen. Drachen und Völker können widersprechen, müssen aber Verantwortung für Folgen übernehmen.
 - **Emotionaler Abschluss:** Neyra erhält keine verborgene Herkunft; sie begründet aus frei gewählten Erinnerungen und Beziehungen ihre eigene Identität.
+- **Tal:** Er nimmt als Retter der Drachen seine letzte Verantwortung an. Er löst die Gefangenschaft nicht mit Gewalt, sondern indem er den Drachen eine Wahl gibt, wie Neyra ihm einst eine gab.
+
+### Offene Mechanik der Tal-Linie
+
+Die Stationen Gegner, Zwangsverbündeter, frühere Liebe, Opfer, Wiederkehr, Befreier der verdrängten Völker und Retter der Drachen sind durch E-010 gesetzt. `OFFEN` bleiben die konkrete Wiederkehrmechanik und die Ausarbeitung seiner Aufgaben in Band 2 und 3. Das Bild fugenfreier Hände ist ein Vorschlag. Die Wiederkehr darf den unwiderruflichen Preis und Neyras verlorene Herkunftswahrheit nicht aufheben. Seine frühere Liebe galt der Vorgängerin des Ankers; Neyras eigene Beziehung zu Tal muss daraus erst entstehen.
 
 ## Eskalationslogik
 
@@ -60,6 +67,7 @@ Alle neun Gesetze beginnen einander zu widersprechen. Die Welt kann entweder in 
 6. Romantik verstärkt Entscheidungen, ersetzt aber keine Figurenmotivation.
 7. Das Finale jedes Bandes verlangt einen unwiderruflichen persönlichen Preis.
 8. Die Reihe endet mit Band 3 vollständig.
+9. Tal bleibt in jeder Phase eine eigene Person und ersetzt weder die Frühere noch Miran als Neyras Liebe automatisch.
 
 ## Offen außerhalb des Kanons
 

@@ -110,6 +110,28 @@ Hier werden verbindliche kreative Entscheidungen nachvollziehbar festgehalten. E
 - **Synchronisiert in:** `produktion/PRODUKTIONSREGELN.md`, `PROJEKTSTATUS.md`, Webseite, Freigabevorlagen
 - **Später zu prüfen:** optionaler automatischer Versand, falls später ein eigener Übermittlungsdienst gewünscht wird
 
+### E-010 · Tal-Linie: Intrige, Liebe, Opfer und Wiederkehr
+
+- **Datum:** 2026-10-20
+- **Beteiligte:** Projektgründer (Änderungswunsch); KI-Ausarbeitung zur anschließenden Koautorenprüfung
+- **Bezug:** Idee 012
+- **Entscheidung:** Der verhasste Gegenspieler Tal, bisher nur ein Vollstrecker der Neunerhalle, wird zum Zwangsverbündeten und zur Liebe aus einem früheren, verworfenen Weltabschnitt. Er wird trotzdem als zweiter Preis der Ankunft geopfert, um die Auslöschung zu verhindern, und taucht am Bandende in einer fremden Jahreszeit wieder auf. In den Folgebänden nimmt er seine Verantwortung als Befreier der verdrängten Völker (Band 2) und Retter der Drachen (Band 3) an. Die Rettung der Drachen ist eine bewusste Abweichung vom bisherigen Drehbuch.
+- **Status:** Angenommen als Arbeitsgrundlage; Koautorenprüfung ausstehend
+- **Begründung:** Gibt dem Band eine zweite emotionale Linie neben Miran, verstärkt den Preis des Finales und verknüpft Band 1 mit Band 2 (fremde Jahreszeiten) und Band 3 (Drachen als Gefangene). Spiegelt Mirans Thema, Vergangenheit nicht zu besitzen.
+- **Synchronisiert in:** `planung/STORY_BIBLE.md`, `planung/FIGUREN.md`, `planung/PLOT_BAUPLAN.md`, `planung/BAND1_BAUPLAN.md`, `planung/SERIEN_BIBEL.md`, `planung/WELT_UND_MAGIE.md`, `manuskript/KAPITEL_01_PLAN.md`, `manuskript/KAPITEL_01_ROHENTWURF.md`, `manuskript/KAPITEL_01_DELTA.md`, Webseite
+- **Später zu prüfen:** `OFFEN`: Mechanik der Wiederkehr (Fugen, Welthaut, Jahreszeit) gegen die Regel, dass Magie geschlossene Wahlmöglichkeiten nie wieder öffnet; genaue Platzierung von Befreier- und Retterrolle in Band 2 und 3; ob Tal in Band 2 eine Perspektive erhält; Identität der Frau hinter der roten Tür (Delta D-04).
+
+### E-011 · Gezielte Überarbeitung von Kapitel 1
+
+- **Datum:** 2026-10-20
+- **Beteiligte:** Projektgründer; KI-Überarbeitung zur anschließenden Koautorenprüfung
+- **Bezug:** Idee 013; bestätigter Überarbeitungsplan
+- **Entscheidung:** Kapitel 1 wird unter Erhalt der drei Szenen, des Diebstahls und des Mutter-Paradoxons gezielt überarbeitet. Priorität haben nachvollziehbare Handlung, Neyras Motivation, erfahrbare Freundschaft mit Phae und ein strafferes Ritual. Die neun Türen auf dem Platz bilden den sichtbaren Umfang der Öffnung; die stadtweite Wirkung wird in Kapitel 2 geprüft. Auf zusätzlichen Auftrag wird die Tal-Linie gegen E-010 abgeglichen: Sereths abgelehnter Kaufversuch und Tals eigener Opferpreis werden konsistent formuliert, die ungeklärte Wiederkehrmechanik einschließlich fugenfreier Hände sichtbar als `OFFEN` geführt.
+- **Status:** Angenommen als redaktioneller Arbeitsauftrag; keine Kapitelabnahme
+- **Begründung:** Die Qualitätsprüfung fand konkrete Logikfehler und zu viel erklärende Distanz. Die Verbesserung soll am Text belegbar sein; eine 10/10 wird nicht vorab behauptet.
+- **Synchronisiert in:** `manuskript/KAPITEL_01_PLAN.md`, `manuskript/KAPITEL_01_ROHENTWURF.md`, `manuskript/KAPITEL_01_DELTA.md`, `planung/STORY_BIBLE.md`, `planung/FIGUREN.md`, `planung/WELT_UND_MAGIE.md`, `planung/PLOT_BAUPLAN.md`, `planung/BAND1_BAUPLAN.md`, `planung/SERIEN_BIBEL.md`, `PROJEKTSTATUS.md`, `produktion/AENDERUNGSPROTOKOLL.md`, Webseite
+- **Später zu prüfen:** Bestehende gelbe und rote Deltas bleiben entscheidungspflichtig. Keine neue Weltregel oder gemeinsame Vorgeschichte für Neyra und Phae wird angenommen. Kapitel 2 muss die zerstörte Kapsel berücksichtigen; ihre Herkunft bleibt offen.
+
 ## Vorlage
 
 ### E-NNN · Kurztitel

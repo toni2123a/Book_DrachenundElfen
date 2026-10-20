@@ -1,208 +1,188 @@
 # Kapitel 1 · Das Kind ohne Vorleben
 
-**Status:** Rohentwurf v1 · Draft-Modus · Koautoren-Abnahme ausstehend
+**Status:** Rohentwurf v2 · Draft-Modus · Koautoren-Abnahme ausstehend
 
 <!-- Neue Kanonannahmen stehen zusätzlich in KAPITEL_01_DELTA.md. -->
 
-Die Tür zum Saal der ungeprüften Erinnerungen öffnete sich, bevor Neyra sie berührte.
+Tal kam nie zu spät.
 
-Nur einen Spalt. Gerade weit genug, um sie zu beschuldigen.
+Neyra wusste es, weil sie vierundzwanzig Jahre lang versucht hatte, ihn dabei zu erwischen. Jeden Abend, wenn die Glocken des Westturms vier Schläge taten, bog er in den Archivgang ein. Neun Schritte bis zur Lampe. Drei Atemzüge Pause. Neun Schritte zurück.
 
-Neyra hielt die Hand über dem Messinggriff und lauschte. Hinter der Tür raschelten zehntausend fremde Vergangenheiten in ihren Kapseln. Das Geräusch erinnerte an Bienen unter Eis – zu leise, um eine einzelne Stimme zu verstehen, zu beharrlich, um es für Stille zu halten.
+Am Abend des Türenfests drückte sich Neyra hinter die Kopistenbank. Im Saal gegenüber lag eine Erinnerung, seit ihrem Erwachen als leer verzeichnet. Wenn sie die Kapsel zur Unbenannten Tür brachte, konnte sie vielleicht herausfinden, ob darin wirklich nichts war. Vierundzwanzig Jahre hatte sie nur ihre eigene Akte gehabt.
 
-„Du bist verschlossen“, flüsterte sie der Tür zu.
+Sie zählte seine Schritte. Eins. Zwei. Der Gang roch nach Bienenwachs und kaltem Stein. Aus den Kapseln hinter den Wänden drang das Summen zehntausender Erinnerungen, leise wie Bienen unter Eis.
 
-Der Spalt blieb.
+Sieben. Acht. Neun.
 
-„Ich habe dich gestern selbst versiegelt.“
+Drei Atemzüge Pause. Dann hätte er umkehren müssen.
 
-Die Tür zeigte keinerlei Reue. Türen waren darin den meisten Archivaren ähnlich.
+Er kehrte nicht um.
 
-Neyra blickte den Westgang hinab. Am Ende brannte noch eine Lampe vor dem Treppenhaus, obwohl draußen bereits die Glocken des Türenfests probten. Drei helle Schläge, ein tiefer. Wieder und wieder. Das gesamte Archiv sollte leer sein. Jeder vernünftige Bewohner Mereas stand längst auf dem Platz der Neun Türen, um zu sehen, welche Namen die Stadt ihren Schwellen für das kommende Jahr gab.
+Tal blieb unter der Lampe stehen, ein hagerer Mann im grauen Mantel der Neunerhalle, die rechte Hand im Handschuh. Auf der linken, die er nie bedeckte, liefen schwarze Fugen bis in die Fingerspitzen. Festgelegt, sagten die Leute. Neyra hatte ihn nie zögern sehen, auch damals nicht, als er ihre Hefte verbrannte.
 
-Jeder vernünftige Bewohner hatte außerdem einen Erinnerungschor, der ihn davon abhielt, in gesperrte Säle einzubrechen.
+Mit neunzehn hatte Neyra einen Winter lang Notizen über ihre Erweckungsakte geführt. Drei Hefte, enge Schrift. Tal hatte sie an einem Morgen abgeholt, höflich, mit einer Quittung, und im Hof der Halle verbrannt. Vorschriftsmäßig. Er hatte dabei nicht einmal gewartet, bis das Papier ganz schwarz war.
 
-Neyra schob die Tür auf.
+Neyra atmete flacher und zählte weiter. Tal neigte den Kopf zur Saaltür. Sie stand einen Fingerbreit offen, seit Neyra die Hand nach ihr ausgestreckt hatte. Ihre Finger waren noch eine Handbreit vom Messinggriff entfernt gewesen. Durch den Spalt kam das Summen lauter als zuvor. Tal musste es hören.
 
-Kalte Luft strich über ihre Wangen. Der Saal lag rund und fensterlos im Bauch des Archivs. Tausende schmale Fächer bedeckten die Wände, jedes mit einer Wachstafel verschlossen. Auf den Tafeln standen Nummern statt Namen. Namen gehörten erst zu Erinnerungen, deren Herkunft und Wahrheit zwei Archivare bestätigt hatten. Alles andere blieb eine Nummer und ein Verdacht.
+Ein vierter Atemzug. Ein fünfter.
+
+Neyra presste die Hand auf den Mund. Wenn er die Tür zuzog, war sie nicht sicher, ob sie sie wieder aufbekam. Wenn er dahinter nachsah, würde er das offene Siegel später ihr zuordnen.
+
+Beim siebten drehte er den Kopf und sah direkt in die Nische. Neyra wich nicht zurück. Hinter ihrem Rücken war Stein.
+
+Tal sah weg. Dann ging er. Neun Schritte, vier Atemzüge später als sonst.
+
+Neyra wartete, bis die Stiefel verklungen waren, und schlüpfte durch den Spalt.
+
+Der Saal lag rund und fensterlos im Bauch des Archivs. Tausende Fächer bedeckten die Wände, jedes mit einer Wachstafel verschlossen, und auf den Tafeln standen Nummern statt Namen. Einen Namen bekam eine Erinnerung erst, wenn zwei Archivare ihre Herkunft bestätigt hatten. Alles andere blieb eine Nummer und ein Verdacht.
 
 Neyra mochte Nummern. Eine Nummer fragte nicht, aus wessen Leben man bestand.
 
-Sie zog die Tür hinter sich zu. Diesmal gehorchte sie.
-
-Kapsel zehn-null befand sich im obersten Ring. Neyra brauchte die fahrbare Leiter, obwohl Elfen angeblich anmutig gebaut waren. Diese Behauptung stammte vermutlich von einem Elf, der nie mit einem langen Mantel auf eine Archivleiter gestiegen war.
-
-Sie klemmte den Saum zwischen die Knie, schob sich drei Sprossen höher und fand die Tafel. `10–0`. Darunter hatte jemand vor vierundzwanzig Jahren mit einem stumpfen Griffel ein einziges Wort eingeritzt: `leer`.
+Kapsel zehn-null lag im obersten Ring. Sie brauchte die fahrbare Leiter, obwohl Elfen angeblich anmutig gebaut waren. Die Behauptung stammte vermutlich von jemandem, der nie mit einem langen Mantel auf eine Archivleiter gestiegen war. Sie klemmte den Saum zwischen die Knie und schob sich hinauf, bis ihr Gesicht vor der Tafel schwebte. `10-0`. Darunter hatte jemand vor vierundzwanzig Jahren mit einem stumpfen Griffel ein einziges Wort eingeritzt: `leer`.
 
 Dasselbe Wort stand in Neyras ältester Akte.
 
-Nicht geboren, hieß es darin. Erwacht. Im Chorgarten unter einer aufgesprungenen Samenschale, die keine Erinnerung getragen hatte. Vierundzwanzig Jahre lang hatten Archivare, Heilerinnen und Chorsprecher nach einer Stimme in ihr gesucht. Sie hatten ihr Silber an die Schläfen gelegt, sie in Resonanzbecken getaucht und ihr so lange Fragen über Leben gestellt, die sie nie geführt hatte, bis sie sich für die falschen Antworten schämte.
-
-Am Ende war nur Neyra geblieben.
-
-Die meisten Leute sagten das mit Bedauern.
+Nicht geboren, hieß es dort. Erwacht. Im Chorgarten, unter einer aufgesprungenen Samenschale. Heilerinnen hatten ihr Silber an die Schläfen gelegt und nach den Toten gefragt, deren Erinnerungen in ihr weiterleben sollten. Neyra hatte keine gehört. Irgendwann hatte sie angefangen, vor jeder Antwort zu warten, damit es wenigstens aussah, als lauschte sie.
 
 Sie brach das Wachs mit dem Daumennagel. Das Fach atmete einen Geruch aus, den sie nicht erwartet hatte: Birnen, an den Rändern verbrannt.
 
-Neyra erstarrte auf der Leiter.
+Neyra erstarrte auf der Leiter. Im nächsten Atemzug war der Geruch fort. Im Fach lag eine Kapsel, milchig, kaum größer als ihr kleiner Finger. Sie hielt sie gegen die Saallampe. Andere Erinnerungssamen leuchteten in ihrer Hand, sobald das Licht durch die Hüllen fiel. Diese hier blieb farblos. Neyra drehte sie zwischen den Fingern. Nichts.
 
-Der Duft war im nächsten Atemzug verschwunden. Im Fach lag eine längliche Kapsel, milchig und kaum größer als ihr kleiner Finger. Erinnerungssamen schimmerten gewöhnlich in der Farbe des Gefühls, das sie bewahrten – blaugrün vor Ruhe, bernsteinfarben vor Freude, dunkel wie geronnenes Blut, wenn jemand im letzten Augenblick nur Furcht zu geben vermochte. Diese Kapsel war farblos. Nicht durchsichtig. Farblos, als hätte die Welt vergessen, welche Farbe sie ihr schuldete.
+„Wenn du fällst“, sagte Phae hinter ihr, „behaupten drei meiner Stimmen, sie hätten dich gewarnt. Zwei bestehen darauf, dich aufzufangen. Eine schläft. Die siebte will, dass ich die Leiter loslasse.“
 
-Neyra streckte die Hand aus.
+Neyra stieß mit der Schulter gegen das Fach. Die Leiter rollte eine Handbreit zur Seite. Phae fing sie am Fuß ab.
 
-„Wenn du fällst“, sagte Phae hinter ihr, „behaupten drei meiner Stimmen, sie hätten dich gewarnt. Zwei werden darauf bestehen, dich aufzufangen. Eine schläft. Und die siebte findet, du hättest den Sturz verdient.“
+„Welche ist die siebte?“
 
-Neyra stieß mit der Schulter gegen das Fach. Die Leiter rollte eine Handbreit seitwärts.
+„Die alte Richterin. Ich halte dich.“
 
-Phae fing sie am Fußende ab.
+Phae stand in der weißen Amtstracht der Chorsprecherinnen zwischen den Regalen, viel zu früh vollständig angekleidet. Kupferfäden im schwarzen Haar. Sieben schmale Ringe am linken Ohr, einer für jede Stimme, die sie in sich trug. Sie grinste, doch die Knöchel an den Leiterholmen waren weiß.
 
-„Welche ist die siebte?“, fragte Neyra.
+„Tal war zu spät“, sagte sie. „Vier Atemzüge. Ich habe es vom Treppenhaus aus gehört.“
 
-„Ich.“
+„Tal ist nie zu spät.“
 
-Phae stand zwischen den Regalen in der weißen Amtstracht der Chorsprecherinnen. Sie war zu früh vollständig angekleidet: Kupferfäden im schwarzen Haar, sieben schmale Ringe am linken Ohr, einer für jede Stimme, die sie in sich trug. Ihre Hände hielten die Leiter fest. Ihr Gesicht tat es ihr nicht gleich.
+„Dann ist heute ein schlechter Abend für Gewissheiten.“
 
-Neyra nahm die Kapsel aus dem Fach und stieg hinunter.
+Neyra stieg hinunter, die Kapsel in der Faust. Auf der letzten Sprosse verfing sich ihr Mantel. Phae löste den Saum, strich ihr den Staub vom Rücken und hielt die Hand auf, um ihr beim Absteigen zu helfen. Neyra legte ihre freie hinein. Erst als beide Füße auf dem Boden standen, ließ Phae los.
 
-„Du wirst nichts sagen“, sagte sie.
+„Du sagst es der Halle nicht.“
 
 „Ich sage bereits sehr viel.“
 
-„Der Halle.“
+Phaes Blick fiel auf das aufgebrochene Wachs. Ihre Schultern zogen sich zurück, das Kinn hob sich. Die Richterin. Neyra kannte diese Haltung. Eben noch hatte Phae ihr den Rücken abgestaubt.
 
-Phaes Blick fiel auf das gebrochene Wachs. Für einen Moment veränderte sich ihre Haltung. Die Schultern zogen sich zurück, das Kinn hob sich. Nicht Phae, dachte Neyra. Eine der Älteren. Vielleicht Siva, die in ihrem ersten Leben Richterin gewesen war und Türen nur mochte, wenn sie verriegelt waren.
+„Wir legen sie zurück“, sagte Phae.
 
-„Wir sollten die Kapsel zurücklegen“, sagte Phae.
+Dann blinzelte sie, und die Schultern sanken.
 
-Dann blinzelte sie. Ihre Schultern sanken.
-
-„Ich sollte sie zurücklegen“, verbesserte sie sich leise.
-
-Neyra schloss die Finger um die Kapsel. Sie war wärmer als ihre Haut.
+„Ich lege sie zurück. Du legst sie zurück.“
 
 „Warum fürchtest du sie?“
 
-„Ich fürchte, was du von ihr verlangst.“
+„Ich fürchte, was du von ihr verlangst. Du willst, dass etwas Totes dir erklärt, wer du bist.“
 
-„Eine Erinnerung.“
+„Das sagt jemand mit sieben Toten im Kopf.“
 
-„Nein. Ein Urteil.“ Phae trat näher. Im kalten Saal roch sie nach Regen und dem bitteren Öl, mit dem Chorsprecher ihre Schläfen bestrichen. „Du willst, dass etwas Totes dir erklärt, wer du bist.“
+Phae zuckte zusammen. Ihre Finger schlossen sich um die Hand, mit der sie Neyra eben geholfen hatte.
 
-„Das ist eine merkwürdige Kritik von jemandem mit sieben Toten im Kopf.“
+Neyra streckte ihre freie Hand aus. Phae sah auf die Faust mit der Kapsel. Neyra ließ den Arm sinken.
 
-Phae zuckte zusammen.
+Draußen schlugen die Festglocken an, drei helle, ein tiefer. Das Fest begann.
 
-Neyra bereute den Satz, bevor er zwischen ihnen Platz fand. Sie entschuldigte sich nicht. Entschuldigungen waren oft nur der Versuch, die Erinnerung eines anderen schneller zu verändern als das eigene Verhalten.
+„Heute wird die Unbenannte geprüft“, sagte Neyra. „Sie soll auf Dinge reagieren, die keiner Erinnerungslinie gehören. Ich will nur die Kapsel an sie halten.“
 
-Von draußen drang ein neuer Glockenschlag durch den Stein. Diesmal antworteten tiefere Töne aus anderen Vierteln. Das Fest begann.
+„Vor der ganzen Stadt?“
 
-Phae öffnete die Hand.
+„Vielleicht muss ich gar nicht so nah heran.“ Sie sah auf das gebrochene Wachs. „Und wenn doch, bin ich bis morgen eben die Leere, die gehofft hat.“
 
-„Gib sie mir.“
+„Und wenn sie nicht leer ist?“
 
-Neyra sah auf die sieben Ringe an ihrem Ohr. Als sie jünger gewesen war, hatte sie geglaubt, jeder Ring enthalte eine vollständige Person, die Phae beraten konnte. Erst später hatte sie verstanden, dass ein Chor nicht aus sieben weisen Ahnen bestand. Er war eher ein Raum mit sieben Fenstern. Durch manche fiel Licht. Durch andere Wind. Und gelegentlich behauptete eines, es sei die Tür.
+Neyra schob die Kapsel in die Innentasche ihres Mantels. Sie war wärmer als ihre Haut.
 
-„Heute wird die Unbenannte geprüft“, sagte Neyra. „Sie soll auf Dinge reagieren, die keiner Erinnerungslinie gehören.“
+Phae trat ihr in den Weg. „Versprich mir, dass du aufhörst, wenn ich es sage.“
 
-„Sie soll zeigen, welchen Namen sie im vergangenen Jahr verdient hat.“
-
-„Dann kann sie zeigen, ob diese Kapsel überhaupt etwas enthält.“
-
-„Vor der ganzen Stadt.“
-
-„Nur, wenn etwas geschieht.“
-
-Phae schloss die Augen. Unter ihren Lidern zitterte es, als sprächen Menschen hinter dünnem Papier durcheinander. Als sie sie wieder öffnete, stand darin keine Zustimmung.
-
-Aber sie rief auch nicht nach den Wächtern.
-
-Neyra schob die Kapsel in die Innentasche ihres Mantels.
+Neyra sah zur Tür.
 
 „Das ist kein Ja“, sagte Phae.
 
-„Nein.“ Neyra ging zur Tür. „Es ist nur keine verschlossene Tür.“
+„Nein.“ Neyra ging zur Tür. „Aber du rufst auch nicht nach der Halle.“
 
-Der Messinggriff drehte sich unter ihrer Hand, diesmal ganz gewöhnlich. Fast enttäuschend.
+Der Messinggriff drehte sich unter ihrer Hand ganz gewöhnlich. Fast enttäuschend.
 
 * * *
 
-Merea hatte für das Fest jede öffentliche Tür aus den Angeln gehoben und auf den Platz getragen.
+Für das Fest hatte Merea seine Türen ausgehängt und auf den Platz getragen.
 
-Neun standen aufrecht in steinernen Haltern: die breite Eichentür des Kornhauses, die grüne Gittertür der Südgärten, die schmale Bronzetür zum Fluttunnel. Ohne ihre Gebäude wirkten sie unanständig nackt. Menschen gingen um sie herum, betrachteten Scharniere, Kerben und die blanken Stellen, an denen im vergangenen Jahr Tausende Hände gelegen hatten. Kinder warfen Kupferstaub gegen die Rahmen. Wo er haften blieb, hatte eine Schwelle gezögert, jemanden hindurchzulassen.
+Neun standen aufrecht in steinernen Haltern: die breite Eichentür des Kornhauses, die grüne Gittertür der Südgärten, die schmale Bronzetür zum Fluttunnel. Ohne ihre Häuser wirkten sie unanständig nackt. Die Leute gingen um sie herum, betrachteten Scharniere und Kerben und die blanken Stellen, an denen ein Jahr lang Hände gelegen hatten. Kinder warfen Kupferstaub gegen die Rahmen. Wo er haftete, hatte die Schwelle gezögert, jemanden einzulassen.
 
-Über dem Platz hing Sommerregen. Noch fiel er nicht. Er sammelte sich in den Wolken und ließ die Luft nach Münzen schmecken.
+Über dem Platz hing Sommerregen, der noch nicht fiel. Er sammelte sich in den Wolken und ließ die Luft nach Münzen schmecken.
 
-Neyra folgte Phae durch die Menge. Die Kapsel in ihrer Manteltasche schien bei jedem Glockenschlag gegen ihre Rippen zu stoßen, obwohl sie sich nicht bewegte.
+Die neunte Tür stand am Rand des Zeremoniekreises. Schwarzes Eibenholz, kein Schloss, kein Knauf. Die anderen acht stammten aus Gebäuden, aber niemand wusste, wo man diese gefunden hatte. Jedes Jahr verweigerte sie einen Namen. Einmal war ein Hund durch sie auf der anderen Platzseite herausgekommen, ohne den Raum dazwischen zu durchqueren. Neyra suchte die Stelle, an der er verschwunden war. Von hier aus sah sie nur Holz.
 
-„Nicht zur Unbenannten sehen“, sagte Phae.
+Neyra mochte sie. Sie war die einzige Tür in Merea, die nichts versprach.
 
-Neyra sah hin.
+„Du siehst hin“, sagte Phae neben ihr.
 
-Die neunte Tür stand am Rand des Zeremoniekreises. Schwarzes Eibenholz, kein Schloss, kein Knauf. Während die anderen acht aus Gebäuden stammten, wusste niemand, wo diese gefunden worden war. Jedes Jahr trug man sie auf den Platz. Jedes Jahr prüfte man sie. Und jedes Jahr verweigerte sie einen Namen.
+„Du hast mich daran erinnert.“
 
-Vor vier Jahren hatte sie einen Ratsherrn nicht hindurchgelassen. Vor drei Jahren war ein Hund durch sie auf der gegenüberliegenden Seite des Platzes herausgekommen, ohne den Raum dazwischen zu durchqueren. Im letzten Jahr hatte sie die ganze Zeremonie über nach Rauch gerochen.
+„Ich habe sieben Erinnerungen, und keine davon tut so etwas mit Absicht.“
 
-Neyra mochte sie.
-
-„Du siehst hin“, sagte Phae.
-
-„Du hast mich an sie erinnert.“
-
-„Ich habe sieben Erinnerungen. Keine davon macht so etwas mit Absicht.“
-
-Ein Kind löste sich aus der Menge und blieb vor Neyra stehen. Es war ein Elfenkind im dritten Wachstumsjahr, vielleicht zwölf, mit frisch geöffneten Erinnerungslinien an den Schläfen. Die feinen silbrigen Adern pulsierten, wenn eine seiner Stimmen aufgeregt war.
+Ein Kind löste sich aus der Menge und blieb vor Neyra stehen, ein Elfenkind im dritten Wachstumsjahr, vielleicht zwölf, mit frisch geöffneten Linien an den Schläfen. Silberne Adern, die pulsierten, wenn eine seiner Stimmen aufgeregt war.
 
 „Bist du die Leere?“, fragte es.
 
-Die Frau hinter ihm wurde bleich. „Tovan.“
+Die Frau hinter ihm wurde bleich. „Tovan!“
 
 „Schon gut“, sagte Neyra.
 
 Das Kind legte den Kopf schief. „Welche Stimme vermisst du am meisten?“
 
-Neyra betrachtete sein ernstes Gesicht. Es war keine Grausamkeit darin, nur die unerschütterliche Neugier von jemandem, der sich eine Person ohne inneres Echo so wenig vorstellen konnte wie einen Schatten ohne Körper.
+Neyra öffnete den Mund. Das Kind wartete aufmerksam. Es wollte eine Antwort, keinen Anlass, sich zu schämen.
 
-„Die, die mir verraten würde, was ich darauf antworten soll.“
+„Die, die mir sagen würde, was ich darauf antworte.“
 
-Tovan dachte nach. Dann lächelte er, als hätte sie ihm ein Rätsel geschenkt, und ließ sich von der Frau fortziehen.
+Tovan überlegte. Dann lächelte er, als hätte sie ihm ein Rätsel geschenkt, und ließ sich fortziehen.
 
-Phae berührte Neyras Handrücken. Nur kurz. Keine Erinnerungslinie verband sie, kein geerbtes Leben verpflichtete sie zueinander. Phae blieb trotzdem.
+Phae berührte Neyras Handrücken. Neyra drehte die Hand, doch Phae zog ihre zurück. Die Glockner auf der Freitreppe hoben schon die Hämmer. Phae musste zu ihrer Tür.
 
-Auf der Freitreppe der Neunerhalle hoben die Glockner ihre Hämmer.
+„Wenn ich dich rufe, kommst du zurück“, sagte sie.
 
-Der erste Schlag brachte den Platz zum Schweigen.
+Neyra nickte. Phae wartete, bis sie ihr dabei in die Augen sah.
 
-Chorsprecherinnen traten vor jede Tür. Phae nahm ihren Platz an der Unbenannten ein. Neyra blieb hinter der Markierung aus weißem Salz, wo die Archivare warteten, falls eine Tür eine alte Erinnerung abwarf. Ihre Aufgabe bestand darin, diese Reste aufzufangen, bevor die Menge sie zertrat.
+Neben den Glocknern stand Tal.
 
-Die Zeremonie begann mit der Kornhaustür.
+Er hatte den Platz nicht betreten. Er stand am obersten Absatz, die Hände an den Seiten, der Mantel ohne eine Falte, und beobachtete die Menge mit der Aufmerksamkeit eines Mannes, der einen Fehler nur einmal korrigieren muss. Die schwarzen Fugen auf seiner Linken glänzten vom Fackelschein. Neyra wusste, dass er sie gesehen hatte, bevor sie ihn gesehen hatte. Er sah sie auch jetzt an, über dreißig Schritt und tausend Köpfe, und zwar zu lange.
 
-Zwei Zeugen berichteten, wen sie im vergangenen Jahr eingelassen und wem sie sich verweigert hatte. Eine Bäckerin sagte, das Holz sei in der Brandnacht rot geworden. Ein Kornmesser widersprach: schwarz, ganz sicher, schwarz wie nasse Kohle. Beide legten die Hände an den Rahmen. Die Chorsprecherin lauschte, bis sich die Stimmen hinter ihren Augen geordnet hatten.
+Sie hielt den Blick. Es war eine Frage des Stolzes und der Hefte.
+
+Er nahm als Erster die Augen fort.
+
+Der erste Glockenschlag brachte den Platz zum Schweigen. Chorsprecherinnen traten vor die Türen. Phae ging zur Unbenannten, und Neyra blieb hinter der Salzlinie bei den Archivaren, die auffingen, was eine Schwelle an alten Erinnerungen abwarf, bevor die Menge es zertrat.
+
+Die Zeremonie begann mit dem Kornhaus. Zwei Zeugen erzählten, wen die Tür im vergangenen Jahr eingelassen und wem sie sich verweigert hatte. Eine Bäckerin sagte, das Holz sei in der Brandnacht rot geworden. Ein Kornmesser widersprach: schwarz, ganz sicher, schwarz wie nasse Kohle. Beide legten die Hände an den Rahmen. Die Chorsprecherin lauschte, bis sich die Stimmen hinter ihren Augen geordnet hatten.
 
 „Im Jahr der knappen Ernte“, rief sie, „heißt diese Schwelle: Die Tür, die zuerst die Hungrigen sah.“
 
-Die Menge wiederholte den Namen. Das Holz knarrte. Kupferstaub löste sich und stieg wie heller Atem auf.
+Die Menge wiederholte den Namen. Das Holz knarrte, Kupferstaub löste sich und stieg wie heller Atem auf.
 
-Eine Tür nach der anderen erhielt ihren Namen.
+An der Gittertür legten die nächsten Zeugen ihre Hände auf. Neyra lauschte kaum. Sie suchte einen Weg durch die Archivare bis zur Unbenannten. Drei Schritte bis zur Salzlinie. Dahinter freier Platz. Von der Treppe aus würde Tal jeden davon sehen.
 
-Die Gittertür der Südgärten wurde zur Schwester des späten Frosts. Die Bronzetür des Fluttunnels hieß fortan Nur gemeinsam. Eine kleine, schief gezimmerte Schultür wählte den Namen Zweiter Versuch, was die Kinder jubeln und die Lehrkräfte seufzen ließ.
+Die Kapsel wurde wärmer. Neyra zog sie ein Stück aus der Tasche, bis sie Luft an den Fingern spürte, und schob sie wieder hinein. Phae blickte von der Eibentür zu ihr herüber.
 
-Neyra lauschte dem Zeremonialtext. Sie kannte ihn seit Jahren, doch erst heute fiel ihr auf, dass Phae vor jeder Benennung zehn Atemzüge wartete.
+Bei der Bronzetür begann Neyra zu zählen. Die Chorsprecherin wartete vor der Benennung zehn Atemzüge.
 
-Nicht neun.
+Nicht neun. Zehn.
 
-Zehn.
+Beim neunten öffnete die Frau die Augen. Beim zehnten sprach sie den Namen: Nur gemeinsam.
 
-Beim neunten öffnete Phae die Augen. Beim zehnten sagte sie den Namen.
+Neyra zählte bei der schiefen Schultür noch einmal. Eine andere Chorsprecherin, dieselbe Pause. Zehn Atemzüge. Dann riefen die Kinder den Namen Zweiter Versuch. Neyra kannte das Ritual seit Jahren. Sie hätte neun Atemzüge darauf geschworen.
 
-Neyra zählte erneut. Zehn.
-
-Die Kapsel unter ihrem Mantel wurde wärmer.
-
-Als nur noch die Eibentür übrig war, setzte der Regen ein. Große, langsame Tropfen trafen den Platz. Sie zeichneten dunkle Kreise auf das Salz und liefen an den nackten Türrahmen hinab, als stünden unsichtbare Häuser im Sturm.
+Als nur noch die Eibentür übrig war, fiel der Regen. Große, langsame Tropfen schlugen dunkle Kreise ins Salz und liefen an den nackten Rahmen hinab, als stünden unsichtbare Häuser im Sturm.
 
 Phae trat vor die Unbenannte.
 
-„Diese Schwelle gehört keinem Haus“, sagte sie.
+„Diese Schwelle gehört keinem Haus.“
 
 „Keinem Haus“, antwortete die Menge.
 
@@ -212,27 +192,17 @@ Phae trat vor die Unbenannte.
 
 „Sie trägt keinen Namen.“
 
-Niemand antwortete.
+Niemand antwortete. Das Schweigen gehörte zum Ritual, und Neyra kannte seine Länge. Neun Atemzüge.
 
-Das Schweigen gehörte zum Ritual. Neyra kannte seine Länge. Neun Atemzüge.
-
-Phae nahm den ersten.
-
-Beim dritten spürte Neyra die Kapsel durch Stoff und Hemd brennen.
-
-Beim fünften begann die Eibentür zu zittern.
-
-Beim siebten drehte sich Phaes Kopf zu ihr.
+Phae nahm den ersten. Beim dritten brannte die Kapsel durch Stoff und Hemd. Beim fünften begann die Eibentür zu zittern. Beim siebten drehte Phae den Kopf und sah Neyra an.
 
 Beim neunten hätte die Tür still bleiben müssen.
 
 Phae holte ein zehntes Mal Luft.
 
-Ein Riss lief durch die Salzlinie vor Neyras Füßen.
+Ein Riss lief durch die Salzlinie vor Neyras Füßen. Die Menge murmelte. Oben auf der Treppe setzte sich Tal in Bewegung, Stufe für Stufe, im Takt seiner Abende. Sein Blick ging von dem Riss zur Tür und von der Tür zu ihrer Manteltasche.
 
-Die Menge murmelte. Einer der Hallenwächter trat aus dem Schatten der Treppe. Neyra sah seinen Blick zwischen dem Riss, der Tür und ihrer Manteltasche wandern.
-
-Sie hätte gehen können. Durch die Menge, den Westbogen hinab, zurück ins Archiv. Die Kapsel wieder in ihr Fach legen, neues Wachs über das alte drücken und für den Rest ihres langen Lebens so tun, als wäre Leere nur ein anderer Name für Freiheit.
+Sie hätte gehen können. Westbogen hinab, zurück ins Archiv, neues Wachs über das alte, und für den Rest eines langen Lebens so tun, als sei Leere nur ein anderes Wort für Freiheit.
 
 Das wäre vernünftig gewesen.
 
@@ -240,135 +210,91 @@ Neyra trat über die Salzlinie.
 
 * * *
 
-„Nein“, sagte Phae.
+„Zurück“, sagte Phae. Nicht laut. Gerade so, dass Neyra es hörte.
 
-Nicht laut. Gerade laut genug, dass Neyra sie hörte.
+Neyra hielt einen Schritt lang inne. Phae sah zuerst auf ihre Tasche, dann in ihr Gesicht. Neyra senkte den Blick und ging weiter.
 
-Der Hallenwächter kam näher. Menschen wichen vor Neyra zurück, ohne zu wissen, warum. Vielleicht war Schuld ansteckend. Vielleicht erkannten sie an Phaes Gesicht, dass gleich etwas zerbrechen würde.
+Das Eibenholz war glatt, aber nicht tot. Unter der Oberfläche liefen feine Linien, die sich im Augenwinkel bewegten. Auf Brusthöhe lag eine flache Mulde, rund wie ein geschlossener Mund.
 
-Neyra blieb vor der Unbenannten stehen.
+„Archivarin Neyra.“ Tal war am Fuß der Treppe angekommen. Er sprach nicht laut, und doch drehte sich die Hälfte des Platzes um. „Treten Sie zurück.“
 
-Das Eibenholz war glatt, aber nicht tot. Unter seiner Oberfläche verliefen feine Linien, die sich im Augenwinkel bewegten. Kein Griff. Kein Schloss. Auf Brusthöhe befand sich eine flache Mulde, rund wie ein geschlossener Mund.
+Er sagte es genau so, wie er damals die Quittung vorgelesen hatte.
 
-„Archivarin“, rief jemand von der Treppe. „Treten Sie zurück.“
+Neyra zog die Kapsel hervor. Durch Phae ging ein Laut, der aus mehreren Kehlen zugleich kam. Neyra verstand keine Worte. Sie verstand die Angst, und sie war nicht Phaes allein.
 
-Neyra zog die Kapsel hervor.
+„Letzte Gelegenheit“, sagte Phae. Wieder war es nur ihre Stimme. „Du musst nicht jede verschlossene Sache öffnen.“
 
-Ein Laut ging durch Phae, der aus mehreren Kehlen zugleich zu kommen schien. Neyra verstand keine Worte. Nur Angst. Nicht Phaes Angst allein.
+Neyra sah auf ihre Faust. Der Daumennagel hatte Wachs unter der Kante. Dafür konnte die Halle sie aus dem Archiv werfen. Phae musste sie nur zurückführen, und sie könnte morgen wieder fremde Stimmen sortieren und auf die nächste Spur warten.
 
-Die Kapsel lag farblos in ihrer Hand.
+Vierundzwanzig Jahre. Sie drückte den Daumen gegen die Kapsel, bis es wehtat.
 
-„Letzte Gelegenheit“, sagte Phae. Ihre Stimme gehörte wieder nur ihr. „Du musst nicht jede verschlossene Sache öffnen.“
+„Für dich ist eine verschlossene Tür etwas, hinter dem jemand wartet“, sagte sie. „Für mich ist sie eine Wand.“
 
-Neyra sah die Frau an, die sieben Vergangenheiten in sich trug und trotzdem jeden Morgen entschied, welche davon sprechen durfte. Dann sah sie auf ihre eigene Hand. Eine Hand ohne fremde Erinnerung. Ohne ererbte Fertigkeit. Ohne Beweis, dass vor ihr irgendetwas gewesen war, das sie gewollt hatte.
-
-„Für dich ist eine verschlossene Tür etwas, hinter dem jemand wartet“, sagte Neyra.
-
-Der Hallenwächter überquerte die nasse Salzlinie.
-
-„Für mich ist sie nur eine Wand.“
+Tal ging über das Salz. Der Riss lag zwischen ihnen. Er blieb davor stehen.
 
 Neyra legte die Kapsel in die Mulde.
 
 Nichts geschah.
 
-Der Regen prasselte auf neun Türen. Phae schloss die Augen. Der Wächter griff nach Neyras Arm.
+Der Regen prasselte auf neun Türen. Phae schloss die Augen. Tal hob die linke Hand, hielt sie aber noch auf seiner Seite des Risses. Neyra wartete. Sie wollte wenigstens den Geruch noch einmal. Birnen. Irgendetwas, das sie sich nicht eingebildet hatte.
 
-Die Enttäuschung war nicht scharf. Schärfe hätte sie ertragen. Sie breitete sich langsam in ihr aus, lauwarm und vertraut, wie Wasser, das durch einen schlechten Verband drang.
-
-Leer, dachte sie.
-
-Natürlich.
+Leer, dachte sie. Natürlich.
 
 Dann öffnete sich die Tür.
 
-Sie schwang nicht nach innen oder außen. Sie war im einen Moment geschlossen und im nächsten nicht mehr dort, wo Geschlossenheit möglich war.
+Das Eibenholz blieb unter Neyras Fingern. Trotzdem sah sie hindurch.
 
-Hinter ihr lag kein Platz.
+Dahinter lag kein Platz. Eine steile Straße führte zwischen Häusern hinab, die Merea nicht kannte. Rotes Glas deckte ihre Dächer. Brücken spannten sich von Fenster zu Fenster, obwohl darunter kein Wasser floss. Schnee stieg vom Pflaster in einen violetten Abendhimmel. Reglose Menschen standen im Aufwärtsfall der Flocken und sahen durch die Schwelle zurück.
 
-Eine steile Straße führte zwischen Häusern hinab, die Merea nicht kannte. Ihre Dächer waren mit rotem Glas gedeckt. Brücken spannten sich von Fenster zu Fenster, obwohl unter ihnen kein Fluss floss. Schnee stieg von den Pflastersteinen in einen violetten Abendhimmel. Menschen standen reglos im Aufwärtsfall der Flocken und blickten durch die offene Schwelle zurück.
+Jetzt roch sie es wieder. Verbrannte Birnen.
 
-Der Geruch traf Neyra zuerst.
+Die Kapsel zerbrach. Es war kein Knall, eher das Knacken eines Zahns im Schlaf. Farbloses Licht lief über das Eibenholz und in die Fugen des Platzes.
 
-Verbrannte Birnen.
+Die Kornhaustür riss auf. Dann die Gittertür, die Bronzetür, die Schultür, die Türen der Badehalle, des Westtors, des Archivs, der Neunerhalle. Alle acht übrigen Schwellen auf dem Platz standen offen. Keine zeigte die Menge auf der anderen Seite des Rahmens. Hinter jeder lag dieselbe fremde Stadt, aus einem anderen Winkel gesehen.
 
-Die Kapsel zerbarst.
+Neyra suchte zwischen den fremden Straßen nach dem Ofen, aus dem der Geruch kam. Hinter einem Rahmen stand ein Turm mit abgebrochener Spitze. Hinter dem nächsten lag ein Platz voller roter Schirme. Dann sah sie eine schmale Gasse und an deren Ende eine rote Tür. Sie wusste, dass die Birnen dort verbrannten.
 
-Kein Knall. Ein kaum hörbares Knacken, wie ein Zahn im Schlaf. Farbloses Licht rann über das Eibenholz und in die Fugen des Platzes.
-
-Die Kornhaustür riss auf.
-
-Die Gittertür der Südgärten folgte.
-
-Dann die Bronzetür, die Schultür, die Türen der Badehalle, des Westtors, des Archivs und der Neunerhalle. Acht Schwellen öffneten sich gleichzeitig. Keine zeigte das Gebäude, aus dem man sie gehoben hatte. Hinter jeder lag dieselbe fremde Stadt, aus einem anderen Winkel gesehen.
-
-Ein Turm mit einer abgebrochenen Spitze.
-
-Ein Platz voller roter Schirme.
-
-Ein Kanal, in dem steinerne Fische durch die Luft schwammen.
-
-Eine schmale Gasse. Eine rote Tür.
-
-Die Glocken verstummten.
-
-Aus den neun offenen Rahmen kam ein Wort.
-
-Nicht gesprochen. Erinnert.
+Die Glocken verstummten. Aus den neun Rahmen kam ein Wort. Es wurde nicht gesprochen, es wurde erinnert.
 
 **Asra.**
 
-Der Name ging durch die Menge wie Wind durch hohes Gras. Menschen sanken auf die Knie. Andere schrien. Eine alte Frau begann zu lachen und schlug beide Hände vor den Mund, als schäme sie sich für die Freude. Neben der Schultür rief ein Mann nach jemandem, dessen Namen Neyra nicht verstand.
+Der Name ging durch die Menge wie Wind durch hohes Gras. Leute sanken auf die Knie, andere schrien. Eine alte Frau lachte und presste beide Hände auf den Mund, als schämte sie sich der Freude. Neben der Schultür rief ein Mann nach jemandem, dessen Namen Neyra nicht verstand.
 
-Phae stand vollkommen still.
+Phae stand still. An ihrem Ohr zitterten die Ringe, einer nach dem anderen. Beim siebten wandte sie sich der fremden Stadt zu, und in ihrem Gesicht lag die Sehnsucht einer Person, die Neyra nie kennengelernt hatte.
 
-An ihrem linken Ohr zitterten sieben Kupferringe. Einer nach dem anderen. Beim siebten wandte sie sich der fremden Stadt zu, und in ihrem Gesicht lag die Sehnsucht einer Person, die Neyra nie kennengelernt hatte.
+Eine Hand schloss sich um Neyras Handgelenk.
 
-Der Wächter hatte Neyras Arm losgelassen.
+Sie fuhr herum. Tal hielt sie mit der linken Hand fest. Seine schwarzen Fugen drückten gegen ihre Haut. Die Finger zitterten. Neyra sah hin, um sicherzugehen. Diese Finger hatten ihre Hefte ins Feuer gehalten. Damals hatten sie nicht gezittert.
 
-Sie hätte die Kapsel aus der Mulde reißen müssen. Phae rufen. Die Tür schließen. Irgendetwas tun, das diese Wirklichkeit wieder zu einer einzigen machte.
+Er sah nicht die Türen an. Er sah nicht die Stadt. Er sah nur sie, mit einem Gesicht, das sie nie an ihm gesehen hatte und das zu müde war für Hass.
 
-Stattdessen streckte Neyra die Hand durch den Rahmen.
+„Nicht schon wieder“, sagte er, so leise, dass es im Regen unterging.
 
-Der Regen endete an der Schwelle.
+Neyra riss sich los. „Fassen Sie mich nicht an.“
 
-Auf der anderen Seite fiel Schnee nach oben. Eine Flocke berührte ihre Finger und war heiß.
+Sie rieb die Stelle an ihrem Handgelenk. Tal ließ die Hand sinken.
 
-Die rote Tür am Ende der Gasse öffnete sich.
+Dann sah sie, was er nicht ansah.
 
-Eine Frau trat heraus. Dunkles Haar, hochgesteckt mit einem Kamm aus weißem Holz. Mehl an den Unterarmen. Eine Brandnarbe am Kinn. Neyra kannte jedes Detail, bevor sie es sah.
+Die rote Tür am Ende der Gasse hatte sich geöffnet. Eine Frau trat heraus, dunkles Haar mit einem Kamm aus weißem Holz hochgesteckt, Mehl an den Unterarmen, eine Brandnarbe am Kinn. Neyra kannte jede Einzelheit, bevor sie sie sah. Sie kannte den Klang dieser Schritte auf einer Treppe. Sie kannte die Stelle an der Schulter, an die man den Kopf legen konnte, ohne die Haarnadeln zu spüren. Sie kannte die Melodie, die die Frau summte, wenn Birnen im Ofen verbrannten.
 
-Sie kannte den Klang der Schritte dieser Frau auf einer Treppe.
+Eine Erinnerung öffnete sich.
 
-Sie kannte die Stelle an ihrer Schulter, an der man den Kopf anlehnen konnte, ohne die Haarnadeln zu spüren.
-
-Sie kannte die Melodie, die die Frau summte, wenn Birnen im Ofen verbrannten.
-
-Eine Erinnerung öffnete sich in Neyra.
-
-Sie war sechs Jahre alt. Ein Alter, das sie nie gehabt hatte. Sie rannte durch die Gasse, beide Knie aufgeschürft, und die rote Tür erkannte ihre Hand. Die Frau kniete sich vor sie, schimpfte über das Blut und weinte dabei vor Erleichterung. Hinter ihr roch das Haus nach Teig, Rauch und Sommerregen.
+Sie war sechs. Ein Alter, das sie nie gehabt hatte. Sie rannte durch die Gasse, beide Knie aufgeschürft, und die rote Tür erkannte ihre Hand. Die Frau ging vor ihr in die Hocke, schimpfte über das Blut und weinte dabei vor Erleichterung. Hinter ihr roch das Haus nach Teig, Rauch und Sommerregen.
 
 „Da bist du ja“, sagte die Frau.
 
-Nicht auf dem Platz. Damals.
+Nicht auf dem Platz. Damals. Und jetzt.
 
-Jetzt.
+Neyra taumelte rückwärts. Der Rahmen schnitt die Erinnerung entzwei, und beide Hälften blieben wahr.
 
-Neyra taumelte zurück. Der Rahmen schnitt die Erinnerung entzwei, doch beide Hälften blieben wahr.
+In der einen war sie vor vierundzwanzig Jahren im Chorgarten erwacht, erwachsen, namenlos, allein in einer leeren Samenschale. In der anderen war sie ein Kind gewesen, durch Asras Gassen gelaufen, und hatte eine Frau Mutter genannt.
 
-In der einen war sie vor vierundzwanzig Jahren im Chorgarten erwacht, erwachsen, namenlos und allein in einer leeren Samenschale.
+Phae packte ihre Hand. „Neyra.“
 
-In der anderen war sie als Kind durch Asras Gassen gelaufen und hatte eine Frau Mutter genannt.
+Diesmal hielt Neyra sich an ihr fest.
 
-Phae packte ihre Hand.
-
-„Neyra.“
-
-Neyra hörte sie kaum. Hinter allen neun Türen schlug die fremde Stadt ihre Glocken. Es waren dieselben Töne wie in Merea, nur in der falschen Reihenfolge.
-
-Die Frau an der roten Tür hob den Kopf.
-
-Über die unmögliche Straße hinweg fand ihr Blick Neyra.
+Neyra hörte sie kaum. Hinter allen neun Türen schlug die fremde Stadt ihre Glocken, dieselben Töne wie in Merea in der falschen Reihenfolge. Die Frau an der roten Tür hob den Kopf. Über die unmögliche Straße hinweg fand ihr Blick Neyra.
 
 Und sie lächelte.
 

@@ -6,10 +6,14 @@
 - **Auslöser:** Beim Fest der benannten Türen öffnen sich alle Schwellen Mereas für einen Augenblick nach Asra. Eine riesige Drachenschuppe schließt sich über der Stadt.
 - **Ziel:** Drei Wirklichkeitsanker finden und vor Ende der neunten Nacht eine kontrollierte Trennung der Städte ermöglichen.
 - **Antagonistische Kraft:** Sereth will Asra vollständig wiederherstellen, obwohl Merea und seine Bewohner dadurch verdrängt würden.
+- **Zweite Kraft:** Tal, der Vollstrecker der Neunerhalle, gilt zuerst als Gegner, wird zum Zwangsverbündeten und trägt am Ende den zweiten Preis der Ankunft.
 - **Einsatz:** Scheitert der Tausch, überschreibt eine Stadt die andere oder beide zerfallen in namenlose Widersprüche.
 - **Finale Entscheidung:** Neyra lehnt beide vorgegebenen Wirklichkeiten ab und ermöglicht Asra eine Ankunft statt einer Ersetzung.
 - **Preis:** Sie schließt für immer die Möglichkeit, ihre Herkunft als eindeutige Wahrheit zu erfahren.
 - **Auflösung:** Beide Städte existieren nebeneinander; Orrs Gesetzesbruch destabilisiert jedoch die Ordnung der gesamten Welt.
+- **Schlussbild:** In einer fremden Jahreszeit tritt der geopferte Tal durch eine Tür zurück in die Welt.
+
+Die sichtbare Öffnung in Kapitel 1 betrifft die neun Festtüren; Kapitel 2 prüft die stadtweite Wirkung. `OFFEN`: Die Mechanik von Tals Wiederkehr muss vor dem Finale geklärt werden, ohne seinen Preis oder Neyras verlorene Herkunftswahrheit rückgängig zu machen.
 
 ## Zeitdruck
 
@@ -39,11 +43,11 @@ Asra erscheint nicht als Hölle, sondern als lebendige, attraktive Alternative. 
 
 ### Akt IIb · Der Preis der Wahrheit · Kapitel 19–28 · etwa 30.000 Wörter
 
-Das zehnte Gesetz wird sichtbar. Mirans und Orrs Geheimnisse brechen Vertrauen. Phae verrät den ersten Anker an Sereth. Die Städte überschreiben einander. Sereth startet den Tausch. Neyra erkennt, dass ihre „Leere“ der lebende Anker der Wahl ist.
+Das zehnte Gesetz wird sichtbar. Tal, der verhasste Vollstrecker, wird nach Neyras Eingriff in seine Kausalkette zum Zwangsverbündeten. Mirans und Orrs Geheimnisse brechen Vertrauen. Phae verrät den ersten Anker an Sereth. Die Städte überschreiben einander. Sereth startet den Tausch. Neyra erkennt, dass ihre „Leere“ der lebende Anker der Wahl ist.
 
 ### Akt III · Eine Stadt darf ankommen · Kapitel 29–36 · etwa 25.000 Wörter
 
-Neyra plant eine dritte Lösung: Asra soll als gegenwärtige Gemeinschaft ankommen, nicht die Vergangenheit ersetzen. Im Inneren der Schuppe zerfallen Namen und Zeugnisse. Orr widerspricht seinem Gesetz, Phae bezeugt frei gegen ihren Chor, und Neyra opfert die Wahrheit über ihre Herkunft. Die Städte werden getrennt und verbunden; die Weltgesetze werden veränderbar.
+Neyra plant eine dritte Lösung (Tal lehnt Sereths Angebot ab und wird als zweiter Preis geopfert, taucht aber in der fremden Jahreszeit wieder auf): Asra soll als gegenwärtige Gemeinschaft ankommen, nicht die Vergangenheit ersetzen. Im Inneren der Schuppe zerfallen Namen und Zeugnisse. Orr widerspricht seinem Gesetz, Phae bezeugt frei gegen ihren Chor, und Neyra opfert die Wahrheit über ihre Herkunft. Die Städte werden getrennt und verbunden; die Weltgesetze werden veränderbar.
 
 ## Handlungsfäden
 
@@ -56,6 +60,8 @@ Neyra plant eine dritte Lösung: Asra soll als gegenwärtige Gemeinschaft ankomm
 | H-005 | Neyra und Miran | Kapitel 6 | Kapitel 23: verschwiegenes Opfer | Kapitel 36: freiwillige Nähe ohne Versprechen |
 | H-006 | Phaes Chor | Kapitel 4 | Kapitel 24: Verrat | Kapitel 34: freies Gegenzeugnis |
 | H-007 | Sereths Wiederherstellung | Kapitel 9 | Kapitel 27: sie beginnt den Tausch | Kapitel 35: verliert Kontrolle, Asra bleibt dennoch |
+| H-008 | Tal: Hass, Zwangsbündnis, Liebe, Opfer | Kapitel 1 | Kapitel 21: Kausalkette verändert; Kapitel 28: Geständnis | Kapitel 35: Opfer; Kapitel 36: Wiederkehr |
+| H-009 | Intrige der Halle um Tal | Kapitel 5 | Kapitel 33: Sereths Angebot an Tal | Kapitel 35: Tal wählt gegen beide Machtblöcke |
 
 ## Enthüllungsleiter
 
@@ -68,6 +74,8 @@ Neyra plant eine dritte Lösung: Asra soll als gegenwärtige Gemeinschaft ankomm
 7. Neyra wurde absichtlich ohne Chor erweckt.
 8. Sie ist der Anker des Gesetzes der Wahl, nicht dessen Besitzerin.
 9. Der Vertrag zwingt nur scheinbar zu einer Siegerwirklichkeit; „Ankunft“ ist eine ungeregelte dritte Kategorie.
+10. Tal erinnert einen verworfenen Weltabschnitt und liebte dort die Vorgängerin des Ankers.
+11. Eine Ankunft verlangt einen zweiten Preis, der nicht Neyra gehören darf.
 
 ## Vollständige Kapitelplanung
 

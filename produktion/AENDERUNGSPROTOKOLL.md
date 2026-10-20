@@ -4,6 +4,25 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Kapitel 1 als v2 überarbeitet und Tal-Linie abgeglichen
+
+- **Art:** Kapitel, Stil, Logik und Planungsabgleich
+- **Grund:** Der Projektgründer beauftragte die gezielte Verbesserung in Richtung 10/10 und die erneute Prüfung seines Grundgerüstwunsches zu Intrige, Liebe, Opfer, Wiederkehr, Befreiung und Drachenrettung.
+- **Änderung:** Idee 013 und E-011 dokumentiert. Alle drei Szenen vor der Änderung mit `szenenfassung.ps1 -Aktion Sichern` als v1 archiviert. Rohentwurf v2 mit 2.992 Wörtern, früherem Ziel, konkreter Nähe zu Phae, gebrochenem Rückkehrversprechen und gestrafftem Ritual erstellt. Fugenhand, vier zusätzliche Atemzüge und Sprecherrollen korrigiert. Kapitelplan, Delta, Status und Webseite auf v2 mit 96/100 synchronisiert.
+- **Grundgerüstprüfung:** Alle gewünschten Stationen sind durch E-010 verankert. Figurenakte korrigiert: Sereth versucht Tal zu kaufen, er lehnt ab. Tals Opferpreis gehört ihm allein. W-009 und fugenfreie Hände als ungeklärte Mechanik gekennzeichnet, ohne die Wiederkehr zu streichen. Die frühere Geliebte bleibt Neyras Vorgängerin. Der vollständige Abgleich mit Kapitel- und Bandzuordnung steht im Kapitel-Delta.
+- **Auswirkung:** Keine neue Weltregel angenommen. Kapitel 2 prüft die stadtweite Wirkung und Spuren der zerbrochenen Kapsel. Spätere Phae-, Herkunfts- und Tal-Payoffs bleiben erhalten. Alte Szenenfreigaben ersetzen keine Prüfung von v2; die Kapitelabnahme bleibt ausstehend.
+- **Betroffene Dateien/Kapitel:** Kapitel-1-Trio und Szenenarchiv, Tal-bezogene Planungsdateien, Inbox und Entscheidungen, Projektstatus, README und Webseite; Folgen für Kapitel 2, 5/7, 10/17/24/34, 14/35, 16/20/28 und die Tal-Linie bis Band 3 geprüft.
+- **Offen:** Bestehende gelbe und rote Deltas, Wiederkehrmechanik, konkrete Tal-Handlung in Band 2/3 und Koautorenabnahme.
+
+### 2026-10-20 · Grundgerüst um die Tal-Linie erweitert, Kapitel 1 neu geschrieben
+
+- **Art:** Kanon, Plot, Figur und Kapitel
+- **Grund:** Der Projektgründer wünschte eine Spur Intrigen und Liebe. Der verhasste Gegenspieler soll zum Zwangsverbündeten und zur Liebe aus einem früheren Weltabschnitt werden, trotzdem geopfert werden und in einer fremden Jahreszeit als Befreier des Volkes und Retter der Drachen zurückkehren.
+- **Änderung:** Entscheidung E-010 angelegt. Tal als Figur ausgearbeitet. Kapitel 1, 5, 7, 19, 21, 22, 23, 28, 29, 33, 35 und 36 im Bauplan angepasst. Setups S-013 bis S-017, Handlungsfäden H-008 und H-009 und Weltregeln W-008 und W-009 ergänzt. Kapitel 1 neu geplant und neu geschrieben. Der neue Text trägt den Namen Rohentwurf v1 und ersetzt den bisherigen Entwurf vollständig. Die alte Fassung bleibt in der Git-Historie erhalten und wurde nicht als Vorfassung in `manuskript/fassungen/` abgelegt.
+- **Auswirkung:** Die Szenenfreigaben und die Kapitelabnahme von Kapitel 1 beginnen neu. Frühere Selbstprüfung (96 von 100) gilt nicht mehr.
+- **Betroffene Dateien/Kapitel:** `planung/*`, `ideen/IDEEN_INBOX.md`, `manuskript/KAPITEL_01_*`, `index.html`, `app.js`, `PROJEKTSTATUS.md`, `readme.md`
+- **Offen:** Wiederkehr-Mechanik, Rollenverteilung in Band 2 und 3, Koautorenprüfung.
+
 ### 2026-10-20 · Mobile Leseansicht für Kapitel und Freigaben optimiert
 
 - **Art:** Gestaltung und Bedienbarkeit

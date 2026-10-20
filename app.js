@@ -40,10 +40,10 @@ const chapterTitles = [
 const chapterAssessments = {
   1: {
     score: '9,6 / 10',
-    verdict: 'Sehr starker, eigenständiger Auftakt mit einem sofortigen Rätsel, einer emotional greifbaren Hauptfigur und einem Schlussbild, das die zentrale Serienfrage persönlich macht.',
-    strengths: 'Der erste Satz setzt unmittelbar Spannung. Neyras trockene Stimme trägt, die drei Szenen eskalieren durch ihre Entscheidungen, und sechs rote Fäden sind sichtbar vorbereitet, ohne die späteren Auflösungen vorwegzunehmen.',
-    risks: 'Die Archivpassage ist stellenweise dichter als der übrige Text. Die freiwillige Bindung zwischen Neyra und Phae könnte noch einen Hauch mehr Wärme vertragen. Elfenalter (D-03) und Mutter-Paradox (D-04) bleiben bewusst entscheidungspflichtig.',
-    recommendation: 'Rohentwurf v1 ist bereit für die Koautorenprüfung. Endgültig freigeben erst, wenn D-03 und D-04 bewusst entschieden oder als beabsichtigt offen protokolliert und die Rückmeldungen des Koautors eingearbeitet wurden.'
+    verdict: 'Rohentwurf v2 erreicht intern 96 von 100 Punkten. Neyras Ziel steht im Einstieg, ihre Freundschaft mit Phae wird durch Hilfe, Verletzung und ein gebrochenes Versprechen greifbar. Die Tal-Linie bleibt als Rätsel vorbereitet.',
+    strengths: 'Ziel und erste Abweichung liegen in den ersten 150 Wörtern. Leiterhilfe und Schlussgriff verbinden die drei Szenen emotional. Zwischen den Türbenennungen halten Kapsel, Fluchtweg und Tals Blick die Spannung. Linke Fugenhand, vier zusätzliche Atemzüge und Sprecherrollen sind konsistent; alle sieben roten Fäden bleiben erhalten.',
+    risks: 'Die Wirkung der Freundschaft und einige Bildwiederholungen brauchen Leserfeedback. Türprüfung, Elfenalter (D-03), Mutter-Paradox (D-04) und Tals Wiederkehrmechanik bleiben offen. „Nicht schon wieder“ bleibt bewusst doppeldeutig (D-06). Fugenfreie Hände bei der Wiederkehr sind ein ungeklärter Bildvorschlag, keine bestätigte Magieregel.',
+    recommendation: 'Rohentwurf v2 liegt über der internen Schwelle von 95 Punkten und bleibt im Draft-Modus. Alle drei Szenen in v2 neu prüfen. Kapitelabnahme erst nach Koautorenprüfung der Tal-Linie (E-010) sowie Entscheidung oder bewusster Offenhaltung der Deltas. 9,6/10 ist eine Selbsteinschätzung und keine unabhängige Qualitätsgarantie.'
   }
 };
 
@@ -347,7 +347,7 @@ const sceneTitles = [
   'Der Name, den es nicht gibt'
 ];
 
-const sceneApprovalStorageKey = 'haeutung-der-welt-kapitel-01-szenenfreigaben-v1';
+const sceneApprovalStorageKey = 'haeutung-der-welt-kapitel-01-szenenfreigaben-v2';
 let sceneApprovals = {};
 
 function loadSceneApprovals() {
@@ -370,7 +370,7 @@ function sceneChangeCount(sceneNumber) {
   return changeNotes.filter((note) => note.target.startsWith(prefix)).length;
 }
 
-// Frühere Szenenfassungen werden mit scripts/szene-sichern.ps1 abgelegt und hier zum Vergleich angeboten.
+// Frühere Szenenfassungen werden mit scripts/szenenfassung.ps1 abgelegt und hier zum Vergleich angeboten.
 const sceneVersionDirectory = 'manuskript/fassungen';
 const sceneVersionManifestPath = `${sceneVersionDirectory}/KAPITEL_01_FASSUNGEN.json`;
 let sceneVersions = {};
@@ -721,7 +721,7 @@ async function renderChapterDraft() {
   }
 }
 
-const changeStorageKey = 'haeutung-der-welt-kontextaenderungen-v2';
+const changeStorageKey = 'haeutung-der-welt-kontextaenderungen-v3';
 const tray = document.querySelector('#changeTray');
 const trayPanel = document.querySelector('#changeTrayPanel');
 const trayToggle = document.querySelector('#changeTrayToggle');

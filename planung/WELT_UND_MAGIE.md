@@ -70,6 +70,10 @@ Elfen werden nicht biologisch geboren. Vor dem Tod kann ein Elf eine prägende E
 - Ein Chor kann lügen, auslassen und unter politischem Druck umgedeutet werden.
 - Elfen leben etwa 180 bis 250 Jahre, sind aber weder unsterblich noch körperlich überlegen.
 
+### Der verworfene Weltabschnitt der Wahl
+
+Vor dem Neunten Vertrag verwarf eine frühere Häutung einen ganzen Weltabschnitt, in dem das zehnte Gesetz galt. Er blieb als Möglichkeit in der Schuppe erhalten. Wer dort lebte, hat keine Heimat in der gültigen Welt. Tal ist der einzige bekannte Mensch, der diesen Abschnitt erinnert. Neyra wuchs aus einem leeren Samen dieses Abschnitts, ist aber nicht dessen Anker von damals. Diese Person ist tot und lässt sich nach den Magiegrenzen nicht identisch zurückholen.
+
 ### Neyras Ausnahme
 
 Neyra wuchs aus einer leeren Samenkapsel. Sie besitzt Gefühle, Fantasie und Persönlichkeit, aber keinen Erinnerungschor. Weil kein geerbtes Narrativ ihre Wahrnehmung auf eine gültige Geschichte festlegt, sieht sie gleichzeitig verworfene und aktuelle Wirklichkeiten.
@@ -93,6 +97,12 @@ Die wirkende Person verliert eine echte künftige Wahl. Die geschlossene Möglic
 ### Festgelegte
 
 Wer zu viele Fugen trägt, wird festgelegt. Ein Festgelegter sieht und vollzieht nur noch eine einzige Folge von Handlungen. Er kann klug und gefährlich sein, aber nicht mehr frei entscheiden. Die Neunerhalle benutzt einzelne Festgelegte als scheinbar unbestechliche Vollstrecker.
+
+### Der Sonderfall Tal
+
+Tals Kausalkette ist nicht von der Halle gewählt. Sie entstand, als er den Anker seines verworfenen Weltabschnitts verlor: Seine einzige verbliebene Zukunft ist, ihn wiederzufinden. Wer seine Kette von außen verändert (Kapitel 21), bindet den Festgelegten an sich. Ein Anker der Wahl kann einem Festgelegten für einen Augenblick eine freie Entscheidung öffnen. Das ist keine Heilung; die Fugen bleiben.
+
+`OFFEN`: Wie die scheinbaren Abweichungen in Kapitel 1 innerhalb dieser Kette entstehen. Neyras Beobachtung von Verspätung und Zittern beweist weder eine freie Wahl noch eine Heilung. Kapitel 21 und 28 müssen die Beobachtungen rückblickend erklären.
 
 ### Weiße Motten
 
@@ -118,10 +128,13 @@ Wenn Doppelzeugnisse nicht übereinstimmen oder zwei Wirklichkeiten denselben Pl
 | W-005 | Elfenchöre sind formbar. | Erinnerung ist Beweis und zugleich unzuverlässig. |
 | W-006 | Neyra erkennt mehrere gültige Möglichkeiten. | Sie ist notwendig, aber nicht allwissend. |
 | W-007 | Eine Rückkehr darf niemanden ersetzen. | Begrenzt die moralisch zulässige Lösung. |
+| W-008 | Eine Ankunft verlangt zwei Preise: Neyras persönlichen Preis und eine Zukunft, die Tal allein gehört und die nur er geben kann. | Das Finale kostet Neyra ihre Herkunftswahrheit und Tal seine freie Wahl. |
+| W-009 · OFFEN | Bisheriger Vorschlag: Eine abgeschlossene Zukunft kann in einer fremden Jahreszeit außerhalb der Welthaut neu beginnen. | Noch keine bestätigte Magieregel. Widerspruch zum Verbot, geschlossene Möglichkeiten wieder zu öffnen, vor dem Finale klären; Tals Wiederkehr bleibt als Plotziel bestehen. |
 
 ## Auswirkungen auf spätere Bände
 
 - Orrs Gesetzesbruch destabilisiert in Band 2 Schwellen und Entfernungen.
 - Asras Rückkehr schafft eine politische Gemeinschaft ohne anerkannten historischen Besitz.
 - Neyra bleibt für Widersprüche empfindlich, verliert aber keine beliebige Superkraft.
+- Tal kehrt aus der Welthaut zurück. `OFFEN`: Wie seine neue Gegenwart möglich ist, ohne die geopferte Zukunft wiederherzustellen. Eine allgemeine Rückholbarkeit geopferter Zukunft ist damit nicht bestätigt.
 - Die Herkunft der neun Drachengesetze wird erst in Band 3 vollständig geklärt.

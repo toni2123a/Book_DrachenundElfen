@@ -5,61 +5,70 @@
 - **Ort und Zeit:** Erinnerungsarchiv und Platz der Neun Türen in Merea; Abend des jährlichen Türenfests
 - **Zielwortzahl:** 2.700 bis 3.200 Wörter
 - **Akt/Abschnitt:** Akt I · Die falsche Erinnerung
-- **Fassung:** Plan v1 · 20. Oktober 2026
+- **Fassung:** Plan v2 · redaktionell präzisiert nach E-011 · 20. Oktober 2026
 
 ## Aufgabe im Gesamtplot
 
-Das Kapitel muss gleichzeitig eine eigenständige Miniatur und der präzise Start des Serienrätsels sein. Es führt Neyras Mangelgefühl, ihre aktive Regelverletzung, Phaes ungleiche Freundschaft, Mereas Türenkultur und die erste Überlagerung mit Asra ein. Es erklärt die Welt nicht vollständig, sondern lässt Regeln über Handlung, Reibung und sinnliche Details verständlich werden.
+Das Kapitel ist eine eigenständige Miniatur und der Start des Serienrätsels. Es führt Neyras Mangelgefühl, ihre aktive Regelverletzung, Phaes ungleiche Freundschaft, Mereas Türenkultur und die erste Überlagerung mit Asra ein. Neu ist die Figur Tal: Der Leser lernt ihn als den Mann kennen, den Neyra hasst, und sieht zugleich, dass er an diesem Abend zum ersten Mal von seiner Bahn abweicht. Das Kapitel erklärt die Welt nicht vollständig. Regeln erscheinen über Handlung, Reibung und sinnliche Details.
 
 ## Kapitelversprechen
 
-Eine junge Elfe ohne geerbte Erinnerungen stiehlt eine verbotene Erinnerungskapsel, um beim Fest der benannten Türen endlich eine Spur zu ihrer Herkunft zu finden. Statt einer Antwort öffnen sämtliche Türen der Stadt denselben unmöglichen Ort – und Neyra erinnert sich an ein Leben, das sie nie gelebt hat.
+Eine junge Elfe ohne geerbte Erinnerungen stiehlt eine verbotene Erinnerungskapsel, um beim Fest der benannten Türen eine Spur zu ihrer Herkunft zu finden. Der gefürchtetste Mann der Stadt verspätet sich zum ersten Mal. Statt einer Antwort zeigen die neun Festtüren denselben unmöglichen Ort, und Neyra erinnert sich an ein Leben, das sie nie gelebt hat. Wie weit die Öffnung in der Stadt reicht, wird erst in Kapitel 2 geprüft.
 
 ## Ziel, Konflikt, Ergebnis
 
-- **Äußeres Ziel:** Neyra will die versiegelte Erinnerungskapsel heimlich an der Unbenannten Tür prüfen.
+- **Äußeres Ziel:** Neyra will die versiegelte Erinnerungskapsel 10-0 heimlich an der Unbenannten Tür prüfen.
 - **Inneres Ziel:** Sie will einen Beweis, dass ihre Leere keine Bedeutungslosigkeit ist.
-- **Konflikt/Widerstand:** Phae erkennt die Regelverletzung; die öffentliche Zeremonie macht Heimlichkeit schwierig; die Kapsel reagiert zunächst nicht; Neyra muss wählen, ob sie sichtbar eine Grenze überschreitet.
-- **Entscheidung:** Neyra setzt die Kapsel trotz Phaes Warnung in die Unbenannte Tür ein.
-- **Ergebnis/Veränderung:** Nicht die Kapsel, sondern alle Türen Mereas reagieren. Sie sprechen den Namen Asra und zeigen eine zweite Stadt.
-- **Kapitelhaken:** Neyra besitzt zwei gleichzeitig wahre Kindheitserinnerungen – in einer hat sie Asra nie gesehen, in der anderen wartet ihre Mutter hinter einer roten Tür.
+- **Konflikt/Widerstand:** Tal patrouilliert im Archiv und überwacht den Platz; Phae erkennt die Regelverletzung; die öffentliche Zeremonie macht Heimlichkeit schwierig; die Kapsel reagiert zunächst nicht.
+- **Entscheidung:** Neyra setzt die Kapsel trotz Phaes Warnung und unter Tals Augen in die Unbenannte Tür ein.
+- **Ergebnis/Veränderung:** Die neun Türen auf dem Festplatz sprechen den Namen Asra und zeigen eine zweite Stadt. Die Kapsel zerbricht. Tal berührt Neyra mit der linken Fugenhand und flüstert „Nicht schon wieder“.
+- **Kapitelhaken:** Neyra hält zwei widersprüchliche Erinnerungen gleichzeitig für wahr: ihr Erwachen als Erwachsene und eine Kindheit in Asra. Dort erinnert sie eine Frau als Mutter. Deren Identität und der Ursprung der Erinnerung bleiben `OFFEN`.
 
 ## Szenenbauplan
 
-### Szene 1 · Das gestohlene Gestern · etwa 850 Wörter
+### Szene 1 · Das gestohlene Gestern · etwa 1.100 Wörter
 
-- **Ziel:** Neyra will Kapsel 10-0 aus dem Erinnerungsarchiv entwenden.
-- **Widerstand:** Die Sicherheitstür öffnet sich vor ihrer Berührung; Phae überrascht sie und erkennt sofort, was sie vorhat.
+- **Ziel:** Neyra will Kapsel 10-0 aus dem Saal der ungeprüften Erinnerungen entwenden.
+- **Widerstand:** Tals Patrouille um vier Glockenschläge; die Tür öffnet sich vor ihrer Berührung; Phae überrascht sie.
 - **Entscheidung:** Neyra lügt nicht, nimmt die Kapsel aber trotzdem mit.
-- **Veränderung:** Phae hilft nicht aktiv, verrät sie jedoch auch nicht. Die Freundschaft erhält ihre erste asymmetrische Spannung.
-- **Sinnesanker:** Bienenwachs, kalter Stein, das kaum hörbare Flüstern tausender Erinnerungssamen.
+- **Veränderung:** Phae hilft Neyra von der Leiter, unterstützt aber den Diebstahl nicht und verrät sie auch nicht. Neyra verletzt sie und weicht einer Versöhnung aus. Tal hält sieben statt drei Atemzüge an, also vier zusätzliche.
+- **Sinnesanker:** Bienenwachs, kaltes Gestein, Flüstern tausender Erinnerungssamen, verbrannte Birnen.
 
-### Szene 2 · Das Fest der benannten Türen · etwa 1.050 Wörter
+### Szene 2 · Das Fest der benannten Türen · etwa 930 Wörter
 
 - **Ziel:** Neyra will unbemerkt zur Unbenannten Tür gelangen.
-- **Widerstand:** Die Zeremonie zwingt sie in die Öffentlichkeit; andere Elfen hören ihre Chöre, Neyra nur ihr eigenes Blut; ein Kind fragt, welche Stimmen in ihr wohnen.
-- **Entscheidung:** Statt sich zurückzuziehen, übernimmt Neyra die offizielle Prüfung der letzten Tür.
+- **Widerstand:** Die Zeremonie zwingt sie in die Öffentlichkeit; ein Kind fragt, welche Stimmen in ihr wohnen; Tal beobachtet vom obersten Absatz der Neunerhalle und hält ihrem Blick nicht stand.
+- **Entscheidung:** Neyra verspricht Phae durch ein Nicken, auf ihren Ruf zurückzukommen. Statt zu gehen, tritt sie über die Salzlinie. Vor der Bronzetür und der Schultür zählt sie bei verschiedenen Chorsprecherinnen zehn Atemzüge.
 - **Veränderung:** Sie steht vor der ganzen Stadt an der Schwelle, die niemandem gehört.
-- **Sinnesanker:** neun verschieden klingende Türglocken, Kupferstaub, Regen auf warmem Holz.
+- **Sinnesanker:** neun Türglocken, Kupferstaub, Regen auf warmem Holz, zehn Atemzüge.
 
-### Szene 3 · Der Name, den es nicht gibt · etwa 1.150 Wörter
+### Szene 3 · Der Name, den es nicht gibt · etwa 1.000 Wörter
 
-- **Ziel:** Neyra will die Kapsel zu einer einzigen Erinnerung zwingen.
-- **Widerstand:** Die Kapsel bleibt stumm; Phae fordert Abbruch; die Unbenannte Tür öffnet sich erneut vor Neyras Wahl.
-- **Entscheidung:** Neyra setzt die Kapsel in die leere Namensmulde.
-- **Veränderung:** Alle Türen sprechen „Asra“, die Plätze überlagern sich, und Neyra empfängt eine unmögliche Kindheitserinnerung.
-- **Sinnesanker:** roter Türlack unter den Fingern, Schnee im Sommerregen, der Geruch nach verbrannten Birnen.
+- **Ziel:** Neyra will der Kapsel eine einzige Erinnerung entlocken.
+- **Widerstand:** Die Kapsel bleibt stumm; Phae fordert Abbruch; Tal tritt über das Salz und fordert sie auf zurückzutreten.
+- **Entscheidung:** Neyra missachtet Phaes Ruf trotz ihres Versprechens und setzt die Kapsel in die Mulde.
+- **Veränderung:** Die neun Festtüren sprechen „Asra“. Tal fasst sie mit der linken Fugenhand an und flüstert „Nicht schon wieder“. Neyra empfängt eine unmögliche Kindheitserinnerung und hält sich nun an Phae fest.
+- **Sinnesanker:** roter Türlack, aufwärts fallender Schnee im Sommerregen, Geruch verbrannter Birnen.
+
+## Tal im Kapitel
+
+- Tal ist ein Festgelegter und Vollstrecker der Neunerhalle. Seine schwarzen Fugen sind auf der linken Hand sichtbar.
+- Neyras Hass ist konkret: Tal verbrannte vor fünf Jahren ihre drei Hefte über die eigene Erweckungsakte, höflich und mit Quittung.
+- Er weicht zweimal von seiner Bahn ab: Er verspätet sich vier Atemzüge, und seine Hand zittert.
+- Die scheinbaren Abweichungen bleiben Neyras Beobachtungen. Das Kapitel behauptet weder, dass die Halle seine Kausalkette wählt, noch, dass Festgelegte grundsätzlich nicht zittern können. Die Erklärung bleibt `OFFEN` bis zur Ausarbeitung von Kapitel 21/28.
+- Der Leser erfährt nicht, warum. Die Antwort kommt in Kapitel 21 (Kausalkette) und Kapitel 28 (Liebe).
 
 ## Rote Fäden
 
 | ID | Faden | Einsatz in Kapitel 1 | Späterer Payoff |
 | --- | --- | --- | --- |
-| RF-01 | Neyra und die Schwellen | Zwei Türen öffnen sich, bevor Neyra sie berührt. | Kapitel 28: Sie ist Anker des Gesetzes der Wahl. |
+| RF-01 | Neyra und die Schwellen | Die Archivtür öffnet sich vor ihrer Berührung. | Kapitel 28: Sie ist Anker des Gesetzes der Wahl. |
 | RF-02 | Das verschwiegene Zehnte | Kapselnummer 10-0; zehn Atemzüge im Zeremonialtext, obwohl es neun Türen gibt. | Kapitel 19/28: zehnter Schatten und Gesetz der Wahl. |
-| RF-03 | Phaes Chor | Sie sagt mehrfach „wir“, korrigiert sich aber zu „ich“. Eine ihrer Stimmen fürchtet die Kapsel. | Kapitel 10/24: Asra-Stimme und Verrat. |
-| RF-04 | Formbare Erinnerung | Zwei Zeugen beschreiben dieselbe Türfarbe unterschiedlich. | Kapitel 17/27: Erinnerung und offizielles Zeugnis sind rekonstruierbar. |
-| RF-05 | Gewählte Zugehörigkeit | Phae bleibt bei Neyra, obwohl keine Erinnerungslinie sie bindet. | Kapitel 14/35: Beziehung statt Abstammung trägt. |
-| RF-06 | Asras roter Türlack | In der Vision wartet eine rote Tür, die Neyras Hand erkennt. | Kapitel 20: Haus nennt Neyra eine laufende Tür. |
+| RF-03 | Phaes Chor | Sie sagt „wir“ und korrigiert sich zu „ich“. Eine Stimme fürchtet die Kapsel. | Kapitel 10/24: Asra-Stimme und Verrat. |
+| RF-04 | Formbare Erinnerung | Zwei Zeugen beschreiben dieselbe Türfarbe unterschiedlich. | Kapitel 17/27 |
+| RF-05 | Gewählte Zugehörigkeit | Phae hilft Neyra von der Leiter und bleibt trotz der Verletzung an ihrer Seite. Neyra nimmt ihre Hand am Schluss an. | Kapitel 14/35 |
+| RF-06 | Die rote Tür | In der Vision wartet eine rote Tür, die Neyras Hand erkennt. | Kapitel 20 |
+| RF-07 | Tal | Verspätung, zitternde Hand, „Nicht schon wieder“, verbrannte Hefte. | Kapitel 21 Kausalkette, 28 Liebe, 35 Opfer, 36 Wiederkehr |
 
 ## Verbindlicher Kanon im Kapitel
 
@@ -67,6 +76,7 @@ Eine junge Elfe ohne geerbte Erinnerungen stiehlt eine verbotene Erinnerungskaps
 - Phae trägt sieben Stimmen und ist Neyras engste Freundin.
 - Öffentliche Türen Mereas werden jährlich benannt.
 - Erinnerungen werden in versiegelten Samenkapseln archiviert.
+- Tal ist ein menschlicher Festgelegter der Neunerhalle.
 - Neyra kann die spätere Doppelwirklichkeit wahrnehmen, versteht diese Fähigkeit aber nicht.
 - Asra darf vor dem Schluss nur als unmöglicher Name und sinnliche Erfahrung erscheinen.
 
@@ -78,7 +88,9 @@ Explizit eingeführt werden nur:
 2. Erinnerungssamen beziehungsweise Kapsel
 3. Unbenannte Tür
 
-Begriffe wie Welthaut, Möglichkeitshandwerk, Doppelzeugnis, Fuge und Neunter Vertrag bleiben späteren Kapiteln vorbehalten.
+Der Begriff „festgelegt“ fällt nur im Zusammenhang mit Tals Fugen, ohne Regelerklärung. Welthaut, Möglichkeitshandwerk, Doppelzeugnis und Neunter Vertrag bleiben späteren Kapiteln vorbehalten.
+
+Bekannte Amts-, Orts- und Alltagswörter wie Archiv oder Chorsprecherin werden im Zusammenhang verständlich. Zusätzliche Magieregeln, Farbtabellen und Chorvergleiche entfallen. Der offene Reifungsprozess des Elfenkindes bleibt als D-03 im Delta erfasst.
 
 ## Nicht vorwegnehmen
 
@@ -86,8 +98,9 @@ Begriffe wie Welthaut, Möglichkeitshandwerk, Doppelzeugnis, Fuge und Neunter Ve
 - keine weiße Motte
 - kein Beweis, dass Asra eine ausgelöschte Stadt ist
 - kein Hinweis, dass Sereth handelt
-- keine Benennung von Neyra als „Zehnte“; das gehört Kapitel 2
-- keine direkte Erklärung von Neyras wahrer Funktion
+- keine Benennung von Neyra als „Zehnte“ (Kapitel 2)
+- keine Erklärung von Neyras wahrer Funktion
+- keine Andeutung, dass Tal sie liebt oder aus einem früheren Weltabschnitt stammt
 
 ## Strikte Qualitätsmatrix vor Veröffentlichung
 
@@ -104,4 +117,4 @@ Begriffe wie Welthaut, Möglichkeitshandwerk, Doppelzeugnis, Fuge und Neunter Ve
 | Kapitelhaken | neue Frage plus emotionale Erschütterung | 10 |
 | Kanontreue | keine Regelverletzung oder verfrühte Enthüllung | 5 |
 
-**Freigabeschwelle des Projekts:** 95 von 100 Punkten in der internen Prüfung. Diese Selbsteinschätzung ist kein Ersatz für die Koautoren-Abnahme oder ein unabhängiges Lektorat.
+**Freigabeschwelle des Projekts:** 95 von 100 Punkten in der internen Prüfung. Diese Selbsteinschätzung ersetzt weder die Koautoren-Abnahme noch ein unabhängiges Lektorat.

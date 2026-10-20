@@ -10,7 +10,7 @@
 | Sereth | Elfe mit überladenem Chor | antagonistische Archivarin | 3 Kapitel | von berechtigter Wiederherstellung zu erzwungener Ersetzung |
 | Phae | Elfe mit sieben Stimmen | Neyras Freundin; Chorsprecherin | keine | von Gehorsam über Verrat zu eigener Entscheidung |
 | Ena Senn | Mensch aus Asra | Mirans ausgelöschte Schwester | keine | vom Objekt der Sehnsucht zur selbstbestimmten Rückkehrerin |
-| Tal | Festgelegter | Vollstrecker der Neunerhalle | keine | zeigt den Endzustand verbrauchter Wahlfreiheit |
+| Tal | Festgelegter, Mensch | Vollstrecker der Neunerhalle; verhasster Gegner, Zwangsverbündeter, verlorene Liebe | keine | vom gefürchteten Vollstrecker über den Verbündeten zum Opfer, das als freier Mann zurückkehrt |
 
 ## Neyra
 
@@ -88,6 +88,26 @@
 - **Ziel:** Asra retten, ohne in Mirans Erinnerung festgeschrieben zu werden
 - **Entscheidung:** bleibt nach dem Finale im neuen Grenzbezirk, statt zu Mirans wiederhergestellter Schwesterrolle zurückzukehren
 
+## Tal
+
+- **Alter:** etwa 40 in dieser Wirklichkeit; erinnert sich an einen Weltabschnitt, der vor dem Neunten Vertrag verworfen wurde
+- **Rolle:** Vollstrecker der Neunerhalle, Festgelegter; erst verhasster Gegenspieler, dann Zwangsverbündeter
+- **Äußeres Ziel (Halle):** Neyra überwachen, festsetzen und zurückbringen
+- **Äußeres Ziel (wahr):** den Anker der Wahl wiederfinden, den er einmal verloren hat; das ist seine einzige Kausalkette
+- **Inneres Bedürfnis:** die Verlorene gehen lassen und Neyra als eigene Person sehen
+- **Fehlannahme:** Wenn er den Anker zurückhat, ist die verworfene Welt wiederhergestellt und seine Schuld getilgt.
+- **Stärke:** unerschütterliche Genauigkeit, körperliche Präzision, Geduld über Jahrzehnte
+- **Schwäche:** kann nicht abweichen, bis jemand seine Kausalkette ändert; verheimlicht, was er weiß
+- **Angst:** den Anker ein zweites Mal zu verlieren, diesmal durch eigenes Zögern
+- **Geheimnis:** Er verbrannte Neyras Hefte, weil sie der Wahrheit zu nahe kamen und die Halle sie sonst beseitigt hätte. Er verspätet sich in Kapitel 1 erstmals, weil er sie erkennt.
+- **Stimme:** knapp, höflich, förmlich; sagt „Sie“ und liest Quittungen vor; verliert unter Druck die Form
+- **Körperzeichen:** linke Hand voller schwarzer Fugen, rechte im Handschuh; zittert, wenn er Neyra berührt
+- **Intrigenrolle:** Er lässt die Halle glauben, er diene ihr, und lenkt Zugriffe so, dass Neyra entkommt. Sereth erkennt das in Kapitel 33 und versucht, ihn mit dem Versprechen zu kaufen, seinen Weltabschnitt zurückzuholen. Tal lehnt ab.
+- **Liebesrolle:** Gegenpol zu Miran. Miran will Ena zurück, Tal will die Frühere zurück. Beide lernen, Menschen nicht als Besitz ihrer Vergangenheit zu behandeln. Neyra liebt keinen von beiden automatisch.
+- **Opfer:** Kapitel 35. Neyra öffnet seiner Kausalkette für einen Augenblick eine freie Wahl. Er wählt, sich als zweiten Preis der Ankunft zu geben. Er verschwindet unter der Welthaut.
+- **Wiederkehr:** Kapitel 36. Er tritt in einer fremden Jahreszeit durch eine Tür. Der bisherige Bildvorschlag zeigt beide Hände frei von Fugen. `OFFEN`: Wie dieses Bild mit dem bleibenden Magiepreis vereinbar ist; die Fugenfreiheit ist noch keine bestätigte Regel.
+- **Ausblick:** Band 2, Befreier der verdrängten Völker. Band 3, Retter der Drachen. Beides ist `OFFEN` bis zur Planung dieser Bände und nur als Richtung kanonisch.
+
 ## Beziehungsachsen
 
 | Beziehung | Beginn | Belastungsprobe | Zielzustand Band 1 |
@@ -97,6 +117,9 @@
 | Neyra / Sereth | ersehnte Mentorin | Sereth will Neyra als Gesetz benutzen | moralische Gegnerinnen, die das Unrecht beide anerkennen |
 | Neyra / Phae | ungleiche Freundschaft | Phaes Verrat | ehrlicher Neubeginn ohne Chorherrschaft |
 | Miran / Ena | Erinnerung und Sehnsucht | Ena entspricht nicht seinem Bild | Geschwister, die einander neu kennenlernen müssen |
+| Neyra / Tal | Hass: Er verbrannte ihre Hefte | Kausalkette-Eingriff, Zwangsbündnis, Geständnis der verlorenen Liebe | Gegenseitiger Respekt; Neyra liebt ihn nicht als Ersatz der Früheren, er opfert sich trotzdem |
+| Miran / Tal | Misstrauen und stiller Wettstreit um Neyra | Tal sieht Mirans verborgene Fuge | zwei Männer, die beide Vergangenheit loslassen müssen |
+| Tal / Sereth | Vollstrecker und Archivarin | Sereths Angebot, seinen Weltabschnitt zurückzuholen | Tal lehnt ab; Sereth verliert ihr stärkstes Druckmittel |
 
 ## Figurenprüfungen für spätere Änderungen
 

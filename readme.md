@@ -8,7 +8,7 @@ Das Projekt übernimmt nur das Arbeitsprinzip aus `TheBookV2`: Ideen werden gesa
 
 ## Aktueller Stand
 
-Das Grundgerüst ist vollständig. Kapitel 1 „Das Kind ohne Vorleben“ liegt als Rohentwurf v1 vor. Die öffentliche Seite zeigt Serienplan, Kapitelbauplan, rote Fäden, Qualitätsprüfung und vollständigen Text. Änderungswünsche werden direkt an der betroffenen Karte oder markierten Textstelle gesammelt; jede Szene wird einzeln freigegeben. Nach einer Überarbeitung lässt sich an der Szene zwischen alter und neuer Fassung umschalten; eine bessere Vorfassung wird per Skript zurückgeholt, ohne die neue zu verlieren. Die endgültige Kapitelabnahme wird erst nach Freigabe aller Szenen entsperrt.
+Das Grundgerüst enthält seit E-010 die Tal-Linie von Intrige und früherer Liebe über Zwangsbündnis, Opfer und Wiederkehr bis zur Befreiung der verdrängten Völker und Rettung der Drachen. Die Wiederkehrmechanik bleibt offen. Kapitel 1 „Das Kind ohne Vorleben“ liegt nach gezielter Überarbeitung als Rohentwurf v2 mit 2.992 Wörtern und einer internen Selbstbewertung von 96/100 vor. Alle drei v1-Szenen sind gesichert. Die öffentliche Seite zeigt Serienplan, Kapitelbauplan, rote Fäden, Qualitätsprüfung und vollständigen Text. Änderungswünsche werden direkt an der betroffenen Karte oder markierten Textstelle gesammelt; jede Szene wird einzeln freigegeben. Nach einer Überarbeitung lässt sich an der Szene zwischen alter und neuer Fassung umschalten; eine bessere Vorfassung wird per Skript zurückgeholt, ohne die neue zu verlieren. Die endgültige Kapitelabnahme wird erst nach Freigabe aller Szenen entsperrt.
 
 ## Verbindliche Planung
 

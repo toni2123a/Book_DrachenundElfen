@@ -1,18 +1,18 @@
 # Band-1-Bauplan · Unter der neunten Schuppe
 
-Status: vollständiges Grundgerüst vor Szenenplanung und Rohfassung.
+Status: vollständiges Grundgerüst, überarbeitet am 20. Oktober 2026 um die Tal-Linie (E-010: Intrige, Liebe, Opfer und Wiederkehr).
 
 ## Akt I · Die falsche Erinnerung
 
 | Nr. | Arbeitstitel | POV | Ziel und Konflikt | Ergebnis / Kapitelhaken |
 | ---: | --- | --- | --- | --- |
-| 1 | Das Kind ohne Vorleben | Neyra | Beim Fest der benannten Türen will Neyra unauffällig eine verbotene Erinnerungskapsel prüfen. Alle Türen sprechen plötzlich den Namen „Asra“ und zeigen eine fremde Stadt. | Neyra erinnert sich gleichzeitig daran, Asra nie gesehen und dort als Kind gelebt zu haben. |
-| 2 | Der Krieg, den es nie gab | Neyra | Sie versucht die widersprüchlichen Erinnerungen zu dokumentieren, während die Neunerhalle alle Zeugen trennt. | Ein offiziell Toter erkennt Neyra als „Zehnte“ und stirbt ein zweites, anderes Mal. |
+| 1 | Das Kind ohne Vorleben | Neyra | Beim Fest der benannten Türen will Neyra unauffällig eine verbotene Erinnerungskapsel prüfen. Tal, der gefürchtete Vollstrecker der Neunerhalle, verspätet sich zum ersten Mal in 24 Jahren. Die neun ausgestellten Türen sprechen plötzlich den Namen „Asra“. | Neyra erinnert sich gleichzeitig daran, Asra nie gesehen und dort als Kind gelebt zu haben. Tal flüstert „Nicht schon wieder“. |
+| 2 | Der Krieg, den es nie gab | Neyra | Sie versucht die widersprüchlichen Erinnerungen zu dokumentieren, während die Neunerhalle alle Zeugen trennt. Die Wirkung außerhalb des Festplatzes und Spuren der zerbrochenen Kapsel werden geprüft; die Mutter-Erinnerung wird nicht als Herkunft bestätigt. | Ein offiziell Toter erkennt Neyra als „Zehnte“ und stirbt ein zweites, anderes Mal. |
 | 3 | Ein Drache fällt nach oben | Neyra | Ein schwarzkupferner, rabengroßer Drache stürzt durch eine geschlossene Decke und fordert Neyras Herausgabe. | Orr nennt sie eine offene Schwelle und warnt vor der neunten Nacht. |
 | 4 | Die Schuppe über Merea | Neyra | Neyra will Phae aus einem wechselnden Gebäude retten. Über der Stadt schließt sich eine Schuppe wie ein zweiter Himmel. | Phaes Chor spricht erstmals mit einer unbekannten Stimme aus Asra. |
-| 5 | Der erste falsche Tote | Neyra | Neyra und Orr untersuchen einen Mann, der in Merea tot, in Asra lebendig ist. Die Neunerhalle will beide Versionen beseitigen. | Weiße Motten fressen den Namen des Mannes aus allen Papieren. |
+| 5 | Der erste falsche Tote | Neyra | Neyra und Orr untersuchen einen Mann, der in Merea tot, in Asra lebendig ist. Die Neunerhalle will beide Versionen beseitigen; Tal vollstreckt kalt und fehlerlos. | Weiße Motten fressen den Namen des Mannes aus allen Papieren. Neyra hasst Tal nun mit Grund und bemerkt, dass er ihr dabei auffallend ausweicht. |
 | 6 | Markt der ungelebten Tode | Miran | Nullkartograf Miran sucht eine Spur seiner ausgelöschten Schwester und handelt dafür mit der Vision seines eigenen Todes. | Er erfährt, dass „die Elfe ohne Gestern“ den Zugang nach Asra öffnen kann. |
-| 7 | Orrs Gewicht | Neyra | Die Neunerhalle versucht Orr und Neyra festzusetzen. Orr kann kämpfen, ohne die Menschen unter seinem Gewicht zu töten. | Miran öffnet einen Fluchtweg, verlangt dafür Neyras Hilfe bei der Suche nach Ena. |
+| 7 | Orrs Gewicht | Neyra | Die Neunerhalle versucht Orr und Neyra festzusetzen. Tal führt den Zugriff. Orr kann kämpfen, ohne die Menschen unter seinem Gewicht zu töten. | Tal lässt Neyra als Einzigen nicht aus den Augen und hält den Zugriff eine Sekunde zu lang an. Miran öffnet einen Fluchtweg, verlangt dafür Neyras Hilfe bei der Suche nach Ena. |
 | 8 | Das Tor nach Asra | Neyra | Am illegalen Tor muss Neyra entscheiden, ob sie der Neunerhalle gehorcht oder der fremden Erinnerung folgt. | Sie tritt mit Orr und Miran nach Asra; hinter ihnen nennt die Tür Merea „die verworfene Stadt“. |
 
 ## Akt IIa · Das bessere Gestern
@@ -34,29 +34,29 @@ Status: vollständiges Grundgerüst vor Szenenplanung und Rohfassung.
 
 | Nr. | Arbeitstitel | POV | Ziel und Konflikt | Ergebnis / Kapitelhaken |
 | ---: | --- | --- | --- | --- |
-| 19 | Neun Gesetze, zehn Schatten | Neyra | Neyra untersucht das Vertragsmosaik; neun Drachenbilder werfen zehn Schatten. Orr verweigert die Erklärung. | Der zehnte Platz trägt Neyras körperloses Spiegelbild. |
+| 19 | Neun Gesetze, zehn Schatten | Neyra | Neyra untersucht das Vertragsmosaik; neun Drachenbilder werfen zehn Schatten. Orr verweigert die Erklärung. | Der zehnte Platz trägt Neyras körperloses Spiegelbild. Es hält die Hand eines zweiten Schattens, der Tals Haltung hat. |
 | 20 | Das Haus, das Neyra kennt | Miran | Miran führt Neyra zu einem Haus, an das sie sich unmöglich erinnern kann. Er hofft auf eine Spur zu Ena. | Das Haus erkennt Neyra nicht als Bewohnerin, sondern als „Tür, die laufen lernte“. |
-| 21 | Der Mann mit nur einer Zukunft | Neyra | Tal, ein Festgelegter der Neunerhalle, soll Neyra zurückbringen. Sie versucht, jemanden zu überzeugen, der nicht mehr wählen kann. | Sie besiegt ihn, indem sie seine einzige Kausalkette verändert, erkennt aber ihren möglichen Endzustand. |
-| 22 | Orrs erster Name | Neyra | Neyra zwingt Orr an einer namenfressenden Schwelle zur Wahrheit über den Vertrag. | Orr gesteht, die Klausel formuliert zu haben, die Asra statt nur seiner Waffen verschwinden ließ. |
-| 23 | Das Begräbnis einer Möglichkeit | Neyra | Miran nutzt Magie, um sie vor einem Einsturz zu retten. Der Tausch legt seine verborgene alte Fuge offen. | Neyra erfährt: Nach der zehnten Morgendämmerung kann Miran Merea nie wieder betreten. Vertrauen bricht. |
+| 21 | Der Mann mit nur einer Zukunft | Neyra | Tal soll Neyra zurückbringen. Sie will jemanden überzeugen, der nicht mehr wählen kann. Seine einzige Kausalkette ist nicht die Halle, sondern sie selbst. | Neyra verändert seine Kausalkette und zwingt ihn damit in ein Bündnis: Er kann sie nicht mehr verfolgen und nicht mehr verlassen. Sie erkennt ihren möglichen Endzustand und hasst ihn weiter. |
+| 22 | Orrs erster Name | Neyra | Neyra zwingt Orr an einer namenfressenden Schwelle zur Wahrheit über den Vertrag. Tal als zweiter Zeuge widerspricht Orrs Auslassungen, ohne zu sagen, woher er sie kennt. | Orr gesteht, die Klausel formuliert zu haben, die Asra statt nur seiner Waffen verschwinden ließ. Misstrauen gegen Tal wächst. |
+| 23 | Das Begräbnis einer Möglichkeit | Neyra | Miran nutzt Magie, um sie vor einem Einsturz zu retten. Der Tausch legt seine verborgene alte Fuge offen. Tal sieht es und schweigt. | Neyra erfährt: Nach der zehnten Morgendämmerung kann Miran Merea nie wieder betreten. Vertrauen bricht, und Tals stiller Zorn auf Mirans Heimlichkeit wirkt wie Eifersucht. |
 | 24 | Phaes Verrat | Neyra | Phae soll den gesicherten ersten Anker bewachen, doch ihre Asra-Stimme fleht um Rettung. | Phae gibt Sereth den Anker und entscheidet damit den Rücktausch zugunsten Asras. |
 | 25 | Die Stadt wählt zurück | Neyra | Merea und Asra tauschen straßenweise Bewohner aus. Neyra versucht ein Hospital aus beiden Versionen gleichzeitig zu retten. | Sie stabilisiert einen gemeinsamen Raum und beweist unbewusst, dass Koexistenz möglich ist. |
 | 26 | Schwester im weißen Regen | Miran | Miran findet Ena im Mottensturm und will sie aus Asra führen. Sie weigert sich, seine Erinnerung von ihr zu spielen. | Ena bestätigt seine Liebe, aber nicht sein Recht, ihre Zukunft zu bestimmen. |
 | 27 | Der Chor lügt | Sereth | Sereth richtet das Doppelzeugnis ein. Die 312 Stimmen ihres Chors widersprechen einander stärker als erwartet. | Sie zwingt die Stimmen zur Einheit und wird selbst fast zur Festgelegten. Der Rücktausch beginnt. |
-| 28 | Neyras wahre Leere | Neyra | Neyra sucht im Kern der Schuppe nach dem dritten Anker und erwartet ihre Herkunft. | Sie erkennt: Ihre Leere ist kein Mangel. Sie ist der lebende Anker des zehnten Gesetzes – der Wahl. |
+| 28 | Neyras wahre Leere | Neyra | Neyra sucht im Kern der Schuppe nach dem dritten Anker und erwartet ihre Herkunft. Tal bricht sein Schweigen. | Sie erkennt: Ihre Leere ist kein Mangel. Sie ist der lebende Anker des zehnten Gesetzes. Tal gesteht, dass er die Anker-Vorgängerin aus dem verworfenen Weltabschnitt der Wahl liebte. |
 
 ## Akt III · Eine Stadt darf ankommen
 
 | Nr. | Arbeitstitel | POV | Ziel und Konflikt | Ergebnis / Kapitelhaken |
 | ---: | --- | --- | --- | --- |
-| 29 | Zwei Wahrheiten | Neyra | Neyra muss Orr und Miran von einer dritten, ungeregelten Lösung überzeugen. Beide halten den Preis für unkalkulierbar. | Das Team entscheidet sich für „Ankunft“: Asra soll Gegenwart werden, ohne Vergangenheit zu ersetzen. |
+| 29 | Zwei Wahrheiten | Neyra | Neyra muss Orr, Miran und Tal von einer dritten, ungeregelten Lösung überzeugen. Alle halten den Preis für unkalkulierbar. Tal sieht, dass sie ihn nicht als Ersatz für die Frühere will. | Das Team entscheidet sich für „Ankunft“: Asra soll Gegenwart werden, ohne Vergangenheit zu ersetzen. |
 | 30 | Unter der neunten Schuppe | Neyra | Sie dringen zum Schuppenkern vor, während die Neunerhalle und Sereths Anhänger kämpfen. | Die Schuppe zeigt jedem eine perfekte Welt; Neyra weist ihre chortragende Version zurück. |
 | 31 | Markt ohne Namen | Neyra | Der Weg führt durch einen namenlos gefressenen Markt. Karten, Ämter und Eigennamen funktionieren nicht mehr. | Mirans Beziehungskarte führt sie anhand freiwilliger Bindungen weiter. |
 | 32 | Die erste Zeugin widerruft | Miran | Iven zieht aus Angst sein Zeugnis zurück. Miran muss ihn retten, ohne ihn wieder zur Zustimmung zu zwingen. | Iven bleibt frei; Phae bietet sich als neue Zeugin an, obwohl ihr Chor dagegen ist. |
-| 33 | Sereth öffnet die Welt | Neyra | Sereth aktiviert den vollständigen Rücktausch. Neyra versucht sie nicht vom Unrecht, sondern von der Ersetzung abzubringen. | Sereth verweigert die dritte Lösung; Merea beginnt sichtbar unter Asra zu verschwinden. |
+| 33 | Sereth öffnet die Welt | Neyra | Sereth aktiviert den vollständigen Rücktausch. Neyra versucht sie nicht vom Unrecht, sondern von der Ersetzung abzubringen. Sereth bietet Tal an, seinen verworfenen Weltabschnitt zurückzuholen, wenn er Neyra bindet. | Sereth verweigert die dritte Lösung, Tal lehnt ihr Angebot ab; Merea beginnt sichtbar unter Asra zu verschwinden. |
 | 34 | Der Drache bricht sein Gesetz | Neyra | Für eine Ankunft muss eine Schwelle gleichzeitig Grenze und Einladung sein – ein Widerspruch zu Orrs Wesen. | Orr spricht beides aus, bricht sein Gesetz und überlebt in veränderter Gestalt. Phae bezeugt frei. |
-| 35 | Eine Stadt darf ankommen | Neyra | Neyra muss den gleichwertigen persönlichen Preis wählen. Sereth bietet ihre eigene Zukunft an, will aber weiter bestimmen. | Neyra opfert die Möglichkeit einer eindeutigen Herkunft. Asra kommt neben Merea an; niemand wird ersetzt. |
-| 36 | Die zehnte Häutung | Neyra | Am Morgen müssen Rückkehrer, Merea-Bewohner und Rat den neuen Zustand anerkennen. Ena wählt ihr eigenes Leben; Sereth wird zur Verantwortung gezogen. | Neyra und Miran entscheiden sich für ein nächstes gemeinsames Stück Weg. Am Horizont häutet sich der Drache der Entfernung. |
+| 35 | Eine Stadt darf ankommen | Neyra | Neyra muss den gleichwertigen persönlichen Preis wählen. Eine Ankunft verlangt einen zweiten Preis: eine Zukunft, die Tal allein gehört. Tal gibt seine einzige, von Neyra für einen Augenblick geöffnete Wahl. | Tal wird gegen Neyras Willen geopfert und verschwindet unter der Welthaut. Neyra opfert die Möglichkeit einer eindeutigen Herkunft; weil Tal als Letzter davon wusste, ist sie unwiederbringlich. Asra kommt neben Merea an; niemand wird ersetzt. |
+| 36 | Die zehnte Häutung | Neyra | Am Morgen müssen Rückkehrer, Merea-Bewohner und Rat den neuen Zustand anerkennen. Ena wählt ihr eigenes Leben; Sereth wird zur Verantwortung gezogen. | Neyra und Miran entscheiden sich für ein nächstes gemeinsames Stück Weg. Am Horizont häutet sich der Drache der Entfernung. In einem Feld mit fremder Jahreszeit (Schnee im Hochsommer) tritt ein Mann durch eine Tür: Tal. Der bisherige Vorschlag zeigt zwei freie Hände; Fugenfreiheit und Rückkehrmechanik bleiben `OFFEN`. |
 
 ## Setups und Payoffs
 
@@ -74,6 +74,11 @@ Status: vollständiges Grundgerüst vor Szenenplanung und Rohfassung.
 | S-010 | Gemeinsames Hospital bleibt stabil. | 25 | Zwei Städte können ohne Ersetzung koexistieren. | 35 |
 | S-011 | Phae kann nicht gegen ihren Chor sprechen. | 17 | Sie bezeugt im Finale eine eigene Entscheidung. | 34 |
 | S-012 | Orr nennt jede Schwelle entweder offen oder geschlossen. | 3–8 | Er nennt eine Schwelle beides und bricht sein Gesetz. | 34 |
+| S-013 | Tal verspätet sich um vier Atemzüge und flüstert „Nicht schon wieder“. | 1 | Er erkennt in Neyra die Anker-Nachfolgerin des verworfenen Weltabschnitts der Wahl. | 28 |
+| S-014 | Tals linke Hand zittert; Neyra hat ihn bisher nur vollkommen ruhig erlebt. | 1 | Seine einzige Kausalkette ist die Suche nach dem Anker; Zwangsbündnis. Die Beobachtung beweist noch keine freie Wahl. | 21 |
+| S-015 | Der zehnte Schatten hält die Hand eines Schattens mit Tals Haltung. | 19 | Der Anker der Wahl hatte in der früheren Schicht einen Partner. | 28 |
+| S-016 | Sereth bietet Tal die Rückkehr seiner verworfenen Schicht an. | 33 | Tal wählt Neyras Ankunft statt seiner eigenen Wiederherstellung und gibt seine Zukunft als zweiten Preis. | 35 |
+| S-017 | Schnee steigt in Asra nach oben, während in Merea Sommerregen fällt. | 1 | Tal tritt in einer fremden Jahreszeit durch eine Tür zurück in die Welt. | 36 |
 
 ## Spannungs- und Informationskontrolle
 
@@ -81,6 +86,8 @@ Status: vollständiges Grundgerüst vor Szenenplanung und Rohfassung.
 - **Bis Kapitel 18:** Leser verstehen das historische Verbrechen, aber nicht Neyras Funktion.
 - **Bis Kapitel 28:** alle Regeln für die dritte Lösung sind gezeigt; die Enthüllung ordnet Bekanntes neu.
 - **Kapitel 29–35:** keine neue rettende Grundregel; das Finale kombiniert Aufwärtsfluss, Doppelzeugnis, Schwelle, Tausch und Neyras Ankerfunktion.
+- **Tal:** Bis Kapitel 20 ist er nur der verhasste Vollstrecker; Hinweise auf seine Verbindung zu Neyra bleiben Körpersprache. Kapitel 21 zeigt seine Kausalkette, Kapitel 28 die Liebe, Kapitel 35 den Preis, Kapitel 36 die Wiederkehr.
+- **OFFEN vor dem Finale:** Die Wiederkehr darf weder Tals Opfer noch Neyras verlorene Herkunftswahrheit rückgängig machen. W-009 und das Bild fugenfreier Hände sind ungeklärte Vorschläge, keine verfügbare Rettungsregel.
 
 ## Vor Beginn der Rohfassung
 

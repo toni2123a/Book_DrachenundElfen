@@ -30,7 +30,7 @@ Dieses Repository übernimmt das bewährte Grundprinzip aus `TheBookV2`: Ideen w
 | `recherche/` | Quellen, Faktenprüfung und offene Recherchen |
 | `vorlagen/` | wiederverwendbare Formulare |
 | `scripts/` | kleine Hilfen für Kapitelanlage und Projektprüfung |
-| `docs/` | öffentliche GitHub-Pages-Buchwerkstatt für den Koautor |
+| `index.html`, `styles.css`, `app.js`, `assets/` | öffentliche GitHub-Pages-Buchwerkstatt für den Koautor |
 
 ## Wichtiges Arbeitsprinzip
 

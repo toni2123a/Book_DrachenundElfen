@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · KI-Einschätzung in Kapitel und Abnahme verankert
+
+- **Art:** Kapitel und Organisation
+- **Grund:** Der Koautor soll meine Einschätzung nicht nur als Punktzahl, sondern als begründete Entscheidungshilfe direkt beim Lesen und bei der Freigabe sehen.
+- **Änderung:** Versionsbezogene Einschätzung mit Bewertung, Kurzurteil, Stärken, offenen Risiken und Freigabeempfehlung ergänzt. Dieselbe Einschätzung wird im Kapitelbereich, in Tor 2 und im erzeugten Abnahmeprotokoll ausgegeben.
+- **Auswirkung:** Die Kapitelabnahme zeigt künftig transparent, warum eine Fassung stark ist und welche Restpunkte vor der endgültigen Freigabe zu entscheiden sind. Die unabhängige Entscheidung bleibt beim Koautor.
+- **Betroffene Dateien:** `index.html`, `styles.css`, `app.js`, `vorlagen/KAPITELABNAHME.md`, `produktion/PRODUKTIONSREGELN.md`
+- **Offen:** Koautorenentscheidung zu D-03 und D-04 sowie Feedback zu Rohentwurf v1.
+
 ### 2026-10-20 · Kapitel 1 geschrieben und Webseite in Draft-Modus versetzt
 
 - **Art:** Kapitel, Plot und Organisation

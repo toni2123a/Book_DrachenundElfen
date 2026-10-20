@@ -37,6 +37,63 @@ const chapterTitles = [
   'Die zehnte Häutung'
 ];
 
+const chapterAssessments = {
+  1: {
+    score: '9,6 / 10',
+    verdict: 'Sehr starker, eigenständiger Auftakt mit einem sofortigen Rätsel, einer emotional greifbaren Hauptfigur und einem Schlussbild, das die zentrale Serienfrage persönlich macht.',
+    strengths: 'Der erste Satz setzt unmittelbar Spannung. Neyras trockene Stimme trägt, die drei Szenen eskalieren durch ihre Entscheidungen, und sechs rote Fäden sind sichtbar vorbereitet, ohne die späteren Auflösungen vorwegzunehmen.',
+    risks: 'Die Archivpassage ist stellenweise dichter als der übrige Text. Die freiwillige Bindung zwischen Neyra und Phae könnte noch einen Hauch mehr Wärme vertragen. Elfenalter (D-03) und Mutter-Paradox (D-04) bleiben bewusst entscheidungspflichtig.',
+    recommendation: 'Rohentwurf v1 ist bereit für die Koautorenprüfung. Endgültig freigeben erst, wenn D-03 und D-04 bewusst entschieden oder als beabsichtigt offen protokolliert und die Rückmeldungen des Koautors eingearbeitet wurden.'
+  }
+};
+
+function chapterAssessment(chapter) {
+  return chapterAssessments[Number(chapter)] || null;
+}
+
+function chapterAssessmentText(chapter) {
+  const assessment = chapterAssessment(chapter);
+  if (!assessment) return 'Für dieses Kapitel liegt noch keine KI-Einschätzung vor.';
+  return `Bewertung: ${assessment.score}\nKurzurteil: ${assessment.verdict}\nStärken: ${assessment.strengths}\nOffene Risiken: ${assessment.risks}\nFreigabeempfehlung: ${assessment.recommendation}`;
+}
+
+function assessmentRow(label, text) {
+  const row = document.createElement('div');
+  row.className = 'assessment-row';
+  const heading = document.createElement('strong');
+  heading.textContent = label;
+  const paragraph = document.createElement('p');
+  paragraph.textContent = text;
+  row.append(heading, paragraph);
+  return row;
+}
+
+function renderChapterAssessment(container, chapter) {
+  const assessment = chapterAssessment(chapter);
+  container.replaceChildren();
+
+  const head = document.createElement('div');
+  head.className = 'assessment-head';
+  const label = document.createElement('span');
+  label.textContent = 'Meine Einschätzung';
+  const score = document.createElement('b');
+  score.textContent = assessment ? assessment.score : 'noch offen';
+  head.append(label, score);
+  container.appendChild(head);
+
+  if (!assessment) {
+    container.appendChild(assessmentRow('Status', 'Für dieses Kapitel liegt noch kein geprüfter Rohentwurf und deshalb keine belastbare Einschätzung vor.'));
+    return;
+  }
+
+  container.append(
+    assessmentRow('Kurzurteil', assessment.verdict),
+    assessmentRow('Stärken', assessment.strengths),
+    assessmentRow('Offene Risiken', assessment.risks),
+    assessmentRow('Freigabeempfehlung', assessment.recommendation)
+  );
+}
+
 function today() {
   return new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date());
 }
@@ -100,6 +157,9 @@ Erstellt: ${form.dataset.protocolDate}
 Koautor / geprüft von: ${values.reviewer}
 Kapitel: ${values.chapter} · ${values.chapterTitle}
 Geprüfte Version: ${values.version}
+
+KI-EINSCHÄTZUNG ZUM KAPITEL
+${chapterAssessmentText(values.chapter)}
 
 ENTSCHEIDUNG
 ${values.decision}
@@ -172,6 +232,8 @@ function downloadApproval(form) {
 
 document.querySelectorAll('.approval-form').forEach((approvalForm) => {
   restoreApprovalDraft(approvalForm);
+  const assessmentContainer = approvalForm.querySelector('[data-chapter-assessment]');
+  if (assessmentContainer) renderChapterAssessment(assessmentContainer, approvalForm.elements.namedItem('chapter').value);
   approvalForm.addEventListener('submit', (event) => event.preventDefault());
   approvalForm.addEventListener('input', () => saveApprovalDraft(approvalForm));
 
@@ -179,11 +241,16 @@ document.querySelectorAll('.approval-form').forEach((approvalForm) => {
   chapterField.addEventListener('change', () => {
     const index = Number(chapterField.value) - 1;
     if (chapterTitles[index]) approvalForm.elements.namedItem('chapterTitle').value = chapterTitles[index];
+    if (assessmentContainer) renderChapterAssessment(assessmentContainer, chapterField.value);
     saveApprovalDraft(approvalForm);
   });
 
   approvalForm.querySelector('[data-action="copy"]').addEventListener('click', () => copyApproval(approvalForm));
   approvalForm.querySelector('[data-action="download"]').addEventListener('click', () => downloadApproval(approvalForm));
+});
+
+document.querySelectorAll('.chapter-assessment[data-chapter-assessment]').forEach((container) => {
+  renderChapterAssessment(container, container.dataset.chapterAssessment);
 });
 
 const sceneTitles = [

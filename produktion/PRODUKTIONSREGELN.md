@@ -20,10 +20,11 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 4. **Delta:** Neue Erkenntnisse als Grün, Gelb oder Rot erfassen.
 5. **Stilprüfung:** Perspektive, Stimme, Rhythmus und Verständlichkeit prüfen.
 6. **Logikprüfung:** Zeitlinie, Motivation, Welt- und Magieregeln prüfen.
-7. **Koautorenprüfung:** Der Koautor liest den vollständigen Text und entscheidet offene Kommentare.
-8. **Überarbeitung:** Entscheidungen umsetzen und Folgekapitel synchronisieren.
-9. **Kapitelabnahme:** Der Koautor gibt eine exakt bezeichnete Textversion frei oder fordert eine weitere Überarbeitung.
-10. **Abschluss:** Kapitelstatus erst nach übermitteltem und protokolliertem Abnahmeprotokoll ändern.
+7. **KI-Einschätzung:** Bewertung, Kurzurteil, Stärken, offene Risiken und Freigabeempfehlung versionsbezogen dokumentieren und auf der Webseite beim Kapitel sowie bei Tor 2 anzeigen.
+8. **Koautorenprüfung:** Der Koautor liest den vollständigen Text, berücksichtigt die KI-Einschätzung und entscheidet offene Kommentare unabhängig.
+9. **Überarbeitung:** Entscheidungen umsetzen und Folgekapitel synchronisieren.
+10. **Kapitelabnahme:** Der Koautor gibt eine exakt bezeichnete Textversion frei oder fordert eine weitere Überarbeitung.
+11. **Abschluss:** Kapitelstatus erst nach übermitteltem und protokolliertem Abnahmeprotokoll ändern.
 
 ## Zwei verbindliche Freigabetore
 
@@ -40,6 +41,7 @@ Das Buch wird kapitelweise entwickelt, ohne dass spontane Einfälle unbemerkt de
 - nennt Kapitelnummer, Kapiteltitel und exakte Textversion,
 - bestätigt die vollständige Lektüre,
 - bestätigt Figurenlogik, Stil, Kontinuität und Deltas,
+- enthält dieselbe versionsbezogene KI-Einschätzung wie der Kapitelbereich und bestätigt, dass Risiken und Empfehlung berücksichtigt wurden,
 - lautet entweder `Kapitel freigegeben` oder `Nicht freigegeben – Überarbeitung erforderlich`,
 - verliert bei jeder nachträglichen Textänderung ihre Gültigkeit.
 

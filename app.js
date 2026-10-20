@@ -89,6 +89,13 @@ function addEditPolicyMarker(element, policyName) {
   tooltip.setAttribute('role', 'tooltip');
   tooltip.textContent = definition.help;
   marker.append(label, info, tooltip);
+  const alignTooltip = () => {
+    const markerBox = marker.getBoundingClientRect();
+    const tooltipWidth = Math.min(330, window.innerWidth * 0.78);
+    tooltip.classList.toggle('align-right', markerBox.left + tooltipWidth > window.innerWidth - 16);
+  };
+  marker.addEventListener('mouseenter', alignTooltip);
+  marker.addEventListener('focus', alignTooltip);
   element.appendChild(marker);
 }
 

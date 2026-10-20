@@ -236,8 +236,9 @@ h1 { max-width: 800px; margin: 0; font-size: clamp(64px, 9vw, 126px); font-weigh
 .edit-policy-marker b { display: grid; width: 16px; height: 16px; place-items: center; border-radius: 50%; background: currentColor; color: var(--white); font-family: Georgia, serif; font-size: 10px; font-style: italic; text-transform: none; }
 .edit-policy-marker.draft { border-color: #7b9da4; background: #edf5f5; color: #315f68; }
 .edit-policy-marker.fixed, .edit-policy-marker.lockedFoundation { border-color: #909697; background: #edf0ef; color: #3f4b4e; }
-.edit-policy-tooltip { position: absolute; z-index: 20; left: 0; bottom: calc(100% + 9px); width: min(330px, 78vw); padding: 12px 14px; border-radius: 10px; background: var(--night-deep); color: var(--cream); box-shadow: 0 12px 32px rgba(5, 22, 27, .3); font-size: 11px; font-weight: 500; letter-spacing: 0; line-height: 1.5; text-transform: none; visibility: hidden; opacity: 0; pointer-events: none; transform: translateY(5px); transition: opacity .16s ease, transform .16s ease, visibility .16s ease; }
-.edit-policy-marker:hover .edit-policy-tooltip, .edit-policy-marker:focus .edit-policy-tooltip, .edit-policy-marker:focus-visible .edit-policy-tooltip { visibility: visible; opacity: 1; transform: translateY(0); }
+.edit-policy-tooltip { position: absolute; z-index: 20; left: 0; bottom: calc(100% + 9px); display: none; width: min(330px, 78vw); padding: 12px 14px; border-radius: 10px; background: var(--night-deep); color: var(--cream); box-shadow: 0 12px 32px rgba(5, 22, 27, .3); font-size: 11px; font-weight: 500; letter-spacing: 0; line-height: 1.5; text-transform: none; pointer-events: none; }
+.edit-policy-tooltip.align-right { right: 0; left: auto; }
+.edit-policy-marker:hover .edit-policy-tooltip, .edit-policy-marker:focus .edit-policy-tooltip, .edit-policy-marker:focus-visible .edit-policy-tooltip { display: block; }
 .world-grid .edit-policy-marker, .acts .edit-policy-marker, .chapter-grid .edit-policy-marker, .book-card.featured .edit-policy-marker, .quality-gate .edit-policy-marker { border-color: rgba(231, 181, 115, .7); background: rgba(209, 154, 87, .13); color: var(--copper-light); }
 .magic-system > .edit-policy-marker, .quality-gate > .edit-policy-marker, .manifest > .edit-policy-marker { grid-column: 1 / -1; }
 .chapter-grid .edit-policy-marker { grid-column: 2; }

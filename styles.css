@@ -232,6 +232,7 @@ footer a { align-self: center; color: var(--ink-soft); font-size: 13px; font-wei
   .brand > span:last-child { display: none; }
   .hero, .hero-copy { min-height: 690px; }
   .hero-shade { background: linear-gradient(0deg, rgba(4, 19, 24, .96) 0%, rgba(5, 22, 27, .6) 70%, rgba(5, 22, 27, .18)); }
+  .hero > img { object-position: 68% center; }
   .hero-copy { justify-content: flex-end; padding-bottom: 65px; }
   h1 { font-size: clamp(61px, 19vw, 90px); }
   .hero-actions { align-items: stretch; flex-direction: column; }

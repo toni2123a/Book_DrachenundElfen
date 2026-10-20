@@ -4,6 +4,15 @@ Dieses Protokoll erfasst Änderungen, die den vereinbarten Projektstand, mehrere
 
 ## Änderungen
 
+### 2026-10-20 · Titelmotiv an „Die Häutung der Welt“ angepasst
+
+- **Art:** Gestaltung
+- **Grund:** Das alte Bild enthielt den früheren Titel als feste Bildschrift und überlagerte sich mit dem neuen Webseitentitel.
+- **Änderung:** Neues schriftfreies Titelmotiv mit zwei Wirklichkeitsschichten, einer gewaltigen Drachenschuppe, weißen Motten und dem kleinen Drachen Orr erstellt. Die linke Bildhälfte bleibt als ruhiger Raum für den Webseitentitel frei.
+- **Auswirkung:** Der Titel ist auf großen und kleinen Bildschirmen klar lesbar; Bild und Konzept erzählen nun dieselbe Weltidee.
+- **Betroffene Dateien:** `assets/hero-worldskin.webp`, `index.html`, `styles.css`
+- **Offen:** keines
+
 ### 2026-10-20 · Zwei Freigabetore für jedes Kapitel ergänzt
 
 - **Art:** Organisation und Kapitelworkflow

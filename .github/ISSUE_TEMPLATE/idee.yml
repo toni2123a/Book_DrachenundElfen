@@ -1,0 +1,47 @@
+name: Neue Buchidee
+description: Eine neue Idee für Drachen und Elfen zur gemeinsamen Prüfung vorschlagen
+title: "Idee: "
+labels:
+  - idee
+body:
+  - type: dropdown
+    id: typ
+    attributes:
+      label: Typ
+      options:
+        - Prämisse
+        - Figur
+        - Welt
+        - Magie
+        - Plot
+        - Szene
+        - Stil
+        - Recherche
+        - Sonstiges
+    validations:
+      required: true
+  - type: textarea
+    id: vorschlag
+    attributes:
+      label: Vorschlag
+      description: Die Idee kurz und konkret beschreiben.
+    validations:
+      required: true
+  - type: textarea
+    id: reiz
+    attributes:
+      label: Warum ist die Idee interessant?
+    validations:
+      required: true
+  - type: textarea
+    id: folgen
+    attributes:
+      label: Mögliche Folgen und offene Fragen
+      description: Auswirkungen auf Kanon, Plot, Figuren, Welt oder spätere Kapitel.
+  - type: checkboxes
+    id: kein_kanon
+    attributes:
+      label: Arbeitsstatus
+      options:
+        - label: Mir ist bewusst, dass der Vorschlag erst nach gemeinsamer Entscheidung zum Kanon wird.
+          required: true

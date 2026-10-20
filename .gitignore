@@ -1,0 +1,16 @@
+# Lokale Arbeitsdateien
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+~$*
+
+# Exporte und lokale Werkzeuge
+output/
+tmp/
+.tools/
+
+# Lokale Geheimnisse
+.env
+*.key
+*_API_Key.txt
